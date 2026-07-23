@@ -125,10 +125,14 @@ def connect() -> sqlite3.Connection:
             rir INTEGER,
             pain INTEGER,
             notes TEXT,
+            set_number INTEGER DEFAULT 1,
             created_at TEXT NOT NULL
         )
         """
     )
+    columns = {row[1] for row in connection.execute("PRAGMA table_info(workout_log)")}
+    if "set_number" not in columns:
+        connection.execute("ALTER TABLE workout_log ADD COLUMN set_number INTEGER DEFAULT 1")
     connection.commit()
     return connection
 
@@ -236,23 +240,37 @@ with tab_today:
                         help="Choose the planned movement or an alternative.",
                     )
                     with st.form(f"log_{selected_day}_{index}", clear_on_submit=True):
-                        c1, c2, c3 = st.columns(3)
-                        log_date = c1.date_input("Date", date.today(), key=f"date_{selected_day}_{index}")
-                        completed_sets = c2.number_input(
-                            "Sets completed", 1, 20, int(item["sets"]), key=f"sets_{selected_day}_{index}"
+                        log_date = st.date_input(
+                            "Date", date.today(), key=f"date_{selected_day}_{index}"
                         )
-                        completed_reps = c3.text_input(
-                            "Reps", str(item["reps"]), key=f"reps_{selected_day}_{index}"
-                        )
-                        c4, c5, c6 = st.columns(3)
-                        weight = c4.number_input(
-                            "Weight (kg)", 0.0, 1000.0, 0.0, 0.5, key=f"weight_{selected_day}_{index}"
-                        )
-                        rir = c5.select_slider(
+                        st.markdown("**Sets performed**")
+                        set_values = []
+                        for set_number in range(1, int(item["sets"]) + 1):
+                            set_col, reps_col, weight_col = st.columns([1, 2, 2])
+                            set_col.markdown(f"Set **{set_number}**")
+                            set_reps = reps_col.number_input(
+                                f"Set {set_number} reps",
+                                min_value=0,
+                                max_value=100,
+                                value=0,
+                                key=f"reps_{selected_day}_{index}_{set_number}",
+                            )
+                            set_weight = weight_col.number_input(
+                                f"Set {set_number} weight (kg)",
+                                min_value=0.0,
+                                max_value=1000.0,
+                                value=0.0,
+                                step=0.5,
+                                key=f"weight_{selected_day}_{index}_{set_number}",
+                            )
+                            set_values.append((set_number, set_reps, set_weight))
+
+                        c1, c2 = st.columns(2)
+                        rir = c1.select_slider(
                             "Reps in reserve", options=list(range(0, 6)), value=2,
                             key=f"rir_{selected_day}_{index}",
                         )
-                        pain = c6.select_slider(
+                        pain = c2.select_slider(
                             "Pain / discomfort", options=list(range(0, 11)), value=0,
                             key=f"pain_{selected_day}_{index}",
                         )
@@ -262,21 +280,30 @@ with tab_today:
                         )
                         submitted = st.form_submit_button("Save to progress", type="primary")
                         if submitted:
-                            db.execute(
-                                """
-                                INSERT INTO workout_log (
-                                    performed_on, day_name, planned_exercise, performed_exercise,
-                                    sets, reps, weight, rir, pain, notes, created_at
-                                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-                                """,
-                                (
-                                    log_date.isoformat(), selected_day, item["name"], performed,
-                                    completed_sets, completed_reps, weight, rir, pain,
-                                    log_notes.strip(), datetime.now().isoformat(timespec="seconds"),
-                                ),
-                            )
-                            db.commit()
-                            st.success("Workout saved.")
+                            completed = [values for values in set_values if values[1] > 0]
+                            if not completed:
+                                st.error("Enter the repetitions for at least one set.")
+                            else:
+                                logged_at = datetime.now().isoformat(timespec="microseconds")
+                                db.executemany(
+                                    """
+                                    INSERT INTO workout_log (
+                                        performed_on, day_name, planned_exercise,
+                                        performed_exercise, sets, reps, weight, rir,
+                                        pain, notes, set_number, created_at
+                                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                                    """,
+                                    [
+                                        (
+                                            log_date.isoformat(), selected_day, item["name"],
+                                            performed, 1, str(set_reps), set_weight, rir, pain,
+                                            log_notes.strip(), set_number, logged_at,
+                                        )
+                                        for set_number, set_reps, set_weight in completed
+                                    ],
+                                )
+                                db.commit()
+                                st.success(f"{len(completed)} sets saved.")
 
 with tab_plan:
     st.subheader("Build your Monday–Friday plan")
@@ -349,11 +376,11 @@ with tab_progress:
         st.info("Your progress will appear here after you log your first exercise.")
     else:
         log["performed_on"] = pd.to_datetime(log["performed_on"])
-        completed_days = log.groupby("performed_on")["sets"].sum()
+        completed_days = log.groupby("performed_on").size().rename("sets")
         c1, c2, c3 = st.columns(3)
         c1.metric("Training days", int(log["performed_on"].nunique()))
-        c2.metric("Exercises logged", len(log))
-        c3.metric("Sets completed", int(log["sets"].sum()))
+        c2.metric("Exercises logged", int(log["created_at"].nunique()))
+        c3.metric("Sets completed", len(log))
 
         st.subheader("Training activity")
         st.bar_chart(completed_days, y="sets", x_label="Date", y_label="Completed sets")
@@ -365,10 +392,13 @@ with tab_progress:
             log["performed_exercise"] == exercise_filter
         ]
         display = shown[
-            ["performed_on", "performed_exercise", "sets", "reps", "weight", "rir", "pain", "notes"]
+            [
+                "performed_on", "performed_exercise", "set_number", "reps",
+                "weight", "rir", "pain", "notes",
+            ]
         ].rename(
             columns={
-                "performed_on": "Date", "performed_exercise": "Exercise", "sets": "Sets",
+                "performed_on": "Date", "performed_exercise": "Exercise", "set_number": "Set",
                 "reps": "Reps", "weight": "Weight (kg)", "rir": "RIR", "pain": "Pain",
                 "notes": "Notes",
             }
@@ -388,7 +418,8 @@ with tab_progress:
                 format_func=lambda row_id: (
                     f"#{row_id} · "
                     f"{shown.loc[shown['id'] == row_id, 'performed_on'].iloc[0].date()} · "
-                    f"{shown.loc[shown['id'] == row_id, 'performed_exercise'].iloc[0]}"
+                    f"{shown.loc[shown['id'] == row_id, 'performed_exercise'].iloc[0]} · "
+                    f"set {shown.loc[shown['id'] == row_id, 'set_number'].iloc[0]}"
                 ),
             )
             if st.button("Delete selected entry"):
