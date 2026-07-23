@@ -239,13 +239,20 @@ with tab_today:
                         key=f"performed_{selected_day}_{index}",
                         help="Choose the planned movement or an alternative.",
                     )
+                    set_count = st.selectbox(
+                        "Number of sets",
+                        options=list(range(1, 11)),
+                        index=min(max(int(item["sets"]), 1), 10) - 1,
+                        key=f"set_count_{selected_day}_{index}",
+                        help="Choose how many sets you performed, then enter each set below.",
+                    )
                     with st.form(f"log_{selected_day}_{index}", clear_on_submit=True):
                         log_date = st.date_input(
                             "Date", date.today(), key=f"date_{selected_day}_{index}"
                         )
                         st.markdown("**Sets performed**")
                         set_values = []
-                        for set_number in range(1, int(item["sets"]) + 1):
+                        for set_number in range(1, set_count + 1):
                             set_col, reps_col, weight_col = st.columns([1, 2, 2])
                             set_col.markdown(f"Set **{set_number}**")
                             set_reps = reps_col.number_input(
