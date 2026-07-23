@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import re
 import sqlite3
 from datetime import date, datetime
 from pathlib import Path
@@ -14,6 +15,34 @@ DATA_DIR = ROOT / "data"
 DB_PATH = DATA_DIR / "progress.db"
 PLAN_PATH = DATA_DIR / "workout_plan.json"
 DAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+MUSCLE_GROUPS = [
+    "Chest", "Back", "Shoulders", "Biceps", "Triceps", "Quadriceps",
+    "Hamstrings", "Glutes", "Calves", "Core",
+]
+
+
+def infer_muscle_groups(name: str) -> list[str]:
+    text = name.lower()
+    rules = [
+        (("chest press", "pec deck", "chest fly", "bench press"), ["Chest", "Shoulders", "Triceps"]),
+        (("lat pulldown", "pull-up"), ["Back", "Biceps"]),
+        (("row",), ["Back", "Biceps"]),
+        (("shoulder press",), ["Shoulders", "Triceps"]),
+        (("lateral raise",), ["Shoulders"]),
+        (("reverse pec", "rear-delt", "face pull"), ["Shoulders", "Back"]),
+        (("triceps",), ["Triceps"]),
+        (("curl",), ["Biceps"]),
+        (("leg press", "split squat", "step-up", "leg extension", "goblet squat"), ["Quadriceps", "Glutes"]),
+        (("leg curl",), ["Hamstrings"]),
+        (("hip thrust", "glute bridge", "pull-through", "hip abduction"), ["Glutes"]),
+        (("calf",), ["Calves"]),
+        (("pallof", "crunch", "dead bug"), ["Core"]),
+    ]
+    groups: list[str] = []
+    for keywords, matched_groups in rules:
+        if any(keyword in text for keyword in keywords):
+            groups.extend(group for group in matched_groups if group not in groups)
+    return groups
 
 def exercise(
     name: str,
@@ -29,6 +58,7 @@ def exercise(
         "alternatives": alternatives,
         "notes": notes,
         "source": "PDF",
+        "muscle_groups": infer_muscle_groups(name),
     }
 
 
@@ -148,7 +178,16 @@ def load_plan() -> dict[str, list[dict]]:
         saved = json.loads(PLAN_PATH.read_text(encoding="utf-8"))
     except (json.JSONDecodeError, OSError):
         saved = STARTER_PLAN
-    return {day: saved.get(day, []) for day in DAYS}
+    normalized = {day: saved.get(day, []) for day in DAYS}
+    changed = False
+    for exercises in normalized.values():
+        for item in exercises:
+            if not item.get("muscle_groups"):
+                item["muscle_groups"] = infer_muscle_groups(item.get("name", ""))
+                changed = True
+    if changed:
+        save_plan(normalized)
+    return normalized
 
 
 def save_plan(plan: dict[str, list[dict]]) -> None:
@@ -163,6 +202,37 @@ def read_log(connection: sqlite3.Connection) -> pd.DataFrame:
 
 def exercise_label(item: dict) -> str:
     return f"{item['name']} · {item['sets']} × {item['reps']}"
+
+
+def target_rep_range(target: str) -> tuple[int | None, int | None]:
+    values = [int(value) for value in re.findall(r"\d+", str(target))]
+    return (values[0], values[1]) if len(values) >= 2 else (None, None)
+
+
+def session_summary(log: pd.DataFrame) -> pd.DataFrame:
+    working = log.copy()
+    working["reps_num"] = pd.to_numeric(working["reps"], errors="coerce").fillna(0)
+    working["weight"] = pd.to_numeric(working["weight"], errors="coerce").fillna(0)
+    working["volume_load"] = working["reps_num"] * working["weight"]
+    working["estimated_1rm"] = working["weight"] * (1 + working["reps_num"] / 30)
+    return (
+        working.groupby(
+            ["created_at", "performed_on", "day_name", "planned_exercise", "performed_exercise"],
+            as_index=False,
+        )
+        .agg(
+            sets=("id", "count"),
+            total_reps=("reps_num", "sum"),
+            minimum_reps=("reps_num", "min"),
+            best_reps=("reps_num", "max"),
+            best_weight=("weight", "max"),
+            volume_load=("volume_load", "sum"),
+            estimated_1rm=("estimated_1rm", "max"),
+            average_rir=("rir", "mean"),
+            average_pain=("pain", "mean"),
+        )
+        .sort_values(["performed_on", "created_at"])
+    )
 
 
 def apply_date_to_day(day: str, exercise_count: int) -> None:
@@ -354,6 +424,12 @@ with tab_plan:
                 alternatives = st.text_area(
                     "Alternatives (one per line)", "\n".join(item.get("alternatives", []))
                 )
+                muscle_groups = st.multiselect(
+                    "Muscle groups",
+                    MUSCLE_GROUPS,
+                    default=item.get("muscle_groups", []),
+                    help="Each completed set counts toward every selected muscle group.",
+                )
                 notes = st.text_area("Form cues / notes", item.get("notes", ""))
                 save_col, delete_col = st.columns(2)
                 save = save_col.form_submit_button("Save changes", type="primary")
@@ -365,6 +441,7 @@ with tab_plan:
                         "sets": sets,
                         "reps": reps.strip(),
                         "alternatives": [x.strip() for x in alternatives.splitlines() if x.strip()],
+                        "muscle_groups": muscle_groups,
                         "notes": notes.strip(),
                     }
                     save_plan(plan)
@@ -381,6 +458,7 @@ with tab_plan:
             new_sets = c1.number_input("Sets", 1, 20, 3)
             new_reps = c2.text_input("Rep target", "8–12")
             new_alternatives = st.text_area("Alternatives (one per line)")
+            new_muscle_groups = st.multiselect("Muscle groups", MUSCLE_GROUPS)
             new_notes = st.text_area("Form cues / notes")
             if st.form_submit_button("Add to plan", type="primary"):
                 if new_name.strip():
@@ -392,6 +470,7 @@ with tab_plan:
                             "alternatives": [
                                 x.strip() for x in new_alternatives.splitlines() if x.strip()
                             ],
+                            "muscle_groups": new_muscle_groups,
                             "notes": new_notes.strip(),
                             "source": "Custom",
                         }
@@ -407,56 +486,281 @@ with tab_progress:
         st.info("Your progress will appear here after you log your first exercise.")
     else:
         log["performed_on"] = pd.to_datetime(log["performed_on"])
-        completed_days = log.groupby("performed_on").size().rename("sets")
+        sessions = session_summary(log)
+        completed_days = log.groupby("performed_on").size().rename("Completed sets")
         c1, c2, c3 = st.columns(3)
         c1.metric("Training days", int(log["performed_on"].nunique()))
         c2.metric("Exercises logged", int(log["created_at"].nunique()))
         c3.metric("Sets completed", len(log))
 
-        st.subheader("Training activity")
-        st.bar_chart(completed_days, y="sets", x_label="Date", y_label="Completed sets")
-
-        exercise_filter = st.selectbox(
-            "Exercise history", ["All exercises", *sorted(log["performed_exercise"].unique())]
-        )
-        shown = log if exercise_filter == "All exercises" else log[
-            log["performed_exercise"] == exercise_filter
-        ]
-        display = shown[
-            [
-                "performed_on", "performed_exercise", "set_number", "reps",
-                "weight", "rir", "pain", "notes",
-            ]
-        ].rename(
-            columns={
-                "performed_on": "Date", "performed_exercise": "Exercise", "set_number": "Set",
-                "reps": "Reps", "weight": "Weight (kg)", "rir": "RIR", "pain": "Pain",
-                "notes": "Notes",
-            }
-        )
-        st.dataframe(display, use_container_width=True, hide_index=True)
-        st.download_button(
-            "Download progress as CSV",
-            log.to_csv(index=False).encode("utf-8"),
-            "workout_progress.csv",
-            "text/csv",
+        overview_tab, exercise_tab, muscles_tab, recovery_tab, history_tab = st.tabs(
+            ["Overview", "Exercise progress", "Muscle groups", "Effort & pain", "History"]
         )
 
-        with st.expander("Delete a mistaken entry"):
-            entry = st.selectbox(
-                "Entry",
-                shown["id"].tolist(),
-                format_func=lambda row_id: (
-                    f"#{row_id} · "
-                    f"{shown.loc[shown['id'] == row_id, 'performed_on'].iloc[0].date()} · "
-                    f"{shown.loc[shown['id'] == row_id, 'performed_exercise'].iloc[0]} · "
-                    f"set {shown.loc[shown['id'] == row_id, 'set_number'].iloc[0]}"
-                ),
+        with overview_tab:
+            st.subheader("Training activity")
+            st.bar_chart(completed_days, x_label="Date", y_label="Completed sets")
+
+            sessions_by_week = (
+                sessions.assign(week=sessions["performed_on"].dt.to_period("W-MON").dt.start_time)
+                .groupby("week")["performed_on"]
+                .nunique()
+                .rename("Completed workouts")
             )
-            if st.button("Delete selected entry"):
-                db.execute("DELETE FROM workout_log WHERE id = ?", (int(entry),))
-                db.commit()
-                st.rerun()
+            first_week = sessions_by_week.index.min()
+            current_week = pd.Timestamp.today().to_period("W-MON").start_time
+            week_index = pd.date_range(first_week, current_week, freq="W-TUE")
+            if len(week_index) == 0:
+                week_index = pd.DatetimeIndex([first_week])
+            adherence = sessions_by_week.reindex(week_index, fill_value=0).to_frame()
+            adherence["Planned workouts"] = 5
+            if current_week in adherence.index:
+                elapsed_weekdays = min(pd.Timestamp.today().weekday() + 1, 5)
+                adherence.loc[current_week, "Planned workouts"] = elapsed_weekdays
+            adherence["Adherence %"] = (
+                adherence["Completed workouts"] / adherence["Planned workouts"].clip(lower=1) * 100
+            ).clip(upper=100)
+
+            st.subheader("Weekly adherence")
+            st.bar_chart(
+                adherence[["Completed workouts", "Planned workouts"]],
+                x_label="Week", y_label="Workouts",
+            )
+            recent = adherence.tail(4)
+            st.metric(
+                "Four-week adherence",
+                f"{recent['Completed workouts'].sum() / recent['Planned workouts'].sum():.0%}",
+            )
+
+            st.subheader("Personal records")
+            records = (
+                sessions.groupby("performed_exercise", as_index=False)
+                .agg(
+                    Sessions=("created_at", "nunique"),
+                    **{
+                        "Best weight (kg)": ("best_weight", "max"),
+                        "Best reps": ("best_reps", "max"),
+                        "Estimated 1RM (kg)": ("estimated_1rm", "max"),
+                    },
+                )
+                .rename(columns={"performed_exercise": "Exercise"})
+            )
+            records["Estimated 1RM (kg)"] = records["Estimated 1RM (kg)"].round(1)
+            st.dataframe(records, width="stretch", hide_index=True)
+
+        with exercise_tab:
+            selected_exercise = st.selectbox(
+                "Exercise",
+                sorted(sessions["performed_exercise"].unique()),
+                key="progress_exercise",
+            )
+            exercise_sessions = sessions[
+                sessions["performed_exercise"] == selected_exercise
+            ].sort_values(["performed_on", "created_at"])
+            latest = exercise_sessions.iloc[-1]
+            previous = exercise_sessions.iloc[-2] if len(exercise_sessions) > 1 else None
+
+            planned_item = next(
+                (
+                    item
+                    for day_exercises in plan.values()
+                    for item in day_exercises
+                    if item["name"] == latest["planned_exercise"]
+                    or selected_exercise in item.get("alternatives", [])
+                ),
+                None,
+            )
+            lower_target, upper_target = target_rep_range(
+                planned_item["reps"] if planned_item else ""
+            )
+            latest_sets = log[log["created_at"] == latest["created_at"]].copy()
+            latest_sets["reps_num"] = pd.to_numeric(latest_sets["reps"], errors="coerce")
+
+            if latest["average_pain"] >= 4:
+                signal, message = "🔴 Review before progressing", (
+                    "Pain/discomfort was elevated. Do not increase the load; review the "
+                    "movement, setup, and recovery first."
+                )
+            elif (
+                previous is not None
+                and latest["estimated_1rm"] < previous["estimated_1rm"] * 0.95
+            ):
+                signal, message = "🔴 Performance dropped", (
+                    "Estimated performance fell by more than 5% from the previous session. "
+                    "Keep or reduce the load and check fatigue and recovery."
+                )
+            elif (
+                upper_target is not None
+                and latest_sets["reps_num"].min() >= upper_target
+                and 1 <= latest["average_rir"] <= 4
+                and latest["average_pain"] <= 2
+            ):
+                signal, message = "🟢 Ready to progress", (
+                    "Every logged set reached the top of the target range with controlled "
+                    "effort and low discomfort. Consider the smallest available load increase."
+                )
+            else:
+                signal, message = "🟡 Build repetitions", (
+                    "Keep the current load and work toward the top of the rep range on every set."
+                )
+            st.subheader(signal)
+            st.write(message)
+
+            d1, d2, d3, d4 = st.columns(4)
+            d1.metric(
+                "Best weight",
+                f"{latest['best_weight']:.1f} kg",
+                None if previous is None else f"{latest['best_weight'] - previous['best_weight']:+.1f}",
+            )
+            d2.metric(
+                "Estimated 1RM",
+                f"{latest['estimated_1rm']:.1f} kg",
+                None if previous is None else f"{latest['estimated_1rm'] - previous['estimated_1rm']:+.1f}",
+            )
+            d3.metric(
+                "Total reps",
+                int(latest["total_reps"]),
+                None if previous is None else f"{latest['total_reps'] - previous['total_reps']:+.0f}",
+            )
+            d4.metric("Average RIR", f"{latest['average_rir']:.1f}")
+
+            trend = exercise_sessions.set_index("performed_on")[
+                ["best_weight", "estimated_1rm"]
+            ].rename(
+                columns={"best_weight": "Best weight", "estimated_1rm": "Estimated 1RM"}
+            )
+            st.subheader("Strength trend")
+            st.line_chart(trend, x_label="Date", y_label="Kilograms")
+            st.caption(
+                "Estimated 1RM uses the Epley formula and is a trend estimate—not a "
+                "recommendation to attempt a maximum lift."
+            )
+
+            st.subheader("Recent set-by-set performance")
+            comparison_rows = []
+            recent_session_ids = exercise_sessions.tail(5)["created_at"].tolist()
+            for session_id in reversed(recent_session_ids):
+                set_rows = log[log["created_at"] == session_id].sort_values("set_number")
+                row = {
+                    "Date": set_rows["performed_on"].iloc[0].date(),
+                    "RIR": set_rows["rir"].mean(),
+                    "Pain": set_rows["pain"].mean(),
+                }
+                for _, set_row in set_rows.iterrows():
+                    row[f"Set {int(set_row['set_number'])}"] = (
+                        f"{float(set_row['weight']):g} kg × {set_row['reps']}"
+                    )
+                comparison_rows.append(row)
+            st.dataframe(pd.DataFrame(comparison_rows), width="stretch", hide_index=True)
+
+        with muscles_tab:
+            plan_groups = {
+                item["name"]: item.get("muscle_groups", infer_muscle_groups(item["name"]))
+                for day_exercises in plan.values()
+                for item in day_exercises
+            }
+            muscle_rows = []
+            for _, set_row in log.iterrows():
+                groups = plan_groups.get(
+                    set_row["planned_exercise"],
+                    infer_muscle_groups(set_row["planned_exercise"]),
+                )
+                for group in groups:
+                    muscle_rows.append(
+                        {
+                            "Week": set_row["performed_on"].to_period("W-MON").start_time,
+                            "Muscle group": group,
+                            "Completed sets": 1,
+                        }
+                    )
+            if muscle_rows:
+                muscle_data = pd.DataFrame(muscle_rows)
+                muscle_weekly = (
+                    muscle_data.groupby(["Week", "Muscle group"])["Completed sets"]
+                    .sum()
+                    .unstack(fill_value=0)
+                )
+                st.subheader("Weekly sets by muscle group")
+                st.bar_chart(muscle_weekly, x_label="Week", y_label="Completed sets")
+                st.caption(
+                    "A compound set counts toward every assigned muscle group. Edit "
+                    "assignments in My plan if you prefer primary-muscle-only counting."
+                )
+                st.dataframe(
+                    muscle_weekly.sort_index(ascending=False),
+                    width="stretch",
+                )
+            else:
+                st.info("Assign muscle groups in My plan to populate this chart.")
+
+        with recovery_tab:
+            weekly_recovery = (
+                log.assign(week=log["performed_on"].dt.to_period("W-MON").dt.start_time)
+                .groupby("week")[["rir", "pain"]]
+                .mean()
+                .rename(columns={"rir": "Average RIR", "pain": "Average pain"})
+            )
+            st.subheader("Weekly effort and discomfort")
+            st.line_chart(weekly_recovery, x_label="Week", y_label="Rating")
+            recent_pain = log.sort_values("performed_on").tail(20)
+            pain_flags = recent_pain[recent_pain["pain"] >= 4]
+            zero_rir = recent_pain[recent_pain["rir"] == 0]
+            if not pain_flags.empty:
+                st.warning(
+                    f"{len(pain_flags)} of your last {len(recent_pain)} sets recorded "
+                    "pain/discomfort of 4 or higher. Review those exercises before progressing."
+                )
+            if not zero_rir.empty:
+                st.warning(
+                    f"{len(zero_rir)} of your last {len(recent_pain)} sets reached 0 RIR. "
+                    "Your plan currently targets roughly 2–3 RIR."
+                )
+            if pain_flags.empty and zero_rir.empty:
+                st.success("No elevated pain or unexpected 0-RIR sets in your recent history.")
+
+        with history_tab:
+            exercise_filter = st.selectbox(
+                "Exercise history",
+                ["All exercises", *sorted(log["performed_exercise"].unique())],
+            )
+            shown = log if exercise_filter == "All exercises" else log[
+                log["performed_exercise"] == exercise_filter
+            ]
+            display = shown[
+                [
+                    "performed_on", "performed_exercise", "set_number", "reps",
+                    "weight", "rir", "pain", "notes",
+                ]
+            ].rename(
+                columns={
+                    "performed_on": "Date", "performed_exercise": "Exercise",
+                    "set_number": "Set", "reps": "Reps", "weight": "Weight (kg)",
+                    "rir": "RIR", "pain": "Pain", "notes": "Notes",
+                }
+            )
+            st.dataframe(display, width="stretch", hide_index=True)
+            st.download_button(
+                "Download progress as CSV",
+                log.to_csv(index=False).encode("utf-8"),
+                "workout_progress.csv",
+                "text/csv",
+            )
+
+            with st.expander("Delete a mistaken entry"):
+                entry = st.selectbox(
+                    "Entry",
+                    shown["id"].tolist(),
+                    format_func=lambda row_id: (
+                        f"#{row_id} · "
+                        f"{shown.loc[shown['id'] == row_id, 'performed_on'].iloc[0].date()} · "
+                        f"{shown.loc[shown['id'] == row_id, 'performed_exercise'].iloc[0]} · "
+                        f"set {shown.loc[shown['id'] == row_id, 'set_number'].iloc[0]}"
+                    ),
+                )
+                if st.button("Delete selected entry"):
+                    db.execute("DELETE FROM workout_log WHERE id = ?", (int(entry),))
+                    db.commit()
+                    st.rerun()
 
 st.divider()
 st.caption(

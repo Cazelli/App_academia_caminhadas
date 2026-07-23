@@ -1,42 +1,454 @@
 {
   "Monday": [
-    {"name":"Machine chest press","sets":4,"reps":"8–12","alternatives":["Dumbbell bench press","Smith-machine bench press"],"notes":"Use controlled technique and finish with about 3 repetitions in reserve.","source":"Custom"},
-    {"name":"Neutral-grip lat pulldown","sets":4,"reps":"8–12","alternatives":["Assisted pull-up","Regular lat pulldown"],"notes":"Use controlled technique and finish with about 3 repetitions in reserve.","source":"Custom"},
-    {"name":"Chest-supported row","sets":3,"reps":"8–12","alternatives":["Chest-supported dumbbell row","Seated cable row"],"notes":"Keep the chest supported and pull under control.","source":"Custom"},
-    {"name":"Machine shoulder press","sets":3,"reps":"8–12","alternatives":["Dumbbell shoulder press (neutral grip)","Landmine press"],"notes":"Neutral grip is the default. Keep elbows slightly forward and your back and head on the pad. Do not lower excessively deep or continue through pinching.","source":"Custom"},
-    {"name":"Cable triceps pushdown","sets":3,"reps":"10–15","alternatives":["Machine triceps extension","Resistance-band pushdown"],"notes":"Use controlled technique and finish with about 3 repetitions in reserve.","source":"Custom"},
-    {"name":"Machine or cable curl","sets":3,"reps":"10–15","alternatives":["Dumbbell curl","Hammer curl"],"notes":"Use controlled technique and finish with about 3 repetitions in reserve.","source":"Custom"}
+    {
+      "name": "Machine chest press",
+      "sets": 4,
+      "reps": "8–12",
+      "alternatives": [
+        "Dumbbell bench press",
+        "Smith-machine bench press"
+      ],
+      "notes": "Use controlled technique and finish with about 3 repetitions in reserve.",
+      "source": "Custom",
+      "muscle_groups": [
+        "Chest",
+        "Shoulders",
+        "Triceps"
+      ]
+    },
+    {
+      "name": "Neutral-grip lat pulldown",
+      "sets": 4,
+      "reps": "8–12",
+      "alternatives": [
+        "Assisted pull-up",
+        "Regular lat pulldown"
+      ],
+      "notes": "Use controlled technique and finish with about 3 repetitions in reserve.",
+      "source": "Custom",
+      "muscle_groups": [
+        "Back",
+        "Biceps"
+      ]
+    },
+    {
+      "name": "Chest-supported row",
+      "sets": 3,
+      "reps": "8–12",
+      "alternatives": [
+        "Chest-supported dumbbell row",
+        "Seated cable row"
+      ],
+      "notes": "Keep the chest supported and pull under control.",
+      "source": "Custom",
+      "muscle_groups": [
+        "Back",
+        "Biceps"
+      ]
+    },
+    {
+      "name": "Machine shoulder press",
+      "sets": 3,
+      "reps": "8–12",
+      "alternatives": [
+        "Dumbbell shoulder press (neutral grip)",
+        "Landmine press"
+      ],
+      "notes": "Neutral grip is the default. Keep elbows slightly forward and your back and head on the pad. Do not lower excessively deep or continue through pinching.",
+      "source": "Custom",
+      "muscle_groups": [
+        "Shoulders",
+        "Triceps"
+      ]
+    },
+    {
+      "name": "Cable triceps pushdown",
+      "sets": 3,
+      "reps": "10–15",
+      "alternatives": [
+        "Machine triceps extension",
+        "Resistance-band pushdown"
+      ],
+      "notes": "Use controlled technique and finish with about 3 repetitions in reserve.",
+      "source": "Custom",
+      "muscle_groups": [
+        "Triceps"
+      ]
+    },
+    {
+      "name": "Machine or cable curl",
+      "sets": 3,
+      "reps": "10–15",
+      "alternatives": [
+        "Dumbbell curl",
+        "Hammer curl"
+      ],
+      "notes": "Use controlled technique and finish with about 3 repetitions in reserve.",
+      "source": "Custom",
+      "muscle_groups": [
+        "Biceps"
+      ]
+    }
   ],
   "Tuesday": [
-    {"name":"Leg press","sets":3,"reps":"10–15","alternatives":["Box squat","Supported goblet squat"],"notes":"Use a comfortable depth. Do not force the knees toward the chest if the lower back rounds.","source":"Custom"},
-    {"name":"Seated leg curl","sets":3,"reps":"10–15","alternatives":["Lying leg curl","Standing machine leg curl"],"notes":"Use controlled technique and finish with about 3 repetitions in reserve.","source":"Custom"},
-    {"name":"Leg extension","sets":3,"reps":"12–15","alternatives":["Supported low step-up","Spanish squat"],"notes":"Use controlled technique and finish with about 3 repetitions in reserve.","source":"Custom"},
-    {"name":"Machine hip thrust","sets":3,"reps":"10–15","alternatives":["Glute bridge","Cable pull-through"],"notes":"Use controlled technique and finish with about 3 repetitions in reserve.","source":"Custom"},
-    {"name":"Seated calf raise","sets":3,"reps":"12–20","alternatives":["Standing calf raise","Calf press on leg press"],"notes":"Use controlled technique and finish with about 3 repetitions in reserve.","source":"Custom"},
-    {"name":"Pallof press","sets":3,"reps":"10–15 per side","alternatives":["Dead bug","Machine crunch"],"notes":"Use controlled technique and finish with about 3 repetitions in reserve.","source":"Custom"}
+    {
+      "name": "Leg press",
+      "sets": 3,
+      "reps": "10–15",
+      "alternatives": [
+        "Box squat",
+        "Supported goblet squat"
+      ],
+      "notes": "Use a comfortable depth. Do not force the knees toward the chest if the lower back rounds.",
+      "source": "Custom",
+      "muscle_groups": [
+        "Quadriceps",
+        "Glutes"
+      ]
+    },
+    {
+      "name": "Seated leg curl",
+      "sets": 3,
+      "reps": "10–15",
+      "alternatives": [
+        "Lying leg curl",
+        "Standing machine leg curl"
+      ],
+      "notes": "Use controlled technique and finish with about 3 repetitions in reserve.",
+      "source": "Custom",
+      "muscle_groups": [
+        "Biceps",
+        "Hamstrings"
+      ]
+    },
+    {
+      "name": "Leg extension",
+      "sets": 3,
+      "reps": "12–15",
+      "alternatives": [
+        "Supported low step-up",
+        "Spanish squat"
+      ],
+      "notes": "Use controlled technique and finish with about 3 repetitions in reserve.",
+      "source": "Custom",
+      "muscle_groups": [
+        "Quadriceps",
+        "Glutes"
+      ]
+    },
+    {
+      "name": "Machine hip thrust",
+      "sets": 3,
+      "reps": "10–15",
+      "alternatives": [
+        "Glute bridge",
+        "Cable pull-through"
+      ],
+      "notes": "Use controlled technique and finish with about 3 repetitions in reserve.",
+      "source": "Custom",
+      "muscle_groups": [
+        "Glutes"
+      ]
+    },
+    {
+      "name": "Seated calf raise",
+      "sets": 3,
+      "reps": "12–20",
+      "alternatives": [
+        "Standing calf raise",
+        "Calf press on leg press"
+      ],
+      "notes": "Use controlled technique and finish with about 3 repetitions in reserve.",
+      "source": "Custom",
+      "muscle_groups": [
+        "Calves"
+      ]
+    },
+    {
+      "name": "Pallof press",
+      "sets": 3,
+      "reps": "10–15 per side",
+      "alternatives": [
+        "Dead bug",
+        "Machine crunch"
+      ],
+      "notes": "Use controlled technique and finish with about 3 repetitions in reserve.",
+      "source": "Custom",
+      "muscle_groups": [
+        "Core"
+      ]
+    }
   ],
   "Wednesday": [
-    {"name":"Incline machine chest press","sets":4,"reps":"8–12","alternatives":["Incline dumbbell press","Incline Smith-machine press"],"notes":"Use controlled technique and finish with about 3 repetitions in reserve.","source":"Custom"},
-    {"name":"Pec deck","sets":3,"reps":"10–15","alternatives":["Cable chest fly","Dumbbell chest fly"],"notes":"Keep your back and head on the pad and a slight elbow bend. Move slowly; do not let the arms travel excessively behind the body.","source":"Custom"},
-    {"name":"Machine shoulder press","sets":3,"reps":"8–12","alternatives":["Dumbbell shoulder press (neutral grip)","Landmine press"],"notes":"Keep elbows slightly forward, back and head on the pad, and stop before the shoulders roll forward.","source":"Custom"},
-    {"name":"Cable or machine lateral raise","sets":4,"reps":"12–20","alternatives":["Dumbbell lateral raise","Single-arm cable lateral raise"],"notes":"Use controlled technique and finish with about 3 repetitions in reserve.","source":"Custom"},
-    {"name":"Cable triceps pushdown","sets":3,"reps":"10–15","alternatives":["Machine triceps extension","Resistance-band pushdown"],"notes":"Use controlled technique and finish with about 3 repetitions in reserve.","source":"Custom"},
-    {"name":"Overhead cable triceps extension","sets":3,"reps":"10–15","alternatives":["Single-arm cable extension","Dumbbell overhead extension"],"notes":"Use controlled technique and finish with about 3 repetitions in reserve.","source":"Custom"}
+    {
+      "name": "Incline machine chest press",
+      "sets": 4,
+      "reps": "8–12",
+      "alternatives": [
+        "Incline dumbbell press",
+        "Incline Smith-machine press"
+      ],
+      "notes": "Use controlled technique and finish with about 3 repetitions in reserve.",
+      "source": "Custom",
+      "muscle_groups": [
+        "Chest",
+        "Shoulders",
+        "Triceps"
+      ]
+    },
+    {
+      "name": "Pec deck",
+      "sets": 3,
+      "reps": "10–15",
+      "alternatives": [
+        "Cable chest fly",
+        "Dumbbell chest fly"
+      ],
+      "notes": "Keep your back and head on the pad and a slight elbow bend. Move slowly; do not let the arms travel excessively behind the body.",
+      "source": "Custom",
+      "muscle_groups": [
+        "Chest",
+        "Shoulders",
+        "Triceps"
+      ]
+    },
+    {
+      "name": "Machine shoulder press",
+      "sets": 3,
+      "reps": "8–12",
+      "alternatives": [
+        "Dumbbell shoulder press (neutral grip)",
+        "Landmine press"
+      ],
+      "notes": "Keep elbows slightly forward, back and head on the pad, and stop before the shoulders roll forward.",
+      "source": "Custom",
+      "muscle_groups": [
+        "Shoulders",
+        "Triceps"
+      ]
+    },
+    {
+      "name": "Cable or machine lateral raise",
+      "sets": 4,
+      "reps": "12–20",
+      "alternatives": [
+        "Dumbbell lateral raise",
+        "Single-arm cable lateral raise"
+      ],
+      "notes": "Use controlled technique and finish with about 3 repetitions in reserve.",
+      "source": "Custom",
+      "muscle_groups": [
+        "Shoulders"
+      ]
+    },
+    {
+      "name": "Cable triceps pushdown",
+      "sets": 3,
+      "reps": "10–15",
+      "alternatives": [
+        "Machine triceps extension",
+        "Resistance-band pushdown"
+      ],
+      "notes": "Use controlled technique and finish with about 3 repetitions in reserve.",
+      "source": "Custom",
+      "muscle_groups": [
+        "Triceps"
+      ]
+    },
+    {
+      "name": "Overhead cable triceps extension",
+      "sets": 3,
+      "reps": "10–15",
+      "alternatives": [
+        "Single-arm cable extension",
+        "Dumbbell overhead extension"
+      ],
+      "notes": "Use controlled technique and finish with about 3 repetitions in reserve.",
+      "source": "Custom",
+      "muscle_groups": [
+        "Triceps"
+      ]
+    }
   ],
   "Thursday": [
-    {"name":"Neutral-grip lat pulldown","sets":4,"reps":"8–12","alternatives":["Assisted neutral-grip pull-up","Regular lat pulldown"],"notes":"Use controlled technique and finish with about 3 repetitions in reserve.","source":"Custom"},
-    {"name":"Chest-supported machine row","sets":4,"reps":"8–12","alternatives":["Chest-supported dumbbell row","Seated cable row"],"notes":"Chest support is preferred initially because it reduces demand on the lower back.","source":"Custom"},
-    {"name":"One-arm cable row","sets":3,"reps":"10–15 per side","alternatives":["One-arm machine row","Chest-supported dumbbell row"],"notes":"Use controlled technique and finish with about 3 repetitions in reserve.","source":"Custom"},
-    {"name":"Reverse pec deck","sets":4,"reps":"12–20","alternatives":["Cable rear-delt fly","Face pull"],"notes":"Use controlled technique and finish with about 3 repetitions in reserve.","source":"Custom"},
-    {"name":"Cable or machine curl","sets":3,"reps":"10–15","alternatives":["Dumbbell curl","Preacher curl"],"notes":"Use controlled technique and finish with about 3 repetitions in reserve.","source":"Custom"},
-    {"name":"Hammer curl","sets":3,"reps":"10–15","alternatives":["Rope cable hammer curl","Machine curl"],"notes":"Use controlled technique and finish with about 3 repetitions in reserve.","source":"Custom"}
+    {
+      "name": "Neutral-grip lat pulldown",
+      "sets": 4,
+      "reps": "8–12",
+      "alternatives": [
+        "Assisted neutral-grip pull-up",
+        "Regular lat pulldown"
+      ],
+      "notes": "Use controlled technique and finish with about 3 repetitions in reserve.",
+      "source": "Custom",
+      "muscle_groups": [
+        "Back",
+        "Biceps"
+      ]
+    },
+    {
+      "name": "Chest-supported machine row",
+      "sets": 4,
+      "reps": "8–12",
+      "alternatives": [
+        "Chest-supported dumbbell row",
+        "Seated cable row"
+      ],
+      "notes": "Chest support is preferred initially because it reduces demand on the lower back.",
+      "source": "Custom",
+      "muscle_groups": [
+        "Back",
+        "Biceps"
+      ]
+    },
+    {
+      "name": "One-arm cable row",
+      "sets": 3,
+      "reps": "10–15 per side",
+      "alternatives": [
+        "One-arm machine row",
+        "Chest-supported dumbbell row"
+      ],
+      "notes": "Use controlled technique and finish with about 3 repetitions in reserve.",
+      "source": "Custom",
+      "muscle_groups": [
+        "Back",
+        "Biceps"
+      ]
+    },
+    {
+      "name": "Reverse pec deck",
+      "sets": 4,
+      "reps": "12–20",
+      "alternatives": [
+        "Cable rear-delt fly",
+        "Face pull"
+      ],
+      "notes": "Use controlled technique and finish with about 3 repetitions in reserve.",
+      "source": "Custom",
+      "muscle_groups": [
+        "Chest",
+        "Shoulders",
+        "Triceps",
+        "Back"
+      ]
+    },
+    {
+      "name": "Cable or machine curl",
+      "sets": 3,
+      "reps": "10–15",
+      "alternatives": [
+        "Dumbbell curl",
+        "Preacher curl"
+      ],
+      "notes": "Use controlled technique and finish with about 3 repetitions in reserve.",
+      "source": "Custom",
+      "muscle_groups": [
+        "Biceps"
+      ]
+    },
+    {
+      "name": "Hammer curl",
+      "sets": 3,
+      "reps": "10–15",
+      "alternatives": [
+        "Rope cable hammer curl",
+        "Machine curl"
+      ],
+      "notes": "Use controlled technique and finish with about 3 repetitions in reserve.",
+      "source": "Custom",
+      "muscle_groups": [
+        "Biceps"
+      ]
+    }
   ],
   "Friday": [
-    {"name":"Seated or lying leg curl","sets":4,"reps":"8–12","alternatives":["Standing machine leg curl","Stability-ball leg curl"],"notes":"Use controlled technique and finish with about 3 repetitions in reserve.","source":"Custom"},
-    {"name":"Leg press, feet slightly higher","sets":3,"reps":"10–15","alternatives":["Box squat","Supported goblet squat"],"notes":"Use a comfortable depth and keep the lower back from rounding.","source":"Custom"},
-    {"name":"Supported split squat or low step-up","sets":3,"reps":"8–12 per leg","alternatives":["Leg extension","Supported reverse lunge"],"notes":"Hold a fixed support and use controlled technique.","source":"Custom"},
-    {"name":"Machine hip thrust","sets":4,"reps":"8–12","alternatives":["Glute bridge","Cable pull-through"],"notes":"Use controlled technique and finish with about 3 repetitions in reserve.","source":"Custom"},
-    {"name":"Seated calf raise","sets":3,"reps":"12–20","alternatives":["Standing calf raise","Calf press on leg press"],"notes":"Use controlled technique and finish with about 3 repetitions in reserve.","source":"Custom"},
-    {"name":"Machine crunch or dead bug","sets":3,"reps":"10–15","alternatives":["Pallof press","Cable crunch"],"notes":"Use controlled technique and finish with about 3 repetitions in reserve.","source":"Custom"}
+    {
+      "name": "Seated or lying leg curl",
+      "sets": 4,
+      "reps": "8–12",
+      "alternatives": [
+        "Standing machine leg curl",
+        "Stability-ball leg curl"
+      ],
+      "notes": "Use controlled technique and finish with about 3 repetitions in reserve.",
+      "source": "Custom",
+      "muscle_groups": [
+        "Biceps",
+        "Hamstrings"
+      ]
+    },
+    {
+      "name": "Leg press, feet slightly higher",
+      "sets": 3,
+      "reps": "10–15",
+      "alternatives": [
+        "Box squat",
+        "Supported goblet squat"
+      ],
+      "notes": "Use a comfortable depth and keep the lower back from rounding.",
+      "source": "Custom",
+      "muscle_groups": [
+        "Quadriceps",
+        "Glutes"
+      ]
+    },
+    {
+      "name": "Supported split squat or low step-up",
+      "sets": 3,
+      "reps": "8–12 per leg",
+      "alternatives": [
+        "Leg extension",
+        "Supported reverse lunge"
+      ],
+      "notes": "Hold a fixed support and use controlled technique.",
+      "source": "Custom",
+      "muscle_groups": [
+        "Quadriceps",
+        "Glutes"
+      ]
+    },
+    {
+      "name": "Machine hip thrust",
+      "sets": 4,
+      "reps": "8–12",
+      "alternatives": [
+        "Glute bridge",
+        "Cable pull-through"
+      ],
+      "notes": "Use controlled technique and finish with about 3 repetitions in reserve.",
+      "source": "Custom",
+      "muscle_groups": [
+        "Glutes"
+      ]
+    },
+    {
+      "name": "Seated calf raise",
+      "sets": 3,
+      "reps": "12–20",
+      "alternatives": [
+        "Standing calf raise",
+        "Calf press on leg press"
+      ],
+      "notes": "Use controlled technique and finish with about 3 repetitions in reserve.",
+      "source": "Custom",
+      "muscle_groups": [
+        "Calves"
+      ]
+    },
+    {
+      "name": "Machine crunch or dead bug",
+      "sets": 3,
+      "reps": "10–15",
+      "alternatives": [
+        "Pallof press",
+        "Cable crunch"
+      ],
+      "notes": "Use controlled technique and finish with about 3 repetitions in reserve.",
+      "source": "Custom",
+      "muscle_groups": [
+        "Core"
+      ]
+    }
   ]
 }

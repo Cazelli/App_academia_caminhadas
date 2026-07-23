@@ -1,11 +1,15 @@
 # My Training Path
 
 A local Streamlit app for a Monday–Friday exercise plan, exercise alternatives,
-and workout progress tracking.
+and set-by-set workout progress tracking.
 
 The starter plan follows the complete Upper / Lower / Push / Pull / Legs routine
 in `data/Workout Split Monday to Friday.pdf`, including its beginner set and
 repetition targets. Every exercise and alternative can be edited in the app.
+
+Progress features include exercise strength trends, set-by-set comparisons,
+double-progression guidance, weekly adherence, editable muscle-group volume,
+RIR and pain monitoring, personal records, and CSV export.
 
 ## Run
 
