@@ -1,0 +1,5 @@
+__pycache__/
+*.py[cod]
+.streamlit/
+data/progress.db
+data/pdf_pages/
