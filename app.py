@@ -165,6 +165,12 @@ def exercise_label(item: dict) -> str:
     return f"{item['name']} · {item['sets']} × {item['reps']}"
 
 
+def apply_date_to_day(day: str, exercise_count: int) -> None:
+    selected_date = st.session_state[f"workout_date_{day}"]
+    for exercise_index in range(exercise_count):
+        st.session_state[f"date_{day}_{exercise_index}"] = selected_date
+
+
 st.set_page_config(page_title="My Training Path", page_icon="🏋️", layout="wide")
 st.markdown(
     """
@@ -200,6 +206,16 @@ with tab_today:
         "Training day", DAYS, default=DAYS[default_day], selection_mode="single"
     )
     exercises = plan.get(selected_day, [])
+
+    workout_date = st.date_input(
+        "Date for all exercises",
+        value=date.today(),
+        key=f"workout_date_{selected_day}",
+        on_change=apply_date_to_day,
+        args=(selected_day, len(exercises)),
+        help="Changing this date updates every exercise below. You can still override an individual date.",
+    )
+    st.caption("This date is applied to all exercises; individual dates remain editable.")
 
     with st.expander("How hard should I train?"):
         st.markdown(
@@ -250,8 +266,13 @@ with tab_today:
                         help="Choose how many sets you performed, then enter each set below.",
                     )
                     with st.form(f"log_{selected_day}_{index}", clear_on_submit=True):
+                        exercise_date_key = f"date_{selected_day}_{index}"
+                        if exercise_date_key not in st.session_state:
+                            st.session_state[exercise_date_key] = workout_date
                         log_date = st.date_input(
-                            "Date", date.today(), key=f"date_{selected_day}_{index}"
+                            "Date",
+                            key=exercise_date_key,
+                            help="Change this only when this exercise was performed on a different date.",
                         )
                         st.markdown("**Sets performed**")
                         set_values = []
