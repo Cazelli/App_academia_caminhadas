@@ -90,20 +90,16 @@ STARTER_PLAN = {
         exercise("Hammer curl", 2, "10–15", ["Rope cable hammer curl", "Machine curl"]),
     ],
     "Friday": [
+        exercise("Seated leg curl", 3, "10–15", ["Lying leg curl", "Standing machine leg curl"]),
+        exercise("Leg extension", 3, "12–15", ["Supported low step-up", "Spanish squat"]),
         exercise(
-            "Leg press", 2, "10–15", ["Box squat", "Supported goblet squat"],
-            "Use a comfortable depth and keep the lower back from rounding.",
+            "Glute bridge or light machine hip thrust", 3, "10–15",
+            ["Cable pull-through", "Bodyweight glute bridge"],
+            "Keep the load light and use a controlled range of motion.",
         ),
-        exercise("Seated or lying leg curl", 2, "10–15", ["Standing machine leg curl", "Stability-ball leg curl"]),
-        exercise(
-            "Supported split squat or low step-up", 2, "8–10 per leg",
-            ["Leg extension", "Supported reverse lunge"],
-            "Hold a fixed support. Use leg extensions if knee discomfort, poor balance, "
-            "or excessive fatigue makes the movement difficult.",
-        ),
-        exercise("Machine hip thrust", 2, "10–15", ["Glute bridge", "Cable pull-through"]),
-        exercise("Seated calf raise", 2, "12–20", ["Standing calf raise", "Calf press on leg press"]),
-        exercise("Machine crunch or dead bug", 2, "10–15", ["Pallof press", "Cable crunch"]),
+        exercise("Hip abduction machine", 3, "12–20", ["Cable hip abduction", "Banded hip abduction"]),
+        exercise("Seated calf raise", 3, "12–20", ["Standing calf raise", "Calf press on leg press"]),
+        exercise("Machine crunch or dead bug", 3, "10–15", ["Pallof press", "Cable crunch"]),
     ],
 }
 

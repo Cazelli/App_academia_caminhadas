@@ -32,11 +32,11 @@
     {"name":"Hammer curl","sets":2,"reps":"10–15","alternatives":["Rope cable hammer curl","Machine curl"],"notes":"Use controlled technique and finish with about 3 repetitions in reserve.","source":"PDF"}
   ],
   "Friday": [
-    {"name":"Leg press","sets":2,"reps":"10–15","alternatives":["Box squat","Supported goblet squat"],"notes":"Use a comfortable depth and keep the lower back from rounding.","source":"PDF"},
-    {"name":"Seated or lying leg curl","sets":2,"reps":"10–15","alternatives":["Standing machine leg curl","Stability-ball leg curl"],"notes":"Use controlled technique and finish with about 3 repetitions in reserve.","source":"PDF"},
-    {"name":"Supported split squat or low step-up","sets":2,"reps":"8–10 per leg","alternatives":["Leg extension","Supported reverse lunge"],"notes":"Hold a fixed support. Use leg extensions if knee discomfort, poor balance, or excessive fatigue makes the movement difficult.","source":"PDF"},
-    {"name":"Machine hip thrust","sets":2,"reps":"10–15","alternatives":["Glute bridge","Cable pull-through"],"notes":"Use controlled technique and finish with about 3 repetitions in reserve.","source":"PDF"},
-    {"name":"Seated calf raise","sets":2,"reps":"12–20","alternatives":["Standing calf raise","Calf press on leg press"],"notes":"Use controlled technique and finish with about 3 repetitions in reserve.","source":"PDF"},
-    {"name":"Machine crunch or dead bug","sets":2,"reps":"10–15","alternatives":["Pallof press","Cable crunch"],"notes":"Use controlled technique and finish with about 3 repetitions in reserve.","source":"PDF"}
+    {"name":"Seated leg curl","sets":3,"reps":"10–15","alternatives":["Lying leg curl","Standing machine leg curl"],"notes":"Use controlled technique and finish with about 3 repetitions in reserve.","source":"Custom"},
+    {"name":"Leg extension","sets":3,"reps":"12–15","alternatives":["Supported low step-up","Spanish squat"],"notes":"Use controlled technique and finish with about 3 repetitions in reserve.","source":"Custom"},
+    {"name":"Glute bridge or light machine hip thrust","sets":3,"reps":"10–15","alternatives":["Cable pull-through","Bodyweight glute bridge"],"notes":"Keep the load light and use a controlled range of motion.","source":"Custom"},
+    {"name":"Hip abduction machine","sets":3,"reps":"12–20","alternatives":["Cable hip abduction","Banded hip abduction"],"notes":"Use controlled technique and finish with about 3 repetitions in reserve.","source":"Custom"},
+    {"name":"Seated calf raise","sets":3,"reps":"12–20","alternatives":["Standing calf raise","Calf press on leg press"],"notes":"Use controlled technique and finish with about 3 repetitions in reserve.","source":"Custom"},
+    {"name":"Machine crunch or dead bug","sets":3,"reps":"10–15","alternatives":["Pallof press","Cable crunch"],"notes":"Use controlled technique and finish with about 3 repetitions in reserve.","source":"Custom"}
   ]
 }
