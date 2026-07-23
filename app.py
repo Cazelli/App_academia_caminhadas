@@ -502,14 +502,14 @@ with tab_progress:
             st.bar_chart(completed_days, x_label="Date", y_label="Completed sets")
 
             sessions_by_week = (
-                sessions.assign(week=sessions["performed_on"].dt.to_period("W-MON").dt.start_time)
+                sessions.assign(week=sessions["performed_on"].dt.to_period("W-SUN").dt.start_time)
                 .groupby("week")["performed_on"]
                 .nunique()
                 .rename("Completed workouts")
             )
             first_week = sessions_by_week.index.min()
-            current_week = pd.Timestamp.today().to_period("W-MON").start_time
-            week_index = pd.date_range(first_week, current_week, freq="W-TUE")
+            current_week = pd.Timestamp.today().to_period("W-SUN").start_time
+            week_index = pd.date_range(first_week, current_week, freq="W-MON")
             if len(week_index) == 0:
                 week_index = pd.DatetimeIndex([first_week])
             adherence = sessions_by_week.reindex(week_index, fill_value=0).to_frame()
@@ -668,7 +668,7 @@ with tab_progress:
                 for group in groups:
                     muscle_rows.append(
                         {
-                            "Week": set_row["performed_on"].to_period("W-MON").start_time,
+                            "Week": set_row["performed_on"].to_period("W-SUN").start_time,
                             "Muscle group": group,
                             "Completed sets": 1,
                         }
@@ -695,7 +695,7 @@ with tab_progress:
 
         with recovery_tab:
             weekly_recovery = (
-                log.assign(week=log["performed_on"].dt.to_period("W-MON").dt.start_time)
+                log.assign(week=log["performed_on"].dt.to_period("W-SUN").dt.start_time)
                 .groupby("week")[["rir", "pain"]]
                 .mean()
                 .rename(columns={"rir": "Average RIR", "pain": "Average pain"})
