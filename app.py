@@ -12,6 +12,7 @@ import streamlit as st
 
 ROOT = Path(__file__).parent
 DATA_DIR = ROOT / "data"
+EXERCISE_IMAGE_DIR = ROOT / "assets" / "exercises"
 DB_PATH = DATA_DIR / "progress.db"
 PLAN_PATH = DATA_DIR / "workout_plan.json"
 DAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
@@ -19,6 +20,33 @@ MUSCLE_GROUPS = [
     "Chest", "Back", "Shoulders", "Biceps", "Triceps", "Quadriceps",
     "Hamstrings", "Glutes", "Calves", "Core",
 ]
+EXERCISE_IMAGES = {
+    "Machine chest press": "machine-bench-press.jpg",
+    "Neutral-grip lat pulldown": "neutral-lat-pulldown.jpg",
+    "Chest-supported row": "chest-supported-row.jpg",
+    "Machine shoulder press": "machine-shoulder-press.jpg",
+    "Cable triceps pushdown": "triceps-pushdown.jpg",
+    "Machine or cable curl": "machine-curl.jpg",
+    "Leg press": "leg-press.jpg",
+    "Seated leg curl": "seated-leg-curl.jpg",
+    "Leg extension": "leg-extension.jpg",
+    "Machine hip thrust": "hip-thrust.jpg",
+    "Seated calf raise": "seated-calf-raise.jpg",
+    "Pallof press": "pallof-press.jpg",
+    "Incline machine chest press": "incline-machine-press.jpg",
+    "Pec deck": "pec-deck.jpg",
+    "Cable or machine lateral raise": "lateral-raise.jpg",
+    "Overhead cable triceps extension": "overhead-triceps.jpg",
+    "Chest-supported machine row": "machine-row.jpg",
+    "One-arm cable row": "one-arm-cable-row.jpg",
+    "Reverse pec deck": "reverse-pec-deck.jpg",
+    "Cable or machine curl": "machine-curl.jpg",
+    "Hammer curl": "hammer-curl.jpg",
+    "Seated or lying leg curl": "seated-leg-curl.jpg",
+    "Leg press, feet slightly higher": "leg-press.jpg",
+    "Supported split squat or low step-up": "split-squat.jpg",
+    "Machine crunch or dead bug": "ab-crunch.jpg",
+}
 
 
 def infer_muscle_groups(name: str) -> list[str]:
@@ -208,6 +236,17 @@ def exercise_label(item: dict) -> str:
     return f"{item['name']} · {item['sets']} × {item['reps']}"
 
 
+def exercise_image_path(name: str) -> Path | None:
+    filename = EXERCISE_IMAGES.get(name)
+    path = EXERCISE_IMAGE_DIR / filename if filename else None
+    return path if path and path.exists() else None
+
+
+def muscle_caption(item: dict) -> str:
+    groups = item.get("muscle_groups", [])
+    return " · ".join(groups) if groups else "No muscle groups assigned"
+
+
 def target_rep_range(target: str) -> tuple[int | None, int | None]:
     values = [int(value) for value in re.findall(r"\d+", str(target))]
     return (values[0], values[1]) if len(values) >= 2 else (None, None)
@@ -316,12 +355,23 @@ with tab_today:
 
         for index, item in enumerate(exercises):
             with st.container(border=True):
-                left, right = st.columns([3, 1])
-                left.markdown(f"#### {index + 1}. {item['name']}")
-                right.markdown(f"### {item['sets']} × {item['reps']}")
-                if item.get("source") == "PDF":
-                    st.caption("From your ChatGPT conversation PDF")
-                st.write(item.get("notes", ""))
+                details_col, image_col = st.columns([3, 1.15], vertical_alignment="top")
+                with details_col:
+                    title_col, target_col = st.columns([3, 1])
+                    title_col.markdown(f"#### {index + 1}. {item['name']}")
+                    target_col.markdown(f"### {item['sets']} × {item['reps']}")
+                    st.caption(f"Targets: {muscle_caption(item)}")
+                    if item.get("source") == "PDF":
+                        st.caption("From your ChatGPT conversation PDF")
+                    st.write(item.get("notes", ""))
+                image_path = exercise_image_path(item["name"])
+                with image_col:
+                    if image_path:
+                        st.image(
+                            str(image_path),
+                            caption="Exercise demonstration",
+                            width="stretch",
+                        )
 
                 alternatives = item.get("alternatives", [])
                 choices = [item["name"], *alternatives]
@@ -420,6 +470,11 @@ with tab_plan:
 
     for index, item in enumerate(plan[edit_day]):
         with st.expander(exercise_label(item), expanded=False):
+            image_path = exercise_image_path(item["name"])
+            if image_path:
+                preview_col, target_col = st.columns([1, 2], vertical_alignment="center")
+                preview_col.image(str(image_path), width="stretch")
+                target_col.markdown(f"**Target muscles:** {muscle_caption(item)}")
             with st.form(f"edit_{edit_day}_{index}"):
                 name = st.text_input("Exercise", item["name"])
                 c1, c2 = st.columns(2)
@@ -770,5 +825,9 @@ st.divider()
 st.caption(
     "Training guidance is educational, not medical advice. Stop if you feel sharp pain, "
     "and ask a qualified professional if an exercise causes persistent discomfort."
+)
+st.caption(
+    "Exercise photos: Free Exercise DB (public domain / Unlicense). "
+    "Some machine exercises use the closest available movement illustration."
 )
 db.close()

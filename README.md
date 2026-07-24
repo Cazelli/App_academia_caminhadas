@@ -11,6 +11,11 @@ Progress features include exercise strength trends, set-by-set comparisons,
 double-progression guidance, weekly adherence, editable muscle-group volume,
 RIR and pain monitoring, personal records, and CSV export.
 
+Exercise demonstration photos are displayed in both Today and My Plan. They are
+sourced from the public-domain
+[Free Exercise DB](https://github.com/yuhonas/free-exercise-db); details are in
+`assets/exercises/ATTRIBUTION.md`.
+
 ## Run
 
 ```powershell
