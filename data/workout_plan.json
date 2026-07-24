@@ -117,7 +117,6 @@
       "notes": "Use controlled technique and finish with about 3 repetitions in reserve.",
       "source": "Custom",
       "muscle_groups": [
-        "Biceps",
         "Hamstrings"
       ]
     },
@@ -191,9 +190,7 @@
       "notes": "Use controlled technique and finish with about 3 repetitions in reserve.",
       "source": "Custom",
       "muscle_groups": [
-        "Chest",
-        "Shoulders",
-        "Triceps"
+        "Chest"
       ]
     },
     {
@@ -327,9 +324,7 @@
       "notes": "Use controlled technique and finish with about 3 repetitions in reserve.",
       "source": "Custom",
       "muscle_groups": [
-        "Chest",
         "Shoulders",
-        "Triceps",
         "Back"
       ]
     },
@@ -374,7 +369,6 @@
       "notes": "Use controlled technique and finish with about 3 repetitions in reserve.",
       "source": "Custom",
       "muscle_groups": [
-        "Biceps",
         "Hamstrings"
       ]
     },

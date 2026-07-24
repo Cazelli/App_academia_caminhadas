@@ -23,13 +23,17 @@ MUSCLE_GROUPS = [
 
 def infer_muscle_groups(name: str) -> list[str]:
     text = name.lower()
+    if "leg curl" in text:
+        return ["Hamstrings"]
+    if "reverse pec" in text or "rear-delt" in text or "face pull" in text:
+        return ["Shoulders", "Back"]
     rules = [
-        (("chest press", "pec deck", "chest fly", "bench press"), ["Chest", "Shoulders", "Triceps"]),
+        (("chest press", "bench press"), ["Chest", "Shoulders", "Triceps"]),
+        (("pec deck", "chest fly"), ["Chest"]),
         (("lat pulldown", "pull-up"), ["Back", "Biceps"]),
         (("row",), ["Back", "Biceps"]),
         (("shoulder press",), ["Shoulders", "Triceps"]),
         (("lateral raise",), ["Shoulders"]),
-        (("reverse pec", "rear-delt", "face pull"), ["Shoulders", "Back"]),
         (("triceps",), ["Triceps"]),
         (("curl",), ["Biceps"]),
         (("leg press", "split squat", "step-up", "leg extension", "goblet squat"), ["Quadriceps", "Glutes"]),
