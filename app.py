@@ -278,6 +278,28 @@ def session_summary(log: pd.DataFrame) -> pd.DataFrame:
     )
 
 
+def personal_bests(log: pd.DataFrame) -> dict[str, tuple[float, int]]:
+    """Return the highest logged weight and reps for each performed exercise."""
+    if log.empty:
+        return {}
+
+    working = log.copy()
+    working["weight_num"] = pd.to_numeric(working["weight"], errors="coerce")
+    working["reps_num"] = pd.to_numeric(working["reps"], errors="coerce")
+    bests = (
+        working.dropna(subset=["performed_exercise"])
+        .groupby("performed_exercise", sort=False)
+        .agg(max_weight=("weight_num", "max"), max_reps=("reps_num", "max"))
+    )
+    return {
+        exercise_name: (
+            float(row["max_weight"]) if pd.notna(row["max_weight"]) else 0.0,
+            int(row["max_reps"]) if pd.notna(row["max_reps"]) else 0,
+        )
+        for exercise_name, row in bests.iterrows()
+    }
+
+
 def apply_date_to_day(day: str, exercise_count: int) -> None:
     selected_date = st.session_state[f"workout_date_{day}"]
     for exercise_index in range(exercise_count):
@@ -297,6 +319,11 @@ st.markdown(
       .eyebrow {letter-spacing:.12em; text-transform:uppercase; color:#80d4a6;
                 font-size:.78rem; font-weight:700;}
       .muted {color:#9eaaa4;}
+      .personal-best {
+        display:inline-block; margin:.2rem 0 .45rem; padding:.3rem .65rem;
+        border:1px solid #365846; border-radius:999px; color:#b8e6cc;
+        background:#16231d; font-size:.82rem; font-weight:600;
+      }
     </style>
     """,
     unsafe_allow_html=True,
@@ -315,6 +342,7 @@ default_day = DAYS.index(today_name) if today_name in DAYS else 0
 tab_today, tab_plan, tab_progress = st.tabs(["Today", "My plan", "Progress"])
 
 with tab_today:
+    exercise_bests = personal_bests(read_log(db))
     selected_day = st.segmented_control(
         "Training day", DAYS, default=DAYS[default_day], selection_mode="single"
     )
@@ -360,6 +388,20 @@ with tab_today:
                     title_col, target_col = st.columns([3, 1])
                     title_col.markdown(f"#### {index + 1}. {item['name']}")
                     target_col.markdown(f"### {item['sets']} × {item['reps']}")
+                    best = exercise_bests.get(item["name"])
+                    if best:
+                        best_weight, best_reps = best
+                        st.markdown(
+                            '<span class="personal-best">'
+                            f"Personal best · {best_weight:g} kg · {best_reps} reps"
+                            "</span>",
+                            unsafe_allow_html=True,
+                        )
+                    else:
+                        st.markdown(
+                            '<span class="personal-best">Personal best · No logs yet</span>',
+                            unsafe_allow_html=True,
+                        )
                     st.caption(f"Targets: {muscle_caption(item)}")
                     if item.get("source") == "PDF":
                         st.caption("From your ChatGPT conversation PDF")
