@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import html
 import json
 import re
 import sqlite3
@@ -305,6 +306,42 @@ def personal_bests(log: pd.DataFrame) -> dict[str, tuple[float, int, int, float]
     return bests
 
 
+def today_recommendation(log: pd.DataFrame, item: dict) -> str:
+    """Suggest today's load from the exercise's most recent logged session."""
+    exercise_log = log[log["performed_exercise"] == item["name"]].copy()
+    target = f"{item['sets']} × {item['reps']}"
+    if exercise_log.empty:
+        return f"Recommended today · {target} · Choose a comfortable starting weight"
+
+    latest_created_at = exercise_log.iloc[0]["created_at"]
+    latest_sets = exercise_log[exercise_log["created_at"] == latest_created_at]
+    weights = pd.to_numeric(latest_sets["weight"], errors="coerce").dropna()
+    reps = pd.to_numeric(latest_sets["reps"], errors="coerce").dropna()
+    current_weight = float(weights.max()) if not weights.empty else 0.0
+    average_pain = pd.to_numeric(latest_sets["pain"], errors="coerce").mean()
+    average_rir = pd.to_numeric(latest_sets["rir"], errors="coerce").mean()
+    _, upper_target = target_rep_range(item["reps"])
+
+    if pd.notna(average_pain) and average_pain >= 4:
+        return (
+            f"Recommended today · Up to {current_weight:g} kg · "
+            "Review comfort before progressing"
+        )
+    if (
+        upper_target is not None
+        and not reps.empty
+        and reps.min() >= upper_target
+        and pd.notna(average_rir)
+        and 1 <= average_rir <= 4
+        and (pd.isna(average_pain) or average_pain <= 2)
+    ):
+        return (
+            f"Recommended today · {target} · Increase slightly above "
+            f"{current_weight:g} kg"
+        )
+    return f"Recommended today · {target} at {current_weight:g} kg"
+
+
 def apply_date_to_day(day: str, exercise_count: int) -> None:
     selected_date = st.session_state[f"workout_date_{day}"]
     for exercise_index in range(exercise_count):
@@ -329,6 +366,10 @@ st.markdown(
         border:1px solid #365846; border-radius:999px; color:#b8e6cc;
         background:#16231d; font-size:.82rem; font-weight:600;
       }
+      .personal-best .recommendation {
+        display:block; margin-top:.22rem; padding-top:.22rem;
+        border-top:1px solid #365846; color:#d8eadf; font-weight:500;
+      }
     </style>
     """,
     unsafe_allow_html=True,
@@ -347,7 +388,8 @@ default_day = DAYS.index(today_name) if today_name in DAYS else 0
 tab_today, tab_plan, tab_progress = st.tabs(["Today", "My plan", "Progress"])
 
 with tab_today:
-    exercise_bests = personal_bests(read_log(db))
+    today_log = read_log(db)
+    exercise_bests = personal_bests(today_log)
     selected_day = st.segmented_control(
         "Training day", DAYS, default=DAYS[default_day], selection_mode="single"
     )
@@ -394,6 +436,7 @@ with tab_today:
                     title_col.markdown(f"#### {index + 1}. {item['name']}")
                     target_col.markdown(f"### {item['sets']} × {item['reps']}")
                     best = exercise_bests.get(item["name"])
+                    recommendation = html.escape(today_recommendation(today_log, item))
                     if best:
                         best_weight, reps_at_best_weight, best_reps, weight_at_best_reps = best
                         st.markdown(
@@ -401,12 +444,14 @@ with tab_today:
                             f"Max weight · {best_weight:g} kg × {reps_at_best_weight} reps"
                             f"&nbsp;&nbsp;|&nbsp;&nbsp; Max reps · {best_reps} × "
                             f"{weight_at_best_reps:g} kg"
+                            f'<span class="recommendation">{recommendation}</span>'
                             "</span>",
                             unsafe_allow_html=True,
                         )
                     else:
                         st.markdown(
-                            '<span class="personal-best">Personal best · No logs yet</span>',
+                            '<span class="personal-best">Personal best · No logs yet'
+                            f'<span class="recommendation">{recommendation}</span></span>',
                             unsafe_allow_html=True,
                         )
                     st.caption(f"Targets: {muscle_caption(item)}")
