@@ -278,26 +278,31 @@ def session_summary(log: pd.DataFrame) -> pd.DataFrame:
     )
 
 
-def personal_bests(log: pd.DataFrame) -> dict[str, tuple[float, int]]:
-    """Return the highest logged weight and reps for each performed exercise."""
+def personal_bests(log: pd.DataFrame) -> dict[str, tuple[float, int, int, float]]:
+    """Return paired weight and repetition records for each performed exercise."""
     if log.empty:
         return {}
 
     working = log.copy()
     working["weight_num"] = pd.to_numeric(working["weight"], errors="coerce")
     working["reps_num"] = pd.to_numeric(working["reps"], errors="coerce")
-    bests = (
-        working.dropna(subset=["performed_exercise"])
-        .groupby("performed_exercise", sort=False)
-        .agg(max_weight=("weight_num", "max"), max_reps=("reps_num", "max"))
-    )
-    return {
-        exercise_name: (
-            float(row["max_weight"]) if pd.notna(row["max_weight"]) else 0.0,
-            int(row["max_reps"]) if pd.notna(row["max_reps"]) else 0,
+    bests = {}
+    for exercise_name, sets in working.dropna(
+        subset=["performed_exercise", "weight_num", "reps_num"]
+    ).groupby("performed_exercise", sort=False):
+        heaviest_set = sets.sort_values(
+            ["weight_num", "reps_num"], ascending=False
+        ).iloc[0]
+        highest_rep_set = sets.sort_values(
+            ["reps_num", "weight_num"], ascending=False
+        ).iloc[0]
+        bests[exercise_name] = (
+            float(heaviest_set["weight_num"]),
+            int(heaviest_set["reps_num"]),
+            int(highest_rep_set["reps_num"]),
+            float(highest_rep_set["weight_num"]),
         )
-        for exercise_name, row in bests.iterrows()
-    }
+    return bests
 
 
 def apply_date_to_day(day: str, exercise_count: int) -> None:
@@ -390,10 +395,12 @@ with tab_today:
                     target_col.markdown(f"### {item['sets']} × {item['reps']}")
                     best = exercise_bests.get(item["name"])
                     if best:
-                        best_weight, best_reps = best
+                        best_weight, reps_at_best_weight, best_reps, weight_at_best_reps = best
                         st.markdown(
                             '<span class="personal-best">'
-                            f"Personal best · {best_weight:g} kg · {best_reps} reps"
+                            f"Max weight · {best_weight:g} kg × {reps_at_best_weight} reps"
+                            f"&nbsp;&nbsp;|&nbsp;&nbsp; Max reps · {best_reps} × "
+                            f"{weight_at_best_reps:g} kg"
                             "</span>",
                             unsafe_allow_html=True,
                         )
