@@ -6,6 +6,7 @@ import re
 import sqlite3
 from datetime import date, datetime
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 import pandas as pd
 import streamlit as st
@@ -17,6 +18,7 @@ EXERCISE_IMAGE_DIR = ROOT / "assets" / "exercises"
 DB_PATH = DATA_DIR / "progress.db"
 PLAN_PATH = DATA_DIR / "workout_plan.json"
 DAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+BRASILIA_TZ = ZoneInfo("America/Sao_Paulo")
 MUSCLE_GROUPS = [
     "Chest", "Back", "Shoulders", "Biceps", "Triceps", "Quadriceps",
     "Hamstrings", "Glutes", "Calves", "Core",
@@ -48,6 +50,18 @@ EXERCISE_IMAGES = {
     "Supported split squat or low step-up": "split-squat.jpg",
     "Machine crunch or dead bug": "ab-crunch.jpg",
 }
+
+
+def brasilia_now() -> datetime:
+    return datetime.now(BRASILIA_TZ)
+
+
+def brasilia_today() -> date:
+    return brasilia_now().date()
+
+
+def brasilia_timestamp() -> pd.Timestamp:
+    return pd.Timestamp(brasilia_now().replace(tzinfo=None))
 
 
 def infer_muscle_groups(name: str) -> list[str]:
@@ -199,6 +213,27 @@ def connect() -> sqlite3.Connection:
     columns = {row[1] for row in connection.execute("PRAGMA table_info(workout_log)")}
     if "set_number" not in columns:
         connection.execute("ALTER TABLE workout_log ADD COLUMN set_number INTEGER DEFAULT 1")
+    connection.execute(
+        """
+        CREATE TABLE IF NOT EXISTS app_migrations (
+            migration_id TEXT PRIMARY KEY,
+            applied_at TEXT NOT NULL
+        )
+        """
+    )
+    migration_id = "correct_2026_07_28_to_brasilia_2026_07_27"
+    already_applied = connection.execute(
+        "SELECT 1 FROM app_migrations WHERE migration_id = ?", (migration_id,)
+    ).fetchone()
+    if not already_applied:
+        connection.execute(
+            "UPDATE workout_log SET performed_on = ? WHERE performed_on = ?",
+            ("2026-07-27", "2026-07-28"),
+        )
+        connection.execute(
+            "INSERT INTO app_migrations (migration_id, applied_at) VALUES (?, ?)",
+            (migration_id, brasilia_now().isoformat(timespec="microseconds")),
+        )
     connection.commit()
     return connection
 
@@ -382,7 +417,7 @@ st.markdown('<p class="eyebrow">Personal training companion</p>', unsafe_allow_h
 st.title("My Training Path")
 st.caption("Know what to do today, swap an exercise when needed, and keep a useful record of your progress.")
 
-today_name = datetime.now().strftime("%A")
+today_name = brasilia_now().strftime("%A")
 default_day = DAYS.index(today_name) if today_name in DAYS else 0
 
 tab_today, tab_plan, tab_progress = st.tabs(["Today", "My plan", "Progress"])
@@ -397,7 +432,7 @@ with tab_today:
 
     workout_date = st.date_input(
         "Date for all exercises",
-        value=date.today(),
+        value=brasilia_today(),
         key=f"workout_date_{selected_day}",
         on_change=apply_date_to_day,
         args=(selected_day, len(exercises)),
@@ -533,7 +568,7 @@ with tab_today:
                             if not completed:
                                 st.error("Enter the repetitions for at least one set.")
                             else:
-                                logged_at = datetime.now().isoformat(timespec="microseconds")
+                                logged_at = brasilia_now().isoformat(timespec="microseconds")
                                 db.executemany(
                                     """
                                     INSERT INTO workout_log (
@@ -661,14 +696,14 @@ with tab_progress:
                 .rename("Completed workouts")
             )
             first_week = sessions_by_week.index.min()
-            current_week = pd.Timestamp.today().to_period("W-SUN").start_time
+            current_week = brasilia_timestamp().to_period("W-SUN").start_time
             week_index = pd.date_range(first_week, current_week, freq="W-MON")
             if len(week_index) == 0:
                 week_index = pd.DatetimeIndex([first_week])
             adherence = sessions_by_week.reindex(week_index, fill_value=0).to_frame()
             adherence["Planned workouts"] = 5
             if current_week in adherence.index:
-                elapsed_weekdays = min(pd.Timestamp.today().weekday() + 1, 5)
+                elapsed_weekdays = min(brasilia_timestamp().weekday() + 1, 5)
                 adherence.loc[current_week, "Planned workouts"] = elapsed_weekdays
             adherence["Adherence %"] = (
                 adherence["Completed workouts"] / adherence["Planned workouts"].clip(lower=1) * 100
