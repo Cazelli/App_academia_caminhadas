@@ -3,3 +3,4 @@ __pycache__/
 .streamlit/
 data/progress.db
 data/pdf_pages/
+*_export.csv

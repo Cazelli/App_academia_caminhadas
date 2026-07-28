@@ -31,3 +31,26 @@ If the Windows `python` alias does not point to your Python installation, use:
 
 The editable plan is saved to `data/workout_plan.json`. Progress is stored
 locally in `data/progress.db`, and can also be downloaded from the app as CSV.
+
+## Persistent GitHub history
+
+The app can use `data/workout_progress.csv` as a durable GitHub backup. At
+startup it restores this CSV into SQLite, and after every save or deletion it
+commits an updated CSV through the GitHub API.
+
+Add these secrets in the Streamlit Community Cloud app settings:
+
+```toml
+GITHUB_TOKEN = "your-fine-grained-personal-access-token"
+GITHUB_HISTORY_REPO = "Cazelli/App_academia_caminhadas"
+GITHUB_HISTORY_BRANCH = "main"
+```
+
+The token needs **Contents: Read and write** access to the selected repository.
+Do not commit the token or place it in this repository. This repository is
+public, so its CSV history will also be public. To keep workout history private,
+set `GITHUB_HISTORY_REPO` to a separate private repository instead.
+
+When the same repository is used, running `git pull` locally retrieves the
+latest `data/workout_progress.csv`. The SQLite database remains ignored because
+it is only the app's working copy.

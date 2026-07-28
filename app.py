@@ -1,9 +1,13 @@
 from __future__ import annotations
 
+import base64
 import html
 import json
 import re
 import sqlite3
+import urllib.error
+import urllib.parse
+import urllib.request
 from datetime import date, datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -16,6 +20,7 @@ ROOT = Path(__file__).parent
 DATA_DIR = ROOT / "data"
 EXERCISE_IMAGE_DIR = ROOT / "assets" / "exercises"
 DB_PATH = DATA_DIR / "progress.db"
+HISTORY_PATH = DATA_DIR / "workout_progress.csv"
 PLAN_PATH = DATA_DIR / "workout_plan.json"
 DAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
 BRASILIA_TZ = ZoneInfo("America/Sao_Paulo")
@@ -62,6 +67,147 @@ def brasilia_today() -> date:
 
 def brasilia_timestamp() -> pd.Timestamp:
     return pd.Timestamp(brasilia_now().replace(tzinfo=None))
+
+
+def github_history_config() -> dict[str, str] | None:
+    try:
+        token = str(st.secrets.get("GITHUB_TOKEN", "")).strip()
+        repository = str(
+            st.secrets.get("GITHUB_HISTORY_REPO", "Cazelli/App_academia_caminhadas")
+        ).strip()
+        branch = str(st.secrets.get("GITHUB_HISTORY_BRANCH", "main")).strip()
+    except FileNotFoundError:
+        return None
+    if not token or not repository:
+        return None
+    return {
+        "token": token,
+        "repository": repository,
+        "branch": branch,
+        "path": "data/workout_progress.csv",
+    }
+
+
+def github_history_request(
+    config: dict[str, str],
+    method: str = "GET",
+    payload: dict | None = None,
+) -> dict | None:
+    encoded_path = urllib.parse.quote(config["path"])
+    url = f"https://api.github.com/repos/{config['repository']}/contents/{encoded_path}"
+    if method == "GET":
+        url += f"?ref={urllib.parse.quote(config['branch'])}"
+    body = json.dumps(payload).encode("utf-8") if payload is not None else None
+    request = urllib.request.Request(
+        url,
+        data=body,
+        method=method,
+        headers={
+            "Accept": "application/vnd.github+json",
+            "Authorization": f"Bearer {config['token']}",
+            "X-GitHub-Api-Version": "2022-11-28",
+            "User-Agent": "my-training-path",
+        },
+    )
+    try:
+        with urllib.request.urlopen(request, timeout=20) as response:
+            return json.loads(response.read().decode("utf-8"))
+    except urllib.error.HTTPError as error:
+        if method == "GET" and error.code == 404:
+            return None
+        detail = error.read().decode("utf-8", errors="replace")
+        raise RuntimeError(f"GitHub returned HTTP {error.code}: {detail}") from error
+
+
+def restore_history_from_github(config: dict[str, str] | None) -> bool:
+    if config is None:
+        return False
+    remote_file = github_history_request(config)
+    if remote_file is None:
+        return False
+    history_bytes = base64.b64decode(remote_file["content"])
+    if not history_bytes.lstrip().startswith((b"id,", b"Date,")):
+        raise RuntimeError("The GitHub history file is not a recognized workout CSV.")
+    DATA_DIR.mkdir(exist_ok=True)
+    HISTORY_PATH.write_bytes(history_bytes)
+    return True
+
+
+def export_history_csv(connection: sqlite3.Connection) -> None:
+    read_log(connection).to_csv(HISTORY_PATH, index=False)
+
+
+def import_history_csv(connection: sqlite3.Connection) -> int:
+    history = pd.read_csv(HISTORY_PATH)
+    display_columns = {
+        "Date": "performed_on",
+        "Exercise": "performed_exercise",
+        "Set": "set_number",
+        "Reps": "reps",
+        "Weight (kg)": "weight",
+        "RIR": "rir",
+        "Pain": "pain",
+        "Notes": "notes",
+    }
+    if "Date" in history.columns:
+        history = history.rename(columns=display_columns)
+        history["performed_on"] = history["performed_on"].astype(str).str[:10]
+        history["planned_exercise"] = history["performed_exercise"]
+        history["day_name"] = pd.to_datetime(history["performed_on"]).dt.day_name()
+        history["sets"] = 1
+        session_keys = (
+            history["performed_on"].astype(str)
+            + "|"
+            + history["performed_exercise"].astype(str)
+        )
+        session_numbers = pd.factorize(session_keys, sort=False)[0]
+        history["created_at"] = [
+            f"{performed_on}T12:00:{session_number:02d}.000000-03:00"
+            for performed_on, session_number in zip(
+                history["performed_on"], session_numbers
+            )
+        ]
+
+    required = [
+        "performed_on", "day_name", "planned_exercise", "performed_exercise",
+        "sets", "reps", "weight", "rir", "pain", "notes", "set_number",
+        "created_at",
+    ]
+    missing = [column for column in required if column not in history.columns]
+    if missing:
+        raise RuntimeError(f"History CSV is missing columns: {', '.join(missing)}")
+    history["notes"] = history["notes"].fillna("")
+    connection.execute("DELETE FROM workout_log")
+    connection.executemany(
+        """
+        INSERT INTO workout_log (
+            performed_on, day_name, planned_exercise, performed_exercise,
+            sets, reps, weight, rir, pain, notes, set_number, created_at
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        """,
+        history[required].itertuples(index=False, name=None),
+    )
+    connection.commit()
+    export_history_csv(connection)
+    return len(history)
+
+
+def save_history_to_github(
+    config: dict[str, str] | None, connection: sqlite3.Connection
+) -> bool:
+    export_history_csv(connection)
+    if config is None:
+        return False
+    remote_file = github_history_request(config)
+    payload = {
+        "message": f"Update workout history ({brasilia_now():%Y-%m-%d %H:%M BRT})",
+        "content": base64.b64encode(HISTORY_PATH.read_bytes()).decode("ascii"),
+        "branch": config["branch"],
+    }
+    if remote_file is not None:
+        payload["sha"] = remote_file["sha"]
+    github_history_request(config, method="PUT", payload=payload)
+    return True
 
 
 def infer_muscle_groups(name: str) -> list[str]:
@@ -411,11 +557,34 @@ st.markdown(
 )
 
 plan = load_plan()
+github_config = github_history_config()
+github_sync_error = None
+try:
+    history_restored = restore_history_from_github(github_config)
+except (OSError, RuntimeError, ValueError, KeyError) as error:
+    history_restored = False
+    github_sync_error = str(error)
 db = connect()
+if HISTORY_PATH.exists():
+    try:
+        import_history_csv(db)
+    except (OSError, RuntimeError, ValueError, KeyError) as error:
+        github_sync_error = str(error)
+if github_config is not None and not history_restored and github_sync_error is None:
+    try:
+        save_history_to_github(github_config, db)
+    except (OSError, RuntimeError, ValueError, KeyError) as error:
+        github_sync_error = str(error)
 
 st.markdown('<p class="eyebrow">Personal training companion</p>', unsafe_allow_html=True)
 st.title("My Training Path")
 st.caption("Know what to do today, swap an exercise when needed, and keep a useful record of your progress.")
+if github_config is None:
+    st.sidebar.warning("GitHub history backup is not configured.")
+elif github_sync_error:
+    st.sidebar.error(f"GitHub history sync failed: {github_sync_error}")
+else:
+    st.sidebar.success("History is backed up to GitHub.")
 
 today_name = brasilia_now().strftime("%A")
 default_day = DAYS.index(today_name) if today_name in DAYS else 0
@@ -587,7 +756,20 @@ with tab_today:
                                     ],
                                 )
                                 db.commit()
-                                st.success(f"{len(completed)} sets saved.")
+                                try:
+                                    backed_up = save_history_to_github(github_config, db)
+                                except (OSError, RuntimeError, ValueError, KeyError) as error:
+                                    backed_up = False
+                                    st.error(
+                                        "Sets were saved locally, but the GitHub backup failed: "
+                                        f"{error}"
+                                    )
+                                if backed_up:
+                                    st.success(
+                                        f"{len(completed)} sets saved and backed up to GitHub."
+                                    )
+                                elif github_config is None:
+                                    st.success(f"{len(completed)} sets saved locally.")
 
 with tab_plan:
     st.subheader("Build your Monday–Friday plan")
@@ -948,6 +1130,14 @@ with tab_progress:
                 if st.button("Delete selected entry"):
                     db.execute("DELETE FROM workout_log WHERE id = ?", (int(entry),))
                     db.commit()
+                    try:
+                        save_history_to_github(github_config, db)
+                    except (OSError, RuntimeError, ValueError, KeyError) as error:
+                        st.error(
+                            "Entry was deleted locally, but the GitHub backup failed: "
+                            f"{error}"
+                        )
+                        st.stop()
                     st.rerun()
 
 st.divider()
