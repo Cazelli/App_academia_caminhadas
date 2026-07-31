@@ -11,6 +11,12 @@ Progress features include exercise strength trends, set-by-set comparisons,
 double-progression guidance, weekly adherence, editable muscle-group volume,
 RIR and pain monitoring, personal records, and CSV export.
 
+The app also includes a Wednesday body check-in for weight and optional tape
+measurements (waist, hips, chest, thigh, upper arm, and neck), plus a cardio log
+for walking, running, cycling, treadmill, and stationary-bike workouts. These
+tabs show weight and circumference trends, weekly cardio time, total distance,
+and pace when distance is recorded.
+
 Exercise demonstration photos are displayed in both Today and My Plan. They are
 sourced from the public-domain
 [Free Exercise DB](https://github.com/yuhonas/free-exercise-db); details are in
@@ -31,12 +37,14 @@ If the Windows `python` alias does not point to your Python installation, use:
 
 The editable plan is saved to `data/workout_plan.json`. Progress is stored
 locally in `data/progress.db`, and can also be downloaded from the app as CSV.
+Durable CSV snapshots use `data/workout_progress.csv`, `data/body_progress.csv`,
+and `data/cardio_progress.csv`.
 
 ## Persistent GitHub history
 
 The app can use `data/workout_progress.csv` as a durable GitHub backup. At
-startup it restores this CSV into SQLite, and after every save or deletion it
-commits an updated CSV through the GitHub API.
+startup it restores the progress CSVs into SQLite, and after every save or
+deletion it commits updated CSV snapshots through the GitHub API.
 
 Add these secrets in the Streamlit Community Cloud app settings:
 

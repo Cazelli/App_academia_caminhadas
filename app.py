@@ -8,7 +8,7 @@ import sqlite3
 import urllib.error
 import urllib.parse
 import urllib.request
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -21,6 +21,8 @@ DATA_DIR = ROOT / "data"
 EXERCISE_IMAGE_DIR = ROOT / "assets" / "exercises"
 DB_PATH = DATA_DIR / "progress.db"
 HISTORY_PATH = DATA_DIR / "workout_progress.csv"
+BODY_HISTORY_PATH = DATA_DIR / "body_progress.csv"
+CARDIO_HISTORY_PATH = DATA_DIR / "cardio_progress.csv"
 PLAN_PATH = DATA_DIR / "workout_plan.json"
 DAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
 BRASILIA_TZ = ZoneInfo("America/Sao_Paulo")
@@ -92,8 +94,9 @@ def github_history_request(
     config: dict[str, str],
     method: str = "GET",
     payload: dict | None = None,
+    path: str | None = None,
 ) -> dict | None:
-    encoded_path = urllib.parse.quote(config["path"])
+    encoded_path = urllib.parse.quote(path or config["path"])
     url = f"https://api.github.com/repos/{config['repository']}/contents/{encoded_path}"
     if method == "GET":
         url += f"?ref={urllib.parse.quote(config['branch'])}"
@@ -361,6 +364,38 @@ def connect() -> sqlite3.Connection:
         connection.execute("ALTER TABLE workout_log ADD COLUMN set_number INTEGER DEFAULT 1")
     connection.execute(
         """
+        CREATE TABLE IF NOT EXISTS body_log (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            measured_on TEXT NOT NULL UNIQUE,
+            weight REAL NOT NULL,
+            waist REAL,
+            hips REAL,
+            chest REAL,
+            thigh REAL,
+            upper_arm REAL,
+            neck REAL,
+            notes TEXT,
+            created_at TEXT NOT NULL
+        )
+        """
+    )
+    connection.execute(
+        """
+        CREATE TABLE IF NOT EXISTS cardio_log (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            performed_on TEXT NOT NULL,
+            activity TEXT NOT NULL,
+            duration_minutes INTEGER NOT NULL,
+            distance_km REAL,
+            average_heart_rate INTEGER,
+            effort INTEGER,
+            notes TEXT,
+            created_at TEXT NOT NULL
+        )
+        """
+    )
+    connection.execute(
+        """
         CREATE TABLE IF NOT EXISTS app_migrations (
             migration_id TEXT PRIMARY KEY,
             applied_at TEXT NOT NULL
@@ -412,6 +447,87 @@ def read_log(connection: sqlite3.Connection) -> pd.DataFrame:
     return pd.read_sql_query(
         "SELECT * FROM workout_log ORDER BY performed_on DESC, id DESC", connection
     )
+
+
+def read_body_log(connection: sqlite3.Connection) -> pd.DataFrame:
+    return pd.read_sql_query(
+        "SELECT * FROM body_log ORDER BY measured_on DESC, id DESC", connection
+    )
+
+
+def read_cardio_log(connection: sqlite3.Connection) -> pd.DataFrame:
+    return pd.read_sql_query(
+        "SELECT * FROM cardio_log ORDER BY performed_on DESC, id DESC", connection
+    )
+
+
+def export_wellness_csvs(connection: sqlite3.Connection) -> None:
+    read_body_log(connection).to_csv(BODY_HISTORY_PATH, index=False)
+    read_cardio_log(connection).to_csv(CARDIO_HISTORY_PATH, index=False)
+
+
+def import_wellness_csvs(connection: sqlite3.Connection) -> None:
+    for path, table in (
+        (BODY_HISTORY_PATH, "body_log"),
+        (CARDIO_HISTORY_PATH, "cardio_log"),
+    ):
+        if not path.exists() or path.stat().st_size == 0:
+            continue
+        frame = pd.read_csv(path)
+        if frame.empty:
+            continue
+        valid_columns = {
+            row[1] for row in connection.execute(f"PRAGMA table_info({table})")
+        }
+        columns = [column for column in frame.columns if column in valid_columns]
+        if "id" not in columns:
+            continue
+        connection.execute(f"DELETE FROM {table}")
+        placeholders = ", ".join("?" for _ in columns)
+        connection.executemany(
+            f"INSERT INTO {table} ({', '.join(columns)}) VALUES ({placeholders})",
+            frame[columns].where(pd.notna(frame[columns]), None).itertuples(
+                index=False, name=None
+            ),
+        )
+    connection.commit()
+
+
+def restore_wellness_from_github(config: dict[str, str] | None) -> bool:
+    if config is None:
+        return False
+    restored = False
+    for path, local_path in (
+        ("data/body_progress.csv", BODY_HISTORY_PATH),
+        ("data/cardio_progress.csv", CARDIO_HISTORY_PATH),
+    ):
+        remote_file = github_history_request(config, path=path)
+        if remote_file is not None:
+            local_path.write_bytes(base64.b64decode(remote_file["content"]))
+            restored = True
+    return restored
+
+
+def save_wellness_to_github(
+    config: dict[str, str] | None, connection: sqlite3.Connection
+) -> bool:
+    export_wellness_csvs(connection)
+    if config is None:
+        return False
+    for path, local_path in (
+        ("data/body_progress.csv", BODY_HISTORY_PATH),
+        ("data/cardio_progress.csv", CARDIO_HISTORY_PATH),
+    ):
+        remote_file = github_history_request(config, path=path)
+        payload = {
+            "message": f"Update {local_path.stem} ({brasilia_now():%Y-%m-%d %H:%M BRT})",
+            "content": base64.b64encode(local_path.read_bytes()).decode("ascii"),
+            "branch": config["branch"],
+        }
+        if remote_file is not None:
+            payload["sha"] = remote_file["sha"]
+        github_history_request(config, method="PUT", payload=payload, path=path)
+    return True
 
 
 def exercise_label(item: dict) -> str:
@@ -561,8 +677,10 @@ github_config = github_history_config()
 github_sync_error = None
 try:
     history_restored = restore_history_from_github(github_config)
+    wellness_restored = restore_wellness_from_github(github_config)
 except (OSError, RuntimeError, ValueError, KeyError) as error:
     history_restored = False
+    wellness_restored = False
     github_sync_error = str(error)
 db = connect()
 if HISTORY_PATH.exists():
@@ -570,9 +688,18 @@ if HISTORY_PATH.exists():
         import_history_csv(db)
     except (OSError, RuntimeError, ValueError, KeyError) as error:
         github_sync_error = str(error)
+try:
+    import_wellness_csvs(db)
+except (OSError, RuntimeError, ValueError, KeyError, sqlite3.Error) as error:
+    github_sync_error = str(error)
 if github_config is not None and not history_restored and github_sync_error is None:
     try:
         save_history_to_github(github_config, db)
+    except (OSError, RuntimeError, ValueError, KeyError) as error:
+        github_sync_error = str(error)
+if github_config is not None and not wellness_restored and github_sync_error is None:
+    try:
+        save_wellness_to_github(github_config, db)
     except (OSError, RuntimeError, ValueError, KeyError) as error:
         github_sync_error = str(error)
 
@@ -589,7 +716,9 @@ else:
 today_name = brasilia_now().strftime("%A")
 default_day = DAYS.index(today_name) if today_name in DAYS else 0
 
-tab_today, tab_plan, tab_progress = st.tabs(["Today", "My plan", "Progress"])
+tab_today, tab_plan, tab_progress, tab_body, tab_cardio = st.tabs(
+    ["Today", "My plan", "Strength progress", "Body tracking", "Cardio"]
+)
 
 with tab_today:
     today_log = read_log(db)
@@ -1139,6 +1268,206 @@ with tab_progress:
                         )
                         st.stop()
                     st.rerun()
+
+with tab_body:
+    st.subheader("Weekly body check-in")
+    st.caption(
+        "Record under similar conditions each Wednesday. Tape measurements are optional; "
+        "consistency matters more than measuring every area."
+    )
+    most_recent_wednesday = brasilia_today() - timedelta(
+        days=(brasilia_today().weekday() - 2) % 7
+    )
+    with st.form("body_check_in", clear_on_submit=True):
+        measured_on = st.date_input("Measurement date", value=most_recent_wednesday)
+        weight = st.number_input(
+            "Weight (kg)", min_value=20.0, max_value=400.0, step=0.1,
+            value=None, placeholder="Required",
+        )
+        st.markdown("**Tape measurements (cm)**")
+        b1, b2, b3 = st.columns(3)
+        waist = b1.number_input("Waist", 20.0, 300.0, value=None, step=0.1)
+        hips = b2.number_input("Hips", 20.0, 300.0, value=None, step=0.1)
+        chest = b3.number_input("Chest", 20.0, 300.0, value=None, step=0.1)
+        b4, b5, b6 = st.columns(3)
+        thigh = b4.number_input("Thigh", 10.0, 150.0, value=None, step=0.1)
+        upper_arm = b5.number_input("Upper arm", 10.0, 100.0, value=None, step=0.1)
+        neck = b6.number_input("Neck", 10.0, 100.0, value=None, step=0.1)
+        body_notes = st.text_area("Notes", placeholder="Time of day, clothing, context…")
+        save_body = st.form_submit_button("Save check-in", type="primary")
+        if save_body:
+            if weight is None:
+                st.error("Enter your weight before saving.")
+            elif measured_on.weekday() != 2:
+                st.error("Choose a Wednesday for your weekly check-in.")
+            else:
+                db.execute(
+                    """
+                    INSERT INTO body_log (
+                        measured_on, weight, waist, hips, chest, thigh, upper_arm,
+                        neck, notes, created_at
+                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    ON CONFLICT(measured_on) DO UPDATE SET
+                        weight=excluded.weight, waist=excluded.waist, hips=excluded.hips,
+                        chest=excluded.chest, thigh=excluded.thigh,
+                        upper_arm=excluded.upper_arm, neck=excluded.neck,
+                        notes=excluded.notes, created_at=excluded.created_at
+                    """,
+                    (
+                        measured_on.isoformat(), weight, waist, hips, chest, thigh,
+                        upper_arm, neck, body_notes.strip(),
+                        brasilia_now().isoformat(timespec="microseconds"),
+                    ),
+                )
+                db.commit()
+                try:
+                    save_wellness_to_github(github_config, db)
+                except (OSError, RuntimeError, ValueError, KeyError) as error:
+                    st.warning(f"Saved locally, but the GitHub backup failed: {error}")
+                else:
+                    st.success("Wednesday check-in saved.")
+
+    body_log = read_body_log(db)
+    if body_log.empty:
+        st.info("Your weight and measurement trends will appear after the first check-in.")
+    else:
+        body_log["measured_on"] = pd.to_datetime(body_log["measured_on"])
+        chronological_body = body_log.sort_values("measured_on")
+        latest_body = chronological_body.iloc[-1]
+        first_body = chronological_body.iloc[0]
+        m1, m2, m3 = st.columns(3)
+        m1.metric(
+            "Latest weight", f"{latest_body['weight']:.1f} kg",
+            f"{latest_body['weight'] - first_body['weight']:+.1f} kg overall"
+            if len(chronological_body) > 1 else None,
+            delta_color="inverse",
+        )
+        m2.metric("Check-ins", len(body_log))
+        m3.metric("Latest check-in", latest_body["measured_on"].strftime("%d %b %Y"))
+        st.subheader("Weight trend")
+        st.line_chart(
+            chronological_body.set_index("measured_on")[["weight"]].rename(
+                columns={"weight": "Weight (kg)"}
+            ),
+            x_label="Date", y_label="Kilograms",
+        )
+        tape_columns = ["waist", "hips", "chest", "thigh", "upper_arm", "neck"]
+        tape = chronological_body.set_index("measured_on")[tape_columns].rename(
+            columns={
+                "waist": "Waist", "hips": "Hips", "chest": "Chest",
+                "thigh": "Thigh", "upper_arm": "Upper arm", "neck": "Neck",
+            }
+        )
+        if tape.notna().any().any():
+            st.subheader("Tape measurement trends")
+            st.line_chart(tape, x_label="Date", y_label="Centimeters")
+        st.dataframe(
+            body_log.rename(columns={
+                "measured_on": "Date", "weight": "Weight (kg)", "waist": "Waist",
+                "hips": "Hips", "chest": "Chest", "thigh": "Thigh",
+                "upper_arm": "Upper arm", "neck": "Neck", "notes": "Notes",
+            })[["Date", "Weight (kg)", "Waist", "Hips", "Chest", "Thigh", "Upper arm", "Neck", "Notes"]],
+            width="stretch", hide_index=True,
+        )
+        delete_body = st.selectbox(
+            "Delete body check-in", body_log["id"].tolist(),
+            format_func=lambda row_id: body_log.loc[
+                body_log["id"] == row_id, "measured_on"
+            ].iloc[0].strftime("%d %b %Y"),
+        )
+        if st.button("Delete selected body check-in"):
+            db.execute("DELETE FROM body_log WHERE id = ?", (int(delete_body),))
+            db.commit()
+            save_wellness_to_github(github_config, db)
+            st.rerun()
+
+with tab_cardio:
+    st.subheader("Walking, running & cycling")
+    st.caption("Log outdoor or indoor sessions. Distance and heart rate are optional.")
+    with st.form("cardio_workout", clear_on_submit=True):
+        c1, c2 = st.columns(2)
+        cardio_date = c1.date_input("Date", value=brasilia_today())
+        activity = c2.selectbox(
+            "Activity", ["Walking", "Running", "Cycling", "Treadmill", "Stationary bike", "Other"]
+        )
+        c3, c4 = st.columns(2)
+        duration = c3.number_input("Duration (minutes)", 1, 1440, 30)
+        distance = c4.number_input(
+            "Distance (km, optional)", 0.0, 1000.0, value=None, step=0.1
+        )
+        c5, c6 = st.columns(2)
+        heart_rate = c5.number_input(
+            "Average heart rate (optional)", 30, 240, value=None, step=1
+        )
+        effort = c6.select_slider("Effort (1–10)", options=list(range(1, 11)), value=5)
+        cardio_notes = st.text_area("Notes", placeholder="Route, terrain, intervals, how it felt…")
+        if st.form_submit_button("Save cardio workout", type="primary"):
+            db.execute(
+                """
+                INSERT INTO cardio_log (
+                    performed_on, activity, duration_minutes, distance_km,
+                    average_heart_rate, effort, notes, created_at
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+                """,
+                (
+                    cardio_date.isoformat(), activity, duration, distance, heart_rate,
+                    effort, cardio_notes.strip(),
+                    brasilia_now().isoformat(timespec="microseconds"),
+                ),
+            )
+            db.commit()
+            try:
+                save_wellness_to_github(github_config, db)
+            except (OSError, RuntimeError, ValueError, KeyError) as error:
+                st.warning(f"Saved locally, but the GitHub backup failed: {error}")
+            else:
+                st.success("Cardio workout saved.")
+
+    cardio_log = read_cardio_log(db)
+    if cardio_log.empty:
+        st.info("Your cardio totals and trends will appear after the first workout.")
+    else:
+        cardio_log["performed_on"] = pd.to_datetime(cardio_log["performed_on"])
+        cardio_log["Pace (min/km)"] = cardio_log.apply(
+            lambda row: row["duration_minutes"] / row["distance_km"]
+            if pd.notna(row["distance_km"]) and row["distance_km"] > 0 else None,
+            axis=1,
+        )
+        k1, k2, k3 = st.columns(3)
+        k1.metric("Workouts", len(cardio_log))
+        k2.metric("Total time", f"{cardio_log['duration_minutes'].sum() / 60:.1f} h")
+        k3.metric("Total distance", f"{cardio_log['distance_km'].sum():.1f} km")
+        weekly_cardio = (
+            cardio_log.assign(
+                week=cardio_log["performed_on"].dt.to_period("W-SUN").dt.start_time
+            ).groupby("week").agg(
+                **{"Minutes": ("duration_minutes", "sum"), "Distance (km)": ("distance_km", "sum")}
+            )
+        )
+        st.subheader("Weekly cardio time")
+        st.bar_chart(weekly_cardio[["Minutes"]], x_label="Week", y_label="Minutes")
+        cardio_display = cardio_log.rename(columns={
+            "performed_on": "Date", "activity": "Activity",
+            "duration_minutes": "Minutes", "distance_km": "Distance (km)",
+            "average_heart_rate": "Avg HR", "effort": "Effort", "notes": "Notes",
+        })
+        cardio_display["Pace (min/km)"] = cardio_display["Pace (min/km)"].round(2)
+        st.dataframe(
+            cardio_display[["Date", "Activity", "Minutes", "Distance (km)", "Pace (min/km)", "Avg HR", "Effort", "Notes"]],
+            width="stretch", hide_index=True,
+        )
+        delete_cardio = st.selectbox(
+            "Delete cardio workout", cardio_log["id"].tolist(),
+            format_func=lambda row_id: (
+                f"{cardio_log.loc[cardio_log['id'] == row_id, 'performed_on'].iloc[0]:%d %b %Y} · "
+                f"{cardio_log.loc[cardio_log['id'] == row_id, 'activity'].iloc[0]}"
+            ),
+        )
+        if st.button("Delete selected cardio workout"):
+            db.execute("DELETE FROM cardio_log WHERE id = ?", (int(delete_cardio),))
+            db.commit()
+            save_wellness_to_github(github_config, db)
+            st.rerun()
 
 st.divider()
 st.caption(
