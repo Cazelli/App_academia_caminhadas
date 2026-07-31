@@ -386,12 +386,25 @@ def connect() -> sqlite3.Connection:
             performed_on TEXT NOT NULL,
             activity TEXT NOT NULL,
             duration_minutes INTEGER NOT NULL,
+            duration_seconds REAL,
             distance_km REAL,
             average_heart_rate INTEGER,
             effort INTEGER,
             notes TEXT,
             created_at TEXT NOT NULL
         )
+        """
+    )
+    cardio_columns = {
+        row[1] for row in connection.execute("PRAGMA table_info(cardio_log)")
+    }
+    if "duration_seconds" not in cardio_columns:
+        connection.execute("ALTER TABLE cardio_log ADD COLUMN duration_seconds REAL")
+    connection.execute(
+        """
+        UPDATE cardio_log
+        SET duration_seconds = duration_minutes * 60.0
+        WHERE duration_seconds IS NULL
         """
     )
     connection.execute(
@@ -459,6 +472,14 @@ def read_cardio_log(connection: sqlite3.Connection) -> pd.DataFrame:
     return pd.read_sql_query(
         "SELECT * FROM cardio_log ORDER BY performed_on DESC, id DESC", connection
     )
+
+
+def format_precise_duration(total_seconds: float) -> str:
+    total_hundredths = round(float(total_seconds) * 100)
+    hours, remainder = divmod(total_hundredths, 360000)
+    minutes, remainder = divmod(remainder, 6000)
+    seconds, hundredths = divmod(remainder, 100)
+    return f"{hours:02d}:{minutes:02d}:{seconds:02d}.{hundredths:02d}"
 
 
 def export_wellness_csvs(connection: sqlite3.Connection) -> None:
@@ -1390,9 +1411,20 @@ with tab_cardio:
         activity = c2.selectbox(
             "Activity", ["Walking", "Running", "Cycling", "Treadmill", "Stationary bike", "Other"]
         )
-        c3, c4 = st.columns(2)
-        duration = c3.number_input("Duration (minutes)", 1, 1440, 30)
-        distance = c4.number_input(
+        st.markdown("**Duration (HH:MM:SS.hh)**")
+        t1, t2, t3, t4 = st.columns(4)
+        duration_hours = t1.number_input("Hours", 0, 23, 0, step=1)
+        duration_whole_minutes = t2.number_input("Minutes", 0, 59, 30, step=1)
+        duration_whole_seconds = t3.number_input("Seconds", 0, 59, 0, step=1)
+        duration_hundredths = t4.number_input("Hundredths", 0, 99, 0, step=1)
+        duration_seconds = (
+            duration_hours * 3600
+            + duration_whole_minutes * 60
+            + duration_whole_seconds
+            + duration_hundredths / 100
+        )
+        duration = duration_seconds / 60
+        distance = st.number_input(
             "Distance (km, optional)", 0.0, 1000.0, value=None, step=0.1
         )
         c5, c6 = st.columns(2)
@@ -1402,58 +1434,68 @@ with tab_cardio:
         effort = c6.select_slider("Effort (1–10)", options=list(range(1, 11)), value=5)
         cardio_notes = st.text_area("Notes", placeholder="Route, terrain, intervals, how it felt…")
         if st.form_submit_button("Save cardio workout", type="primary"):
-            db.execute(
-                """
-                INSERT INTO cardio_log (
-                    performed_on, activity, duration_minutes, distance_km,
-                    average_heart_rate, effort, notes, created_at
-                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
-                """,
-                (
-                    cardio_date.isoformat(), activity, duration, distance, heart_rate,
-                    effort, cardio_notes.strip(),
-                    brasilia_now().isoformat(timespec="microseconds"),
-                ),
-            )
-            db.commit()
-            try:
-                save_wellness_to_github(github_config, db)
-            except (OSError, RuntimeError, ValueError, KeyError) as error:
-                st.warning(f"Saved locally, but the GitHub backup failed: {error}")
+            if duration_seconds <= 0:
+                st.error("Enter a duration greater than zero.")
             else:
-                st.success("Cardio workout saved.")
+                db.execute(
+                    """
+                    INSERT INTO cardio_log (
+                        performed_on, activity, duration_minutes, duration_seconds,
+                        distance_km, average_heart_rate, effort, notes, created_at
+                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    """,
+                    (
+                        cardio_date.isoformat(), activity, duration, duration_seconds,
+                        distance, heart_rate, effort, cardio_notes.strip(),
+                        brasilia_now().isoformat(timespec="microseconds"),
+                    ),
+                )
+                db.commit()
+                try:
+                    save_wellness_to_github(github_config, db)
+                except (OSError, RuntimeError, ValueError, KeyError) as error:
+                    st.warning(f"Saved locally, but the GitHub backup failed: {error}")
+                else:
+                    st.success("Cardio workout saved.")
 
     cardio_log = read_cardio_log(db)
     if cardio_log.empty:
         st.info("Your cardio totals and trends will appear after the first workout.")
     else:
         cardio_log["performed_on"] = pd.to_datetime(cardio_log["performed_on"])
+        cardio_log["duration_seconds"] = cardio_log["duration_seconds"].fillna(
+            cardio_log["duration_minutes"] * 60
+        )
         cardio_log["Pace (min/km)"] = cardio_log.apply(
-            lambda row: row["duration_minutes"] / row["distance_km"]
+            lambda row: row["duration_seconds"] / 60 / row["distance_km"]
             if pd.notna(row["distance_km"]) and row["distance_km"] > 0 else None,
             axis=1,
         )
         k1, k2, k3 = st.columns(3)
         k1.metric("Workouts", len(cardio_log))
-        k2.metric("Total time", f"{cardio_log['duration_minutes'].sum() / 60:.1f} h")
+        k2.metric("Total time", f"{cardio_log['duration_seconds'].sum() / 3600:.1f} h")
         k3.metric("Total distance", f"{cardio_log['distance_km'].sum():.1f} km")
         weekly_cardio = (
             cardio_log.assign(
                 week=cardio_log["performed_on"].dt.to_period("W-SUN").dt.start_time
             ).groupby("week").agg(
-                **{"Minutes": ("duration_minutes", "sum"), "Distance (km)": ("distance_km", "sum")}
+                **{"Seconds": ("duration_seconds", "sum"), "Distance (km)": ("distance_km", "sum")}
             )
         )
+        weekly_cardio["Minutes"] = weekly_cardio["Seconds"] / 60
         st.subheader("Weekly cardio time")
         st.bar_chart(weekly_cardio[["Minutes"]], x_label="Week", y_label="Minutes")
         cardio_display = cardio_log.rename(columns={
             "performed_on": "Date", "activity": "Activity",
-            "duration_minutes": "Minutes", "distance_km": "Distance (km)",
+            "distance_km": "Distance (km)",
             "average_heart_rate": "Avg HR", "effort": "Effort", "notes": "Notes",
         })
+        cardio_display["Duration"] = cardio_display["duration_seconds"].map(
+            format_precise_duration
+        )
         cardio_display["Pace (min/km)"] = cardio_display["Pace (min/km)"].round(2)
         st.dataframe(
-            cardio_display[["Date", "Activity", "Minutes", "Distance (km)", "Pace (min/km)", "Avg HR", "Effort", "Notes"]],
+            cardio_display[["Date", "Activity", "Duration", "Distance (km)", "Pace (min/km)", "Avg HR", "Effort", "Notes"]],
             width="stretch", hide_index=True,
         )
         delete_cardio = st.selectbox(
