@@ -24,7 +24,7 @@ HISTORY_PATH = DATA_DIR / "workout_progress.csv"
 BODY_HISTORY_PATH = DATA_DIR / "body_progress.csv"
 CARDIO_HISTORY_PATH = DATA_DIR / "cardio_progress.csv"
 PLAN_PATH = DATA_DIR / "workout_plan.json"
-DAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+DAYS = ["Monday", "Tuesday", "Wednesday", "Friday", "Saturday"]
 BRASILIA_TZ = ZoneInfo("America/Sao_Paulo")
 MUSCLE_GROUPS = [
     "Chest", "Back", "Shoulders", "Biceps", "Triceps", "Quadriceps",
@@ -259,7 +259,7 @@ def exercise(
 
 
 STARTER_PLAN = {
-    "Monday": [
+    "Friday": [
         exercise("Machine chest press", 4, "8–12", ["Dumbbell bench press", "Smith-machine bench press"]),
         exercise("Neutral-grip lat pulldown", 4, "8–12", ["Assisted pull-up", "Regular lat pulldown"]),
         exercise(
@@ -276,7 +276,7 @@ STARTER_PLAN = {
         exercise("Cable triceps pushdown", 3, "10–15", ["Machine triceps extension", "Resistance-band pushdown"]),
         exercise("Machine or cable curl", 3, "10–15", ["Dumbbell curl", "Hammer curl"]),
     ],
-    "Tuesday": [
+    "Saturday": [
         exercise(
             "Leg press", 3, "10–15", ["Box squat", "Supported goblet squat"],
             "Use a comfortable depth. Do not force the knees toward the chest if the lower back rounds.",
@@ -287,7 +287,7 @@ STARTER_PLAN = {
         exercise("Seated calf raise", 3, "12–20", ["Standing calf raise", "Calf press on leg press"]),
         exercise("Pallof press", 3, "10–15 per side", ["Dead bug", "Machine crunch"]),
     ],
-    "Wednesday": [
+    "Monday": [
         exercise("Incline machine chest press", 4, "8–12", ["Incline dumbbell press", "Incline Smith-machine press"]),
         exercise(
             "Pec deck", 3, "10–15", ["Cable chest fly", "Dumbbell chest fly"],
@@ -303,7 +303,7 @@ STARTER_PLAN = {
         exercise("Cable triceps pushdown", 3, "10–15", ["Machine triceps extension", "Resistance-band pushdown"]),
         exercise("Overhead cable triceps extension", 3, "10–15", ["Single-arm cable extension", "Dumbbell overhead extension"]),
     ],
-    "Thursday": [
+    "Tuesday": [
         exercise("Neutral-grip lat pulldown", 4, "8–12", ["Assisted neutral-grip pull-up", "Regular lat pulldown"]),
         exercise(
             "Chest-supported machine row", 4, "8–12",
@@ -315,7 +315,7 @@ STARTER_PLAN = {
         exercise("Cable or machine curl", 3, "10–15", ["Dumbbell curl", "Preacher curl"]),
         exercise("Hammer curl", 3, "10–15", ["Rope cable hammer curl", "Machine curl"]),
     ],
-    "Friday": [
+    "Wednesday": [
         exercise(
             "Seated or lying leg curl", 4, "8–12",
             ["Standing machine leg curl", "Stability-ball leg curl"],
@@ -922,7 +922,7 @@ with tab_today:
                                     st.success(f"{len(completed)} sets saved locally.")
 
 with tab_plan:
-    st.subheader("Build your Monday–Friday plan")
+    st.subheader("Build your Monday–Saturday plan")
     st.caption(
         "The starter schedule follows the full routine in your updated PDF. "
         "You can still add, edit, or remove any exercise."
@@ -1035,7 +1035,11 @@ with tab_progress:
             adherence = sessions_by_week.reindex(week_index, fill_value=0).to_frame()
             adherence["Planned workouts"] = 5
             if current_week in adherence.index:
-                elapsed_weekdays = min(brasilia_timestamp().weekday() + 1, 5)
+                scheduled_weekdays = {0, 1, 2, 4, 5}
+                elapsed_weekdays = sum(
+                    weekday <= brasilia_timestamp().weekday()
+                    for weekday in scheduled_weekdays
+                )
                 adherence.loc[current_week, "Planned workouts"] = elapsed_weekdays
             adherence["Adherence %"] = (
                 adherence["Completed workouts"] / adherence["Planned workouts"].clip(lower=1) * 100

@@ -1,5 +1,5 @@
 {
-  "Monday": [
+  "Friday": [
     {
       "name": "Machine chest press",
       "sets": 4,
@@ -90,7 +90,7 @@
       ]
     }
   ],
-  "Tuesday": [
+  "Saturday": [
     {
       "name": "Leg press",
       "sets": 3,
@@ -178,7 +178,7 @@
       ]
     }
   ],
-  "Wednesday": [
+  "Monday": [
     {
       "name": "Incline machine chest press",
       "sets": 4,
@@ -267,7 +267,7 @@
       ]
     }
   ],
-  "Thursday": [
+  "Tuesday": [
     {
       "name": "Neutral-grip lat pulldown",
       "sets": 4,
@@ -357,7 +357,7 @@
       ]
     }
   ],
-  "Friday": [
+  "Wednesday": [
     {
       "name": "Seated or lying leg curl",
       "sets": 4,
