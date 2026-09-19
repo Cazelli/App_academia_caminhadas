@@ -1,11 +1,11 @@
 id,performed_on,day_name,planned_exercise,performed_exercise,sets,reps,weight,rir,pain,notes,set_number,created_at
-9044,2026-09-19,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,220.0,1,0,,3,2026-09-19T12:30:03.352595-03:00
-9043,2026-09-19,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,220.0,1,0,,2,2026-09-19T12:30:03.352595-03:00
-9042,2026-09-19,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,200.0,1,0,,1,2026-09-19T12:30:03.352595-03:00
-9041,2026-09-19,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,10,95.0,0,0,,1,2026-09-19T12:29:39.127712-03:00
-9040,2026-09-19,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,8,95.0,0,0,,2,2026-09-19T12:29:39.127712-03:00
-9039,2026-09-19,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,8,95.0,0,0,,3,2026-09-19T12:29:39.127712-03:00
-9038,2026-09-19,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,8,95.0,0,0,,4,2026-09-19T12:29:39.127712-03:00
+9044,2026-09-16,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,220.0,1,0,,3,2026-09-19T12:30:03.352595-03:00
+9043,2026-09-16,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,220.0,1,0,,2,2026-09-19T12:30:03.352595-03:00
+9042,2026-09-16,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,200.0,1,0,,1,2026-09-19T12:30:03.352595-03:00
+9041,2026-09-16,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,10,95.0,0,0,,1,2026-09-19T12:29:39.127712-03:00
+9040,2026-09-16,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,8,95.0,0,0,,2,2026-09-19T12:29:39.127712-03:00
+9039,2026-09-16,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,8,95.0,0,0,,3,2026-09-19T12:29:39.127712-03:00
+9038,2026-09-16,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,8,95.0,0,0,,4,2026-09-19T12:29:39.127712-03:00
 9744,2026-09-16,Wednesday,Machine hip thrust,Machine hip thrust,1,8,160.0,1,0,,4,2026-09-19T12:31:46.059172-03:00
 9743,2026-09-16,Wednesday,Machine hip thrust,Machine hip thrust,1,8,160.0,1,0,,3,2026-09-19T12:31:46.059172-03:00
 9742,2026-09-16,Wednesday,Machine hip thrust,Machine hip thrust,1,8,160.0,1,0,,2,2026-09-19T12:31:46.059172-03:00
