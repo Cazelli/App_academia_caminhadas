@@ -1,708 +1,712 @@
 id,performed_on,day_name,planned_exercise,performed_exercise,sets,reps,weight,rir,pain,notes,set_number,created_at
-9044,2026-09-16,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,220.0,1,0,,3,2026-09-19T12:30:03.352595-03:00
-9043,2026-09-16,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,220.0,1,0,,2,2026-09-19T12:30:03.352595-03:00
-9042,2026-09-16,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,200.0,1,0,,1,2026-09-19T12:30:03.352595-03:00
-9041,2026-09-16,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,10,95.0,0,0,,1,2026-09-19T12:29:39.127712-03:00
-9040,2026-09-16,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,8,95.0,0,0,,2,2026-09-19T12:29:39.127712-03:00
-9039,2026-09-16,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,8,95.0,0,0,,3,2026-09-19T12:29:39.127712-03:00
-9038,2026-09-16,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,8,95.0,0,0,,4,2026-09-19T12:29:39.127712-03:00
-9744,2026-09-16,Wednesday,Machine hip thrust,Machine hip thrust,1,8,160.0,1,0,,4,2026-09-19T12:31:46.059172-03:00
-9743,2026-09-16,Wednesday,Machine hip thrust,Machine hip thrust,1,8,160.0,1,0,,3,2026-09-19T12:31:46.059172-03:00
-9742,2026-09-16,Wednesday,Machine hip thrust,Machine hip thrust,1,8,160.0,1,0,,2,2026-09-19T12:31:46.059172-03:00
-9741,2026-09-16,Wednesday,Machine hip thrust,Machine hip thrust,1,10,120.0,1,0,,1,2026-09-19T12:31:46.059172-03:00
-9047,2026-09-16,Wednesday,Supported split squat or low step-up,Supported split squat or low step-up,1,8,22.0,2,0,,1,2026-09-19T12:31:07.958517-03:00
-9046,2026-09-16,Wednesday,Supported split squat or low step-up,Supported split squat or low step-up,1,8,22.0,2,0,,2,2026-09-19T12:31:07.958517-03:00
-9045,2026-09-16,Wednesday,Supported split squat or low step-up,Supported split squat or low step-up,1,8,22.0,2,0,,3,2026-09-19T12:31:07.958517-03:00
-9068,2026-09-15,Tuesday,Hammer curl,Hammer curl,1,10,12.0,0,0,,3,2026-09-17T07:59:10.274409-03:00
-9067,2026-09-15,Tuesday,Hammer curl,Hammer curl,1,10,12.0,0,0,,2,2026-09-17T07:59:10.274409-03:00
-9066,2026-09-15,Tuesday,Hammer curl,Hammer curl,1,10,10.0,0,0,,1,2026-09-17T07:59:10.274409-03:00
-9065,2026-09-15,Tuesday,Reverse pec deck,Reverse pec deck,1,12,42.5,1,0,,4,2026-09-17T07:58:22.459804-03:00
-9064,2026-09-15,Tuesday,Reverse pec deck,Reverse pec deck,1,12,42.5,1,0,,3,2026-09-17T07:58:22.459804-03:00
-9063,2026-09-15,Tuesday,Reverse pec deck,Reverse pec deck,1,12,40.0,1,0,,2,2026-09-17T07:58:22.459804-03:00
-9062,2026-09-15,Tuesday,Reverse pec deck,Reverse pec deck,1,12,40.0,1,0,,1,2026-09-17T07:58:22.459804-03:00
-9061,2026-09-15,Tuesday,Chest-supported machine row,Chest-supported machine row,1,9,65.0,1,0,,4,2026-09-17T07:57:12.566179-03:00
-9060,2026-09-15,Tuesday,Chest-supported machine row,Chest-supported machine row,1,9,65.0,1,0,,3,2026-09-17T07:57:12.566179-03:00
-9059,2026-09-15,Tuesday,Chest-supported machine row,Chest-supported machine row,1,8,65.0,1,0,,2,2026-09-17T07:57:12.566179-03:00
-9058,2026-09-15,Tuesday,Chest-supported machine row,Chest-supported machine row,1,8,65.0,1,0,,1,2026-09-17T07:57:12.566179-03:00
-9057,2026-09-15,Tuesday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,50.0,0,0,,1,2026-09-17T07:56:49.587254-03:00
-9056,2026-09-15,Tuesday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,55.0,0,0,,2,2026-09-17T07:56:49.587254-03:00
-9055,2026-09-15,Tuesday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,60.0,0,0,,3,2026-09-17T07:56:49.587254-03:00
-9054,2026-09-15,Tuesday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,60.0,0,0,,4,2026-09-17T07:56:49.587254-03:00
-9053,2026-09-15,Tuesday,One-arm cable row,One-arm cable row,1,12,30.0,1,0,,1,2026-09-17T07:57:47.199513-03:00
-9052,2026-09-15,Tuesday,One-arm cable row,One-arm cable row,1,12,30.0,1,0,,2,2026-09-17T07:57:47.199513-03:00
-9051,2026-09-15,Tuesday,One-arm cable row,One-arm cable row,1,12,30.0,1,0,,3,2026-09-17T07:57:47.199513-03:00
-9050,2026-09-15,Tuesday,Cable or machine curl,Cable or machine curl,1,9,53.0,0,0,,1,2026-09-17T07:58:41.981677-03:00
-9049,2026-09-15,Tuesday,Cable or machine curl,Cable or machine curl,1,10,53.0,0,0,,2,2026-09-17T07:58:41.981677-03:00
-9048,2026-09-15,Tuesday,Cable or machine curl,Cable or machine curl,1,8,53.0,0,0,,3,2026-09-17T07:58:41.981677-03:00
-9088,2026-09-14,Monday,Overhead cable triceps extension,Overhead cable triceps extension,1,8,17.5,0,0,,3,2026-09-17T07:56:02.085493-03:00
-9087,2026-09-14,Monday,Overhead cable triceps extension,Overhead cable triceps extension,1,10,17.5,0,0,,2,2026-09-17T07:56:02.085493-03:00
-9086,2026-09-14,Monday,Overhead cable triceps extension,Overhead cable triceps extension,1,10,15.0,0,0,,1,2026-09-17T07:56:02.085493-03:00
-9085,2026-09-14,Monday,Cable or machine lateral raise,Dumbbell lateral raise,1,12,8.0,0,0,,4,2026-09-17T07:55:22.611584-03:00
-9084,2026-09-14,Monday,Cable or machine lateral raise,Dumbbell lateral raise,1,12,8.0,0,0,,3,2026-09-17T07:55:22.611584-03:00
-9083,2026-09-14,Monday,Cable or machine lateral raise,Dumbbell lateral raise,1,12,8.0,0,0,,2,2026-09-17T07:55:22.611584-03:00
-9082,2026-09-14,Monday,Cable or machine lateral raise,Dumbbell lateral raise,1,12,8.0,0,0,,1,2026-09-17T07:55:22.611584-03:00
-9081,2026-09-14,Monday,Pec deck,Pec deck,1,11,67.5,0,0,,3,2026-09-17T07:54:36.295028-03:00
-9080,2026-09-14,Monday,Pec deck,Pec deck,1,10,67.5,0,0,,2,2026-09-17T07:54:36.295028-03:00
-9079,2026-09-14,Monday,Pec deck,Pec deck,1,10,65.0,0,0,,1,2026-09-17T07:54:36.295028-03:00
-9078,2026-09-14,Monday,Incline machine chest press,Incline machine chest press,1,8,70.0,0,0,,1,2026-09-17T07:54:14.668252-03:00
-9077,2026-09-14,Monday,Incline machine chest press,Incline machine chest press,1,8,70.0,0,0,,2,2026-09-17T07:54:14.668252-03:00
-9076,2026-09-14,Monday,Incline machine chest press,Incline machine chest press,1,8,70.0,0,0,,3,2026-09-17T07:54:14.668252-03:00
-9075,2026-09-14,Monday,Incline machine chest press,Incline machine chest press,1,8,70.0,0,0,,4,2026-09-17T07:54:14.668252-03:00
-9074,2026-09-14,Monday,Machine shoulder press,Machine shoulder press,1,8,40.0,0,0,,1,2026-09-17T07:54:52.507610-03:00
-9073,2026-09-14,Monday,Machine shoulder press,Machine shoulder press,1,8,40.0,0,0,,2,2026-09-17T07:54:52.507610-03:00
-9072,2026-09-14,Monday,Machine shoulder press,Machine shoulder press,1,8,40.0,0,0,,3,2026-09-17T07:54:52.507610-03:00
-9071,2026-09-14,Monday,Cable triceps pushdown,Cable triceps pushdown,1,10,37.5,0,0,,1,2026-09-17T07:55:41.436782-03:00
-9070,2026-09-14,Monday,Cable triceps pushdown,Cable triceps pushdown,1,10,37.5,0,0,,2,2026-09-17T07:55:41.436782-03:00
-9069,2026-09-14,Monday,Cable triceps pushdown,Cable triceps pushdown,1,11,37.5,0,0,,3,2026-09-17T07:55:41.436782-03:00
-9100,2026-09-12,Saturday,Machine hip thrust,Machine hip thrust,1,10,120.0,0,0,,3,2026-09-17T07:53:00.092406-03:00
-9099,2026-09-12,Saturday,Machine hip thrust,Machine hip thrust,1,10,120.0,0,0,,2,2026-09-17T07:53:00.092406-03:00
-9098,2026-09-12,Saturday,Machine hip thrust,Machine hip thrust,1,10,120.0,0,0,,1,2026-09-17T07:53:00.092406-03:00
-9097,2026-09-12,Saturday,Seated leg curl,Seated leg curl,1,10,95.0,0,0,,3,2026-09-17T07:52:10.490649-03:00
-9096,2026-09-12,Saturday,Seated leg curl,Seated leg curl,1,10,95.0,0,0,,2,2026-09-17T07:52:10.490649-03:00
-9095,2026-09-12,Saturday,Seated leg curl,Seated leg curl,1,10,95.0,0,0,,1,2026-09-17T07:52:10.490649-03:00
-9094,2026-09-12,Saturday,Leg press,Leg press,1,10,200.0,2,0,,1,2026-09-17T07:51:53.987226-03:00
-9093,2026-09-12,Saturday,Leg press,Leg press,1,10,200.0,2,0,,2,2026-09-17T07:51:53.987226-03:00
-9092,2026-09-12,Saturday,Leg press,Leg press,1,10,200.0,2,0,,3,2026-09-17T07:51:53.987226-03:00
-9091,2026-09-12,Saturday,Leg extension,Leg extension,1,12,87.5,0,0,,1,2026-09-17T07:52:33.887954-03:00
-9090,2026-09-12,Saturday,Leg extension,Leg extension,1,12,87.5,0,0,,2,2026-09-17T07:52:33.887954-03:00
-9089,2026-09-12,Saturday,Leg extension,Leg extension,1,12,87.5,0,0,,3,2026-09-17T07:52:33.887954-03:00
-9120,2026-09-11,Friday,Machine or cable curl,Dumbbell curl,1,10,30.0,0,0,,3,2026-09-14T16:14:18.710211-03:00
-9119,2026-09-11,Friday,Machine or cable curl,Dumbbell curl,1,10,30.0,0,0,,2,2026-09-14T16:14:18.710211-03:00
-9118,2026-09-11,Friday,Machine or cable curl,Dumbbell curl,1,10,30.0,0,0,,1,2026-09-14T16:14:18.710211-03:00
-9117,2026-09-11,Friday,Machine shoulder press,Machine shoulder press,1,8,35.0,0,0,,3,2026-09-14T16:13:16.721330-03:00
-9116,2026-09-11,Friday,Machine shoulder press,Machine shoulder press,1,8,35.0,0,0,,2,2026-09-14T16:13:16.721330-03:00
-9115,2026-09-11,Friday,Machine shoulder press,Machine shoulder press,1,8,35.0,0,0,,1,2026-09-14T16:13:16.721330-03:00
-9114,2026-09-11,Friday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,68.0,0,0,,4,2026-09-14T16:12:13.338113-03:00
-9113,2026-09-11,Friday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,68.0,0,0,,3,2026-09-14T16:12:13.338113-03:00
-9112,2026-09-11,Friday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,68.0,0,0,,2,2026-09-14T16:12:13.338113-03:00
-9111,2026-09-11,Friday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,68.0,0,0,,1,2026-09-14T16:12:13.338113-03:00
-9110,2026-09-11,Friday,Machine chest press,Machine chest press,1,8,70.0,0,0,,1,2026-09-14T16:11:54.333328-03:00
-9109,2026-09-11,Friday,Machine chest press,Machine chest press,1,8,70.0,0,0,,2,2026-09-14T16:11:54.333328-03:00
-9108,2026-09-11,Friday,Machine chest press,Machine chest press,1,8,70.0,0,0,,3,2026-09-14T16:11:54.333328-03:00
-9107,2026-09-11,Friday,Machine chest press,Machine chest press,1,8,70.0,0,0,,4,2026-09-14T16:11:54.333328-03:00
-9106,2026-09-11,Friday,Chest-supported row,Chest-supported row,1,11,65.0,0,0,,1,2026-09-14T16:12:38.255286-03:00
-9105,2026-09-11,Friday,Chest-supported row,Chest-supported row,1,10,65.0,0,0,,2,2026-09-14T16:12:38.255286-03:00
-9104,2026-09-11,Friday,Chest-supported row,Chest-supported row,1,10,65.0,0,0,,3,2026-09-14T16:12:38.255286-03:00
-9103,2026-09-11,Friday,Cable triceps pushdown,Cable triceps pushdown,1,10,35.0,0,0,,1,2026-09-14T16:13:49.194669-03:00
-9102,2026-09-11,Friday,Cable triceps pushdown,Cable triceps pushdown,1,10,35.0,0,0,,2,2026-09-14T16:13:49.194669-03:00
-9101,2026-09-11,Friday,Cable triceps pushdown,Cable triceps pushdown,1,10,35.0,0,0,,3,2026-09-14T16:13:49.194669-03:00
-9134,2026-09-10,Wednesday,Machine hip thrust,Machine hip thrust,1,8,120.0,0,0,,4,2026-09-14T16:10:57.882355-03:00
-9133,2026-09-10,Wednesday,Machine hip thrust,Machine hip thrust,1,8,120.0,0,0,,3,2026-09-14T16:10:57.882355-03:00
-9132,2026-09-10,Wednesday,Machine hip thrust,Machine hip thrust,1,8,120.0,0,0,,2,2026-09-14T16:10:57.882355-03:00
-9131,2026-09-10,Wednesday,Machine hip thrust,Machine hip thrust,1,8,120.0,0,0,,1,2026-09-14T16:10:57.882355-03:00
-9130,2026-09-10,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,200.0,1,0,,3,2026-09-14T16:10:17.457104-03:00
-9129,2026-09-10,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,200.0,1,0,,2,2026-09-14T16:10:17.457104-03:00
-9128,2026-09-10,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,200.0,1,0,,1,2026-09-14T16:10:17.457104-03:00
-9127,2026-09-10,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,10,87.5,1,0,,1,2026-09-14T16:09:59.646677-03:00
-9126,2026-09-10,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,9,87.5,1,0,,2,2026-09-14T16:09:59.646677-03:00
-9125,2026-09-10,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,9,87.5,1,0,,3,2026-09-14T16:09:59.646677-03:00
-9124,2026-09-10,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,9,87.5,1,0,,4,2026-09-14T16:09:59.646677-03:00
-9123,2026-09-10,Wednesday,Supported split squat or low step-up,Supported split squat or low step-up,1,8,22.0,2,0,,1,2026-09-14T16:10:35.063320-03:00
-9122,2026-09-10,Wednesday,Supported split squat or low step-up,Supported split squat or low step-up,1,8,22.0,2,0,,2,2026-09-14T16:10:35.063320-03:00
-9121,2026-09-10,Wednesday,Supported split squat or low step-up,Supported split squat or low step-up,1,8,22.0,2,0,,3,2026-09-14T16:10:35.063320-03:00
-9155,2026-09-08,Tuesday,Hammer curl,Hammer curl,1,10,10.0,0,0,,3,2026-09-09T15:39:13.073104-03:00
-9154,2026-09-08,Tuesday,Hammer curl,Hammer curl,1,10,10.0,0,0,,2,2026-09-09T15:39:13.073104-03:00
-9153,2026-09-08,Tuesday,Hammer curl,Hammer curl,1,10,10.0,0,0,,1,2026-09-09T15:39:13.073104-03:00
-9152,2026-09-08,Tuesday,Reverse pec deck,Reverse pec deck,1,12,0.0,0,0,,4,2026-09-09T15:38:32.452622-03:00
-9151,2026-09-08,Tuesday,Reverse pec deck,Reverse pec deck,1,12,35.0,0,0,,3,2026-09-09T15:38:32.452622-03:00
-9150,2026-09-08,Tuesday,Reverse pec deck,Reverse pec deck,1,15,35.0,0,0,,2,2026-09-09T15:38:32.452622-03:00
-9149,2026-09-08,Tuesday,Reverse pec deck,Reverse pec deck,1,20,35.0,0,0,,1,2026-09-09T15:38:32.452622-03:00
-9148,2026-09-08,Tuesday,Chest-supported machine row,Chest-supported machine row,1,12,65.0,0,0,,4,2026-09-09T15:37:58.106632-03:00
-9147,2026-09-08,Tuesday,Chest-supported machine row,Chest-supported machine row,1,8,65.0,0,0,,3,2026-09-09T15:37:58.106632-03:00
-9146,2026-09-08,Tuesday,Chest-supported machine row,Chest-supported machine row,1,8,65.0,0,0,,2,2026-09-09T15:37:58.106632-03:00
-9145,2026-09-08,Tuesday,Chest-supported machine row,Chest-supported machine row,1,8,65.0,0,0,,1,2026-09-09T15:37:58.106632-03:00
-9144,2026-09-08,Tuesday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,68.0,0,0,,1,2026-09-09T15:37:40.873222-03:00
-9143,2026-09-08,Tuesday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,68.0,0,0,,2,2026-09-09T15:37:40.873222-03:00
-9142,2026-09-08,Tuesday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,68.0,0,0,,3,2026-09-09T15:37:40.873222-03:00
-9141,2026-09-08,Tuesday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,7,68.0,0,0,,4,2026-09-09T15:37:40.873222-03:00
-9140,2026-09-08,Tuesday,One-arm cable row,One-arm cable row,1,12,30.0,0,0,,1,2026-09-09T15:38:16.581748-03:00
-9139,2026-09-08,Tuesday,One-arm cable row,One-arm cable row,1,12,30.0,0,0,,2,2026-09-09T15:38:16.581748-03:00
-9138,2026-09-08,Tuesday,One-arm cable row,One-arm cable row,1,12,30.0,0,0,,3,2026-09-09T15:38:16.581748-03:00
-9137,2026-09-08,Tuesday,Cable or machine curl,Cable or machine curl,1,10,46.0,0,0,,1,2026-09-09T15:39:00.333635-03:00
-9136,2026-09-08,Tuesday,Cable or machine curl,Cable or machine curl,1,10,46.0,0,0,,2,2026-09-09T15:39:00.333635-03:00
-9135,2026-09-08,Tuesday,Cable or machine curl,Cable or machine curl,1,9,46.0,0,0,,3,2026-09-09T15:39:00.333635-03:00
-9175,2026-09-07,Monday,Overhead cable triceps extension,Overhead cable triceps extension,1,10,17.5,0,0,,3,2026-09-09T15:36:59.029609-03:00
-9174,2026-09-07,Monday,Overhead cable triceps extension,Overhead cable triceps extension,1,10,17.5,0,0,,2,2026-09-09T15:36:59.029609-03:00
-9173,2026-09-07,Monday,Overhead cable triceps extension,Overhead cable triceps extension,1,10,15.0,0,0,,1,2026-09-09T15:36:59.029609-03:00
-9172,2026-09-07,Monday,Cable or machine lateral raise,Cable or machine lateral raise,1,12,6.0,0,0,,4,2026-09-09T15:35:49.582709-03:00
-9171,2026-09-07,Monday,Cable or machine lateral raise,Cable or machine lateral raise,1,12,6.0,0,0,,3,2026-09-09T15:35:49.582709-03:00
-9170,2026-09-07,Monday,Cable or machine lateral raise,Cable or machine lateral raise,1,12,6.0,0,0,,2,2026-09-09T15:35:49.582709-03:00
-9169,2026-09-07,Monday,Cable or machine lateral raise,Cable or machine lateral raise,1,20,6.0,0,0,,1,2026-09-09T15:35:49.582709-03:00
-9168,2026-09-07,Monday,Incline machine chest press,Incline machine chest press,1,6,65.0,0,0,,4,2026-09-09T15:34:35.340960-03:00
-9167,2026-09-07,Monday,Incline machine chest press,Incline machine chest press,1,8,65.0,0,0,,3,2026-09-09T15:34:35.340960-03:00
-9166,2026-09-07,Monday,Incline machine chest press,Incline machine chest press,1,8,65.0,0,0,,2,2026-09-09T15:34:35.340960-03:00
-9165,2026-09-07,Monday,Incline machine chest press,Incline machine chest press,1,8,65.0,0,0,,1,2026-09-09T15:34:35.340960-03:00
-9164,2026-09-07,Monday,Pec deck,Pec deck,1,10,65.0,0,0,,1,2026-09-09T15:34:49.850838-03:00
-9163,2026-09-07,Monday,Pec deck,Pec deck,1,10,65.0,0,0,,2,2026-09-09T15:34:49.850838-03:00
-9162,2026-09-07,Monday,Pec deck,Pec deck,1,10,65.0,0,0,,3,2026-09-09T15:34:49.850838-03:00
-9161,2026-09-07,Monday,Machine shoulder press,Machine shoulder press,1,9,32.5,0,0,,1,2026-09-09T15:35:15.598244-03:00
-9160,2026-09-07,Monday,Machine shoulder press,Machine shoulder press,1,8,35.0,0,0,,2,2026-09-09T15:35:15.598244-03:00
-9159,2026-09-07,Monday,Machine shoulder press,Machine shoulder press,1,8,35.0,0,0,,3,2026-09-09T15:35:15.598244-03:00
-9158,2026-09-07,Monday,Cable triceps pushdown,Cable triceps pushdown,1,12,30.0,0,0,,1,2026-09-09T15:36:25.615282-03:00
-9157,2026-09-07,Monday,Cable triceps pushdown,Cable triceps pushdown,1,10,30.0,0,0,,2,2026-09-09T15:36:25.615282-03:00
-9156,2026-09-07,Monday,Cable triceps pushdown,Cable triceps pushdown,1,10,32.5,0,0,,3,2026-09-09T15:36:25.615282-03:00
-9187,2026-09-06,Saturday,Leg extension,Leg extension,1,10,80.0,0,0,,3,2026-09-09T15:33:16.444154-03:00
-9186,2026-09-06,Saturday,Leg extension,Leg extension,1,10,80.0,0,0,,2,2026-09-09T15:33:16.444154-03:00
-9185,2026-09-06,Saturday,Leg extension,Leg extension,1,10,80.0,0,0,,1,2026-09-09T15:33:16.444154-03:00
-9184,2026-09-06,Saturday,Leg press,Leg press,1,10,200.0,0,0,,3,2026-09-09T15:32:30.836860-03:00
-9183,2026-09-06,Saturday,Leg press,Leg press,1,10,200.0,0,0,,2,2026-09-09T15:32:30.836860-03:00
-9182,2026-09-06,Saturday,Leg press,Leg press,1,10,200.0,0,0,,1,2026-09-09T15:32:30.836860-03:00
-9181,2026-09-06,Saturday,Seated leg curl,Seated leg curl,1,10,80.0,0,0,,1,2026-09-09T15:32:57.006423-03:00
-9180,2026-09-06,Saturday,Seated leg curl,Seated leg curl,1,10,80.0,0,0,,2,2026-09-09T15:32:57.006423-03:00
-9179,2026-09-06,Saturday,Seated leg curl,Seated leg curl,1,10,80.0,0,0,,3,2026-09-09T15:32:57.006423-03:00
-9178,2026-09-06,Saturday,Machine hip thrust,Machine hip thrust,1,10,120.0,0,0,,1,2026-09-09T15:33:32.609702-03:00
-9177,2026-09-06,Saturday,Machine hip thrust,Machine hip thrust,1,10,120.0,0,0,,2,2026-09-09T15:33:32.609702-03:00
-9176,2026-09-06,Saturday,Machine hip thrust,Machine hip thrust,1,10,120.0,0,0,,3,2026-09-09T15:33:32.609702-03:00
-9209,2026-09-05,Friday,Cable triceps pushdown,Cable triceps pushdown,1,10,31.5,0,0,,3,2026-09-09T15:29:02.005477-03:00
-9208,2026-09-05,Friday,Cable triceps pushdown,Cable triceps pushdown,1,10,31.5,0,0,,2,2026-09-09T15:29:02.005477-03:00
-9207,2026-09-05,Friday,Cable triceps pushdown,Cable triceps pushdown,1,10,31.5,0,0,,1,2026-09-09T15:29:02.005477-03:00
-9206,2026-09-05,Friday,Machine shoulder press,Machine shoulder press,1,8,70.0,0,0,,2,2026-09-09T15:25:35.758062-03:00
-9205,2026-09-05,Friday,Machine shoulder press,Machine shoulder press,1,8,65.0,0,0,,1,2026-09-09T15:25:35.758062-03:00
-9204,2026-09-05,Friday,Machine chest press,Machine chest press,1,8,65.0,0,0,,4,2026-09-09T15:24:53.251225-03:00
-9203,2026-09-05,Friday,Machine chest press,Machine chest press,1,8,65.0,0,0,,3,2026-09-09T15:24:53.251225-03:00
-9202,2026-09-05,Friday,Machine chest press,Machine chest press,1,8,65.0,0,0,,2,2026-09-09T15:24:53.251225-03:00
-9201,2026-09-05,Friday,Machine chest press,Machine chest press,1,8,65.0,0,0,,1,2026-09-09T15:24:53.251225-03:00
-9200,2026-09-05,Friday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,68.0,0,0,,1,2026-09-09T15:25:15.654715-03:00
-9199,2026-09-05,Friday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,68.0,0,0,,2,2026-09-09T15:25:15.654715-03:00
-9198,2026-09-05,Friday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,68.0,0,0,,3,2026-09-09T15:25:15.654715-03:00
-9197,2026-09-05,Friday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,68.0,0,0,,4,2026-09-09T15:25:15.654715-03:00
-9196,2026-09-05,Friday,Machine shoulder press,Machine shoulder press,1,10,32.5,0,0,,1,2026-09-09T15:26:35.323136-03:00
-9195,2026-09-05,Friday,Machine shoulder press,Machine shoulder press,1,10,32.5,0,0,,2,2026-09-09T15:26:35.323136-03:00
-9194,2026-09-05,Friday,Machine shoulder press,Machine shoulder press,1,8,32.5,0,0,,3,2026-09-09T15:26:35.323136-03:00
-9193,2026-09-05,Friday,Chest-supported row,Chest-supported row,1,8,65.0,0,0,,1,2026-09-09T15:28:41.415303-03:00
-9192,2026-09-05,Friday,Chest-supported row,Chest-supported row,1,8,70.0,0,0,,2,2026-09-09T15:28:41.415303-03:00
-9191,2026-09-05,Friday,Chest-supported row,Chest-supported row,1,8,70.0,0,0,,3,2026-09-09T15:28:41.415303-03:00
-9190,2026-09-05,Friday,Machine or cable curl,Machine or cable curl,1,10,46.0,0,0,,1,2026-09-09T15:29:54.941372-03:00
-9189,2026-09-05,Friday,Machine or cable curl,Machine or cable curl,1,10,46.0,0,0,,2,2026-09-09T15:29:54.941372-03:00
-9188,2026-09-05,Friday,Machine or cable curl,Machine or cable curl,1,7,53.0,0,0,,3,2026-09-09T15:29:54.941372-03:00
-9223,2026-09-03,Wednesday,Supported split squat or low step-up,Supported split squat or low step-up,1,10,20.0,1,0,,3,2026-09-03T21:38:40.682544-03:00
-9222,2026-09-03,Wednesday,Supported split squat or low step-up,Supported split squat or low step-up,1,10,20.0,1,0,,2,2026-09-03T21:38:40.682544-03:00
-9221,2026-09-03,Wednesday,Supported split squat or low step-up,Supported split squat or low step-up,1,8,20.0,1,0,,1,2026-09-03T21:38:40.682544-03:00
-9220,2026-09-03,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,200.0,1,0,,3,2026-09-03T21:37:30.587774-03:00
-9219,2026-09-03,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,200.0,1,0,,2,2026-09-03T21:37:30.587774-03:00
-9218,2026-09-03,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,200.0,1,0,,1,2026-09-03T21:37:30.587774-03:00
-9217,2026-09-03,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,10,87.5,0,0,,1,2026-09-03T21:38:11.819776-03:00
-9216,2026-09-03,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,11,87.5,0,0,,2,2026-09-03T21:38:11.819776-03:00
-9215,2026-09-03,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,10,87.5,0,0,,3,2026-09-03T21:38:11.819776-03:00
-9214,2026-09-03,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,8,87.5,0,0,,4,2026-09-03T21:38:11.819776-03:00
-9213,2026-09-03,Wednesday,Machine hip thrust,Machine hip thrust,1,8,120.0,1,0,,1,2026-09-03T21:39:04.000780-03:00
-9212,2026-09-03,Wednesday,Machine hip thrust,Machine hip thrust,1,8,120.0,1,0,,2,2026-09-03T21:39:04.000780-03:00
-9211,2026-09-03,Wednesday,Machine hip thrust,Machine hip thrust,1,9,120.0,1,0,,3,2026-09-03T21:39:04.000780-03:00
-9210,2026-09-03,Wednesday,Machine hip thrust,Machine hip thrust,1,8,120.0,1,0,,4,2026-09-03T21:39:04.000780-03:00
-9241,2026-09-01,Tuesday,Cable or machine curl,Cable or machine curl,1,10,46.0,0,0,,3,2026-09-03T21:36:21.760162-03:00
-9240,2026-09-01,Tuesday,Cable or machine curl,Cable or machine curl,1,10,46.0,0,0,,2,2026-09-03T21:36:21.760162-03:00
-9239,2026-09-01,Tuesday,Cable or machine curl,Cable or machine curl,1,10,46.0,0,0,,1,2026-09-03T21:36:21.760162-03:00
-9238,2026-09-01,Tuesday,Chest-supported machine row,Chest-supported machine row,1,11,0.0,0,0,,4,2026-09-03T21:35:03.786046-03:00
-9237,2026-09-01,Tuesday,Chest-supported machine row,Chest-supported machine row,1,8,0.0,0,0,,3,2026-09-03T21:35:03.786046-03:00
-9236,2026-09-01,Tuesday,Chest-supported machine row,Chest-supported machine row,1,8,0.0,0,0,,2,2026-09-03T21:35:03.786046-03:00
-9235,2026-09-01,Tuesday,Chest-supported machine row,Chest-supported machine row,1,8,65.0,0,0,,1,2026-09-03T21:35:03.786046-03:00
-9234,2026-09-01,Tuesday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,11,66.0,0,0,,1,2026-09-03T21:34:45.213763-03:00
-9233,2026-09-01,Tuesday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,9,66.0,0,0,,2,2026-09-03T21:34:45.213763-03:00
-9232,2026-09-01,Tuesday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,66.0,0,0,,3,2026-09-03T21:34:45.213763-03:00
-9231,2026-09-01,Tuesday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,66.0,0,0,,4,2026-09-03T21:34:45.213763-03:00
-9230,2026-09-01,Tuesday,Reverse pec deck,Reverse pec deck,1,20,35.0,0,0,,1,2026-09-03T21:36:00.955774-03:00
-9229,2026-09-01,Tuesday,Reverse pec deck,Reverse pec deck,1,15,35.0,0,0,,2,2026-09-03T21:36:00.955774-03:00
-9228,2026-09-01,Tuesday,Reverse pec deck,Reverse pec deck,1,12,35.0,0,0,,3,2026-09-03T21:36:00.955774-03:00
-9227,2026-09-01,Tuesday,Reverse pec deck,Reverse pec deck,1,12,37.5,0,0,,4,2026-09-03T21:36:00.955774-03:00
-9226,2026-09-01,Tuesday,Hammer curl,Hammer curl,1,11,10.0,0,0,,1,2026-09-03T21:36:39.402777-03:00
-9225,2026-09-01,Tuesday,Hammer curl,Hammer curl,1,10,10.0,0,0,,2,2026-09-03T21:36:39.402777-03:00
-9224,2026-09-01,Tuesday,Hammer curl,Hammer curl,1,10,10.0,0,0,,3,2026-09-03T21:36:39.402777-03:00
-9261,2026-08-31,Monday,Overhead cable triceps extension,Overhead cable triceps extension,1,11,12.5,0,0,,3,2026-09-03T21:25:38.129174-03:00
-9260,2026-08-31,Monday,Overhead cable triceps extension,Overhead cable triceps extension,1,10,12.5,0,0,,2,2026-09-03T21:25:38.129174-03:00
-9259,2026-08-31,Monday,Overhead cable triceps extension,Overhead cable triceps extension,1,10,12.5,0,0,,1,2026-09-03T21:25:38.129174-03:00
-9258,2026-08-31,Monday,Cable or machine lateral raise,Dumbbell lateral raise,1,8,8.0,0,0,,4,2026-09-03T20:35:25.277065-03:00
-9257,2026-08-31,Monday,Cable or machine lateral raise,Dumbbell lateral raise,1,11,8.0,0,0,,3,2026-09-03T20:35:25.277065-03:00
-9256,2026-08-31,Monday,Cable or machine lateral raise,Dumbbell lateral raise,1,12,8.0,0,0,,2,2026-09-03T20:35:25.277065-03:00
-9255,2026-08-31,Monday,Cable or machine lateral raise,Dumbbell lateral raise,1,12,7.0,0,0,,1,2026-09-03T20:35:25.277065-03:00
-9254,2026-08-31,Monday,Pec deck,Pec deck,1,10,65.0,0,0,,3,2026-09-03T20:34:20.103889-03:00
-9253,2026-08-31,Monday,Pec deck,Pec deck,1,10,65.0,0,0,,2,2026-09-03T20:34:20.103889-03:00
-9252,2026-08-31,Monday,Pec deck,Pec deck,1,15,57.5,0,0,,1,2026-09-03T20:34:20.103889-03:00
-9251,2026-08-31,Monday,Incline machine chest press,Incline machine chest press,1,8,60.0,0,0,,1,2026-09-03T20:33:51.815674-03:00
-9250,2026-08-31,Monday,Incline machine chest press,Incline machine chest press,1,8,60.0,0,0,,2,2026-09-03T20:33:51.815674-03:00
-9249,2026-08-31,Monday,Incline machine chest press,Incline machine chest press,1,8,60.0,0,0,,3,2026-09-03T20:33:51.815674-03:00
-9248,2026-08-31,Monday,Incline machine chest press,Incline machine chest press,1,8,60.0,0,0,,4,2026-09-03T20:33:51.815674-03:00
-9247,2026-08-31,Monday,Machine shoulder press,Machine shoulder press,1,8,30.0,0,0,,1,2026-09-03T20:34:39.614327-03:00
-9246,2026-08-31,Monday,Machine shoulder press,Machine shoulder press,1,9,0.0,0,0,,2,2026-09-03T20:34:39.614327-03:00
-9245,2026-08-31,Monday,Machine shoulder press,Machine shoulder press,1,8,0.0,0,0,,3,2026-09-03T20:34:39.614327-03:00
-9244,2026-08-31,Monday,Cable triceps pushdown,Cable triceps pushdown,1,10,27.5,0,0,,1,2026-09-03T20:36:00.106052-03:00
-9243,2026-08-31,Monday,Cable triceps pushdown,Cable triceps pushdown,1,11,27.5,0,0,,2,2026-09-03T20:36:00.106052-03:00
-9242,2026-08-31,Monday,Cable triceps pushdown,Cable triceps pushdown,1,10,27.5,0,0,,3,2026-09-03T20:36:00.106052-03:00
-9273,2026-08-29,Saturday,Machine hip thrust,Machine hip thrust,1,10,120.0,1,0,,3,2026-08-31T11:15:46.867911-03:00
-9272,2026-08-29,Saturday,Machine hip thrust,Machine hip thrust,1,10,120.0,1,0,,2,2026-08-31T11:15:46.867911-03:00
-9271,2026-08-29,Saturday,Machine hip thrust,Machine hip thrust,1,10,120.0,1,0,,1,2026-08-31T11:15:46.867911-03:00
-9270,2026-08-29,Saturday,Seated leg curl,Seated leg curl,1,12,80.0,0,0,,3,2026-08-31T11:15:03.101556-03:00
-9269,2026-08-29,Saturday,Seated leg curl,Seated leg curl,1,12,80.0,0,0,,2,2026-08-31T11:15:03.101556-03:00
-9268,2026-08-29,Saturday,Seated leg curl,Seated leg curl,1,12,80.0,0,0,,1,2026-08-31T11:15:03.101556-03:00
-9267,2026-08-29,Saturday,Leg press,Leg press,1,10,200.0,0,0,,1,2026-08-31T11:14:38.663214-03:00
-9266,2026-08-29,Saturday,Leg press,Leg press,1,10,200.0,0,0,,2,2026-08-31T11:14:38.663214-03:00
-9265,2026-08-29,Saturday,Leg press,Leg press,1,10,200.0,0,0,,3,2026-08-31T11:14:38.663214-03:00
-9264,2026-08-29,Saturday,Leg extension,Leg extension,1,12,72.5,0,0,,1,2026-08-31T11:15:23.983345-03:00
-9263,2026-08-29,Saturday,Leg extension,Leg extension,1,12,72.5,0,0,,2,2026-08-31T11:15:23.983345-03:00
-9262,2026-08-29,Saturday,Leg extension,Leg extension,1,12,72.5,0,0,,3,2026-08-31T11:15:23.983345-03:00
-9293,2026-08-28,Friday,Machine or cable curl,Machine or cable curl,1,10,46.0,0,0,,3,2026-08-31T11:13:39.224797-03:00
-9292,2026-08-28,Friday,Machine or cable curl,Machine or cable curl,1,10,46.0,0,0,,2,2026-08-31T11:13:39.224797-03:00
-9291,2026-08-28,Friday,Machine or cable curl,Machine or cable curl,1,10,46.0,0,0,,1,2026-08-31T11:13:39.224797-03:00
-9290,2026-08-28,Friday,Machine shoulder press,Machine shoulder press,1,8,30.0,1,0,,3,2026-08-31T11:12:41.600353-03:00
-9289,2026-08-28,Friday,Machine shoulder press,Machine shoulder press,1,8,30.0,1,0,,2,2026-08-31T11:12:41.600353-03:00
-9288,2026-08-28,Friday,Machine shoulder press,Machine shoulder press,1,12,27.5,1,0,,1,2026-08-31T11:12:41.600353-03:00
-9287,2026-08-28,Friday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,63.5,0,0,,4,2026-08-31T11:11:22.038720-03:00
-9286,2026-08-28,Friday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,63.5,0,0,,3,2026-08-31T11:11:22.038720-03:00
-9285,2026-08-28,Friday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,61.0,0,0,,2,2026-08-31T11:11:22.038720-03:00
-9284,2026-08-28,Friday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,61.0,0,0,,1,2026-08-31T11:11:22.038720-03:00
-9283,2026-08-28,Friday,Machine chest press,Machine chest press,1,8,55.0,0,0,,1,2026-08-31T11:10:30.491647-03:00
-9282,2026-08-28,Friday,Machine chest press,Machine chest press,1,8,55.0,0,0,,2,2026-08-31T11:10:30.491647-03:00
-9281,2026-08-28,Friday,Machine chest press,Machine chest press,1,8,60.0,0,0,,3,2026-08-31T11:10:30.491647-03:00
-9280,2026-08-28,Friday,Machine chest press,Machine chest press,1,9,60.0,0,0,,4,2026-08-31T11:10:30.491647-03:00
-9279,2026-08-28,Friday,Chest-supported row,Chest-supported row,1,10,65.0,0,0,,1,2026-08-31T11:12:05.906954-03:00
-9278,2026-08-28,Friday,Chest-supported row,Chest-supported row,1,8,65.0,0,0,,2,2026-08-31T11:12:05.906954-03:00
-9277,2026-08-28,Friday,Chest-supported row,Chest-supported row,1,9,65.0,0,0,,3,2026-08-31T11:12:05.906954-03:00
-9276,2026-08-28,Friday,Cable triceps pushdown,Cable triceps pushdown,1,10,27.5,0,0,,1,2026-08-31T11:13:16.989095-03:00
-9275,2026-08-28,Friday,Cable triceps pushdown,Cable triceps pushdown,1,9,30.0,0,0,,2,2026-08-31T11:13:16.989095-03:00
-9274,2026-08-28,Friday,Cable triceps pushdown,Cable triceps pushdown,1,10,30.0,0,0,,3,2026-08-31T11:13:16.989095-03:00
-9307,2026-08-26,Wednesday,Machine hip thrust,Machine hip thrust,1,8,110.0,1,0,,4,2026-08-27T07:07:27.359659-03:00
-9306,2026-08-26,Wednesday,Machine hip thrust,Machine hip thrust,1,8,110.0,1,0,,3,2026-08-27T07:07:27.359659-03:00
-9305,2026-08-26,Wednesday,Machine hip thrust,Machine hip thrust,1,8,110.0,1,0,,2,2026-08-27T07:07:27.359659-03:00
-9304,2026-08-26,Wednesday,Machine hip thrust,Machine hip thrust,1,8,110.0,1,0,,1,2026-08-27T07:07:27.359659-03:00
-9303,2026-08-26,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,9,200.0,1,0,,3,2026-08-27T07:06:31.075409-03:00
-9302,2026-08-26,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,200.0,1,0,,2,2026-08-27T07:06:31.075409-03:00
-9301,2026-08-26,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,200.0,1,0,,1,2026-08-27T07:06:31.075409-03:00
-9300,2026-08-26,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,12,80.0,0,0,,1,2026-08-27T07:06:03.451256-03:00
-9299,2026-08-26,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,12,80.0,0,0,,2,2026-08-27T07:06:03.451256-03:00
-9298,2026-08-26,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,10,80.0,0,0,,3,2026-08-27T07:06:03.451256-03:00
-9297,2026-08-26,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,8,80.0,0,0,,4,2026-08-27T07:06:03.451256-03:00
-9296,2026-08-26,Wednesday,Supported split squat or low step-up,Supported split squat or low step-up,1,8,20.0,1,0,,1,2026-08-27T07:06:55.364930-03:00
-9295,2026-08-26,Wednesday,Supported split squat or low step-up,Supported split squat or low step-up,1,8,20.0,1,0,,2,2026-08-27T07:06:55.364930-03:00
-9294,2026-08-26,Wednesday,Supported split squat or low step-up,Supported split squat or low step-up,1,8,20.0,1,0,,3,2026-08-27T07:06:55.364930-03:00
-9328,2026-08-25,Tuesday,Hammer curl,Hammer curl,1,10,10.0,0,0,,3,2026-08-25T16:29:36.363780-03:00
-9327,2026-08-25,Tuesday,Hammer curl,Hammer curl,1,10,10.0,0,0,,2,2026-08-25T16:29:36.363780-03:00
-9326,2026-08-25,Tuesday,Hammer curl,Hammer curl,1,15,9.0,0,0,,1,2026-08-25T16:29:36.363780-03:00
-9325,2026-08-25,Tuesday,Reverse pec deck,Reverse pec deck,1,12,35.0,0,0,,4,2026-08-25T16:28:48.511019-03:00
-9324,2026-08-25,Tuesday,Reverse pec deck,Reverse pec deck,1,12,35.0,0,0,,3,2026-08-25T16:28:48.511019-03:00
-9323,2026-08-25,Tuesday,Reverse pec deck,Reverse pec deck,1,16,35.0,0,0,,2,2026-08-25T16:28:48.511019-03:00
-9322,2026-08-25,Tuesday,Reverse pec deck,Reverse pec deck,1,20,35.0,0,0,,1,2026-08-25T16:28:48.511019-03:00
-9321,2026-08-25,Tuesday,Chest-supported machine row,Chest-supported machine row,1,10,60.0,0,0,,4,2026-08-25T16:25:53.635007-03:00
-9320,2026-08-25,Tuesday,Chest-supported machine row,Chest-supported machine row,1,10,60.0,0,0,,3,2026-08-25T16:25:53.635007-03:00
-9319,2026-08-25,Tuesday,Chest-supported machine row,Chest-supported machine row,1,9,60.0,0,0,,2,2026-08-25T16:25:53.635007-03:00
-9318,2026-08-25,Tuesday,Chest-supported machine row,Chest-supported machine row,1,10,60.0,0,0,,1,2026-08-25T16:25:53.635007-03:00
-9317,2026-08-25,Tuesday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,60.0,0,0,,1,2026-08-25T16:25:27.992993-03:00
-9316,2026-08-25,Tuesday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,60.0,0,0,,2,2026-08-25T16:25:27.992993-03:00
-9315,2026-08-25,Tuesday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,60.0,0,0,,3,2026-08-25T16:25:27.992993-03:00
-9314,2026-08-25,Tuesday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,60.0,0,0,,4,2026-08-25T16:25:27.992993-03:00
-9313,2026-08-25,Tuesday,One-arm cable row,One-arm cable row,1,13,20.0,2,0,,1,2026-08-25T16:27:53.264503-03:00
-9312,2026-08-25,Tuesday,One-arm cable row,One-arm cable row,1,13,20.0,2,0,,2,2026-08-25T16:27:53.264503-03:00
-9311,2026-08-25,Tuesday,One-arm cable row,One-arm cable row,1,10,20.0,2,0,,3,2026-08-25T16:27:53.264503-03:00
-9310,2026-08-25,Tuesday,Cable or machine curl,Cable or machine curl,1,12,39.0,0,0,,1,2026-08-25T16:29:16.735193-03:00
-9309,2026-08-25,Tuesday,Cable or machine curl,Cable or machine curl,1,8,46.0,0,0,,2,2026-08-25T16:29:16.735193-03:00
-9308,2026-08-25,Tuesday,Cable or machine curl,Cable or machine curl,1,8,46.0,0,0,,3,2026-08-25T16:29:16.735193-03:00
-9348,2026-08-24,Monday,Overhead cable triceps extension,Overhead cable triceps extension,1,10,13.75,1,0,,3,2026-08-24T16:59:42.836698-03:00
-9347,2026-08-24,Monday,Overhead cable triceps extension,Overhead cable triceps extension,1,10,13.75,1,0,,2,2026-08-24T16:59:42.836698-03:00
-9346,2026-08-24,Monday,Overhead cable triceps extension,Overhead cable triceps extension,1,10,13.75,1,0,,1,2026-08-24T16:59:42.836698-03:00
-9345,2026-08-24,Monday,Cable or machine lateral raise,Cable or machine lateral raise,1,12,3.75,0,0,,4,2026-08-24T16:56:15.346062-03:00
-9344,2026-08-24,Monday,Cable or machine lateral raise,Cable or machine lateral raise,1,12,6.25,0,0,,3,2026-08-24T16:56:15.346062-03:00
-9343,2026-08-24,Monday,Cable or machine lateral raise,Cable or machine lateral raise,1,12,6.25,0,0,,2,2026-08-24T16:56:15.346062-03:00
-9342,2026-08-24,Monday,Cable or machine lateral raise,Cable or machine lateral raise,1,12,6.25,0,0,,1,2026-08-24T16:56:15.346062-03:00
-9341,2026-08-24,Monday,Pec deck,Pec deck,1,10,65.0,0,0,,3,2026-08-24T16:55:19.034909-03:00
-9340,2026-08-24,Monday,Pec deck,Pec deck,1,10,65.0,0,0,,2,2026-08-24T16:55:19.034909-03:00
-9339,2026-08-24,Monday,Pec deck,Pec deck,1,13,57.5,0,0,,1,2026-08-24T16:55:19.034909-03:00
-9338,2026-08-24,Monday,Incline machine chest press,Incline machine chest press,1,12,50.0,0,0,,1,2026-08-24T16:54:56.765350-03:00
-9337,2026-08-24,Monday,Incline machine chest press,Incline machine chest press,1,11,50.0,0,0,,2,2026-08-24T16:54:56.765350-03:00
-9336,2026-08-24,Monday,Incline machine chest press,Incline machine chest press,1,8,55.0,0,0,,3,2026-08-24T16:54:56.765350-03:00
-9335,2026-08-24,Monday,Incline machine chest press,Incline machine chest press,1,8,55.0,0,0,,4,2026-08-24T16:54:56.765350-03:00
-9334,2026-08-24,Monday,Machine shoulder press,Machine shoulder press,1,10,30.0,0,0,,1,2026-08-24T16:55:37.680944-03:00
-9333,2026-08-24,Monday,Machine shoulder press,Machine shoulder press,1,9,30.0,0,0,,2,2026-08-24T16:55:37.680944-03:00
-9332,2026-08-24,Monday,Machine shoulder press,Machine shoulder press,1,8,30.0,0,0,,3,2026-08-24T16:55:37.680944-03:00
-9331,2026-08-24,Monday,Cable triceps pushdown,Cable triceps pushdown,1,12,28.75,0,0,,1,2026-08-24T16:56:56.272659-03:00
-9330,2026-08-24,Monday,Cable triceps pushdown,Cable triceps pushdown,1,10,31.25,0,0,,2,2026-08-24T16:56:56.272659-03:00
-9329,2026-08-24,Monday,Cable triceps pushdown,Cable triceps pushdown,1,9,31.25,0,0,,3,2026-08-24T16:58:53.740521-03:00
-9363,2026-08-22,Saturday,Pallof press,Pallof press,1,12,10.0,2,0,,3,2026-08-24T12:38:01.502749-03:00
-9362,2026-08-22,Saturday,Pallof press,Pallof press,1,15,10.0,2,0,,2,2026-08-24T12:38:01.502749-03:00
-9361,2026-08-22,Saturday,Pallof press,Pallof press,1,10,10.0,2,0,,1,2026-08-24T12:38:01.502749-03:00
-9360,2026-08-22,Saturday,Leg extension,Leg extension,1,12,72.5,0,0,,3,2026-08-24T12:37:20.261434-03:00
-9359,2026-08-22,Saturday,Leg extension,Leg extension,1,12,72.5,0,0,,2,2026-08-24T12:37:20.261434-03:00
-9358,2026-08-22,Saturday,Leg extension,Leg extension,1,12,72.5,0,0,,1,2026-08-24T12:37:20.261434-03:00
-9357,2026-08-22,Saturday,Leg press,Leg press,1,10,160.0,0,0,,3,2026-08-24T12:36:46.360960-03:00
-9356,2026-08-22,Saturday,Leg press,Leg press,1,10,160.0,0,0,,2,2026-08-24T12:36:46.360960-03:00
-9355,2026-08-22,Saturday,Leg press,Leg press,1,10,160.0,0,0,,1,2026-08-24T12:36:46.360960-03:00
-9354,2026-08-22,Saturday,Seated leg curl,Seated leg curl,1,10,80.0,0,0,,1,2026-08-24T12:37:03.520589-03:00
-9353,2026-08-22,Saturday,Seated leg curl,Seated leg curl,1,10,80.0,0,0,,2,2026-08-24T12:37:03.520589-03:00
-9352,2026-08-22,Saturday,Seated leg curl,Seated leg curl,1,10,80.0,0,0,,3,2026-08-24T12:37:03.520589-03:00
-9351,2026-08-22,Saturday,Machine hip thrust,Machine hip thrust,1,12,80.0,0,0,,1,2026-08-24T12:37:39.012252-03:00
-9350,2026-08-22,Saturday,Machine hip thrust,Machine hip thrust,1,12,80.0,0,0,,2,2026-08-24T12:37:39.012252-03:00
-9349,2026-08-22,Saturday,Machine hip thrust,Machine hip thrust,1,12,80.0,0,0,,3,2026-08-24T12:37:39.012252-03:00
-9383,2026-08-21,Friday,Cable triceps pushdown,Cable triceps pushdown,1,10,31.5,0,0,,3,2026-08-24T12:35:36.686856-03:00
-9382,2026-08-21,Friday,Cable triceps pushdown,Cable triceps pushdown,1,11,31.5,0,0,,2,2026-08-24T12:35:36.686856-03:00
-9381,2026-08-21,Friday,Cable triceps pushdown,Cable triceps pushdown,1,12,28.5,0,0,,1,2026-08-24T12:35:36.686856-03:00
-9380,2026-08-21,Friday,Machine shoulder press,Machine shoulder press,1,8,27.5,0,0,,3,2026-08-24T12:34:34.688248-03:00
-9379,2026-08-21,Friday,Machine shoulder press,Machine shoulder press,1,9,27.5,0,0,,2,2026-08-24T12:34:34.688248-03:00
-9378,2026-08-21,Friday,Machine shoulder press,Machine shoulder press,1,12,27.5,0,0,,1,2026-08-24T12:34:34.688248-03:00
-9377,2026-08-21,Friday,Machine chest press,Machine chest press,1,8,50.0,0,0,,4,2026-08-24T12:33:26.579740-03:00
-9376,2026-08-21,Friday,Machine chest press,Machine chest press,1,8,50.0,0,0,,3,2026-08-24T12:33:26.579740-03:00
-9375,2026-08-21,Friday,Machine chest press,Machine chest press,1,10,50.0,0,0,,2,2026-08-24T12:33:26.579740-03:00
-9374,2026-08-21,Friday,Machine chest press,Machine chest press,1,12,50.0,0,0,,1,2026-08-24T12:33:26.579740-03:00
-9373,2026-08-21,Friday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,12,59.0,0,0,,1,2026-08-24T12:34:00.273442-03:00
-9372,2026-08-21,Friday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,9,59.0,0,0,,2,2026-08-24T12:34:00.273442-03:00
-9371,2026-08-21,Friday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,61.0,0,0,,3,2026-08-24T12:34:00.273442-03:00
-9370,2026-08-21,Friday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,61.0,0,0,,4,2026-08-24T12:34:00.273442-03:00
-9369,2026-08-21,Friday,Chest-supported row,Chest-supported row,1,12,65.0,2,0,,1,2026-08-24T12:34:57.260928-03:00
-9368,2026-08-21,Friday,Chest-supported row,Chest-supported row,1,10,0.0,2,0,,2,2026-08-24T12:34:57.260928-03:00
-9367,2026-08-21,Friday,Chest-supported row,Chest-supported row,1,9,0.0,2,0,,3,2026-08-24T12:34:57.260928-03:00
-9366,2026-08-21,Friday,Machine or cable curl,Machine or cable curl,1,15,39.0,0,0,,1,2026-08-24T12:36:07.360128-03:00
-9365,2026-08-21,Friday,Machine or cable curl,Machine or cable curl,1,11,39.0,0,0,,2,2026-08-24T12:36:07.360128-03:00
-9364,2026-08-21,Friday,Machine or cable curl,Machine or cable curl,1,10,46.0,0,0,,3,2026-08-24T12:36:07.360128-03:00
-9399,2026-08-19,Wednesday,Machine crunch or dead bug,Machine crunch or dead bug,1,10,60.0,2,0,,3,2026-08-20T13:38:05.336538-03:00
-9398,2026-08-19,Wednesday,Machine crunch or dead bug,Machine crunch or dead bug,1,10,60.0,2,0,,2,2026-08-20T13:38:05.336538-03:00
-9397,2026-08-19,Wednesday,Machine crunch or dead bug,Machine crunch or dead bug,1,10,60.0,2,0,,1,2026-08-20T13:38:05.336538-03:00
-9396,2026-08-19,Wednesday,Machine hip thrust,Machine hip thrust,1,10,40.0,0,0,,3,2026-08-20T13:36:18.852402-03:00
-9395,2026-08-19,Wednesday,Machine hip thrust,Machine hip thrust,1,10,40.0,0,0,,2,2026-08-20T13:36:18.852402-03:00
-9394,2026-08-19,Wednesday,Machine hip thrust,Machine hip thrust,1,10,40.0,0,0,,1,2026-08-20T13:36:18.852402-03:00
-9393,2026-08-19,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,160.0,0,0,,3,2026-08-20T13:34:57.698644-03:00
-9392,2026-08-19,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,160.0,0,0,,2,2026-08-20T13:34:57.698644-03:00
-9391,2026-08-19,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,15,160.0,0,0,,1,2026-08-20T13:34:57.698644-03:00
-9390,2026-08-19,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,12,80.0,0,0,,1,2026-08-20T13:34:24.422625-03:00
-9389,2026-08-19,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,10,80.0,0,0,,2,2026-08-20T13:34:24.422625-03:00
-9388,2026-08-19,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,8,80.0,0,0,,3,2026-08-20T13:34:24.422625-03:00
-9387,2026-08-19,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,8,80.0,0,0,,4,2026-08-20T13:34:24.422625-03:00
-9386,2026-08-19,Wednesday,Supported split squat or low step-up,Supported split squat or low step-up,1,8,20.0,0,0,,1,2026-08-20T13:35:39.532817-03:00
-9385,2026-08-19,Wednesday,Supported split squat or low step-up,Supported split squat or low step-up,1,8,20.0,0,0,,2,2026-08-20T13:35:39.532817-03:00
-9384,2026-08-19,Wednesday,Supported split squat or low step-up,Supported split squat or low step-up,1,8,20.0,0,0,,3,2026-08-20T13:35:39.532817-03:00
-9420,2026-08-18,Tuesday,Hammer curl,Hammer curl,1,10,9.0,0,0,,3,2026-08-20T13:33:37.615483-03:00
-9419,2026-08-18,Tuesday,Hammer curl,Hammer curl,1,14,9.0,0,0,,2,2026-08-20T13:33:37.615483-03:00
-9418,2026-08-18,Tuesday,Hammer curl,Hammer curl,1,15,9.0,0,0,,1,2026-08-20T13:33:37.615483-03:00
-9417,2026-08-18,Tuesday,Reverse pec deck,Reverse pec deck,1,12,35.0,0,0,,4,2026-08-20T13:32:56.300051-03:00
-9416,2026-08-18,Tuesday,Reverse pec deck,Reverse pec deck,1,12,35.0,0,0,,3,2026-08-20T13:32:56.300051-03:00
-9415,2026-08-18,Tuesday,Reverse pec deck,Reverse pec deck,1,14,35.0,0,0,,2,2026-08-20T13:32:56.300051-03:00
-9414,2026-08-18,Tuesday,Reverse pec deck,Reverse pec deck,1,20,35.0,0,0,,1,2026-08-20T13:32:56.300051-03:00
-9413,2026-08-18,Tuesday,Chest-supported machine row,Chest-supported machine row,1,10,57.5,0,0,,4,2026-08-20T13:31:56.252146-03:00
-9412,2026-08-18,Tuesday,Chest-supported machine row,Chest-supported machine row,1,9,57.5,0,0,,3,2026-08-20T13:31:56.252146-03:00
-9411,2026-08-18,Tuesday,Chest-supported machine row,Chest-supported machine row,1,10,57.5,0,0,,2,2026-08-20T13:31:56.252146-03:00
-9410,2026-08-18,Tuesday,Chest-supported machine row,Chest-supported machine row,1,10,57.5,0,0,,1,2026-08-20T13:31:56.252146-03:00
-9409,2026-08-18,Tuesday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,12,59.0,0,0,,1,2026-08-20T13:31:26.342767-03:00
-9408,2026-08-18,Tuesday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,12,59.0,0,0,,2,2026-08-20T13:31:26.342767-03:00
-9407,2026-08-18,Tuesday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,10,59.0,0,0,,3,2026-08-20T13:31:26.342767-03:00
-9406,2026-08-18,Tuesday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,9,59.0,0,0,,4,2026-08-20T13:31:26.342767-03:00
-9405,2026-08-18,Tuesday,One-arm cable row,One-arm cable row,1,10,15.0,0,0,,1,2026-08-20T13:32:27.228789-03:00
-9404,2026-08-18,Tuesday,One-arm cable row,One-arm cable row,1,10,20.0,0,0,,2,2026-08-20T13:32:27.228789-03:00
-9403,2026-08-18,Tuesday,One-arm cable row,One-arm cable row,1,10,20.0,0,0,,3,2026-08-20T13:32:27.228789-03:00
-9402,2026-08-18,Tuesday,Cable or machine curl,Cable or machine curl,1,12,39.0,0,0,,1,2026-08-20T13:33:17.002347-03:00
-9401,2026-08-18,Tuesday,Cable or machine curl,Cable or machine curl,1,9,0.0,0,0,,2,2026-08-20T13:33:17.002347-03:00
-9400,2026-08-18,Tuesday,Cable or machine curl,Cable or machine curl,1,9,0.0,0,0,,3,2026-08-20T13:33:17.002347-03:00
-9440,2026-08-17,Monday,Overhead cable triceps extension,Overhead cable triceps extension,1,10,10.0,0,0,,3,2026-08-18T10:54:15.700949-03:00
-9439,2026-08-17,Monday,Overhead cable triceps extension,Overhead cable triceps extension,1,10,10.0,0,0,,2,2026-08-18T10:54:15.700949-03:00
-9438,2026-08-17,Monday,Overhead cable triceps extension,Overhead cable triceps extension,1,10,10.0,0,0,,1,2026-08-18T10:54:15.700949-03:00
-9437,2026-08-17,Monday,Cable or machine lateral raise,Cable or machine lateral raise,1,12,2.5,0,0,,4,2026-08-18T10:53:13.460578-03:00
-9436,2026-08-17,Monday,Cable or machine lateral raise,Cable or machine lateral raise,1,12,2.5,0,0,,3,2026-08-18T10:53:13.460578-03:00
-9435,2026-08-17,Monday,Cable or machine lateral raise,Cable or machine lateral raise,1,12,2.5,0,0,,2,2026-08-18T10:53:13.460578-03:00
-9434,2026-08-17,Monday,Cable or machine lateral raise,Cable or machine lateral raise,1,12,2.5,0,0,,1,2026-08-18T10:53:13.460578-03:00
-9433,2026-08-17,Monday,Machine shoulder press,Machine shoulder press,1,11,20.0,0,0,,3,2026-08-18T10:51:56.842732-03:00
-9432,2026-08-17,Monday,Machine shoulder press,Machine shoulder press,1,10,20.0,0,0,,2,2026-08-18T10:51:56.842732-03:00
-9431,2026-08-17,Monday,Machine shoulder press,Machine shoulder press,1,10,20.0,0,0,,1,2026-08-18T10:51:56.842732-03:00
-9430,2026-08-17,Monday,Incline machine chest press,Incline machine chest press,1,12,50.0,0,0,,1,2026-08-18T10:51:32.794740-03:00
-9429,2026-08-17,Monday,Incline machine chest press,Incline machine chest press,1,12,50.0,0,0,,2,2026-08-18T10:51:32.794740-03:00
-9428,2026-08-17,Monday,Incline machine chest press,Incline machine chest press,1,8,50.0,0,0,,3,2026-08-18T10:51:32.794740-03:00
-9427,2026-08-17,Monday,Incline machine chest press,Incline machine chest press,1,8,50.0,0,0,,4,2026-08-18T10:51:32.794740-03:00
-9426,2026-08-17,Monday,Pec deck,Pec deck,1,15,50.0,0,0,,1,2026-08-18T10:52:19.152147-03:00
-9425,2026-08-17,Monday,Pec deck,Pec deck,1,10,57.5,0,0,,2,2026-08-18T10:52:19.152147-03:00
-9424,2026-08-17,Monday,Pec deck,Pec deck,1,10,57.5,0,0,,3,2026-08-18T10:52:19.152147-03:00
-9423,2026-08-17,Monday,Cable triceps pushdown,Cable triceps pushdown,1,12,25.0,0,0,,1,2026-08-18T10:53:37.017900-03:00
-9422,2026-08-17,Monday,Cable triceps pushdown,Cable triceps pushdown,1,12,25.0,0,0,,2,2026-08-18T10:53:37.017900-03:00
-9421,2026-08-17,Monday,Cable triceps pushdown,Cable triceps pushdown,1,10,25.0,0,0,,3,2026-08-18T10:53:37.017900-03:00
-9456,2026-08-11,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,10,60.0,0,0,,4,2026-08-18T10:33:44.037653-03:00
-9455,2026-08-11,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,10,60.0,0,0,,3,2026-08-18T10:33:44.037653-03:00
-9454,2026-08-11,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,10,60.0,0,0,,2,2026-08-18T10:33:44.037653-03:00
-9453,2026-08-11,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,10,60.0,0,0,,1,2026-08-18T10:33:44.037653-03:00
-9452,2026-08-11,Saturday,Pallof press,Pallof press,1,15,12.5,2,0,,3,2026-08-18T10:42:40.697144-03:00
-9451,2026-08-11,Saturday,Pallof press,Pallof press,1,15,12.5,2,0,,2,2026-08-18T10:42:40.697144-03:00
-9450,2026-08-11,Saturday,Pallof press,Pallof press,1,15,12.5,2,0,,1,2026-08-18T10:42:40.697144-03:00
-9449,2026-08-11,Saturday,Seated leg curl,Seated leg curl,1,10,80.0,0,0,,3,2026-08-18T10:41:35.418751-03:00
-9448,2026-08-11,Saturday,Seated leg curl,Seated leg curl,1,10,80.0,0,0,,2,2026-08-18T10:41:35.418751-03:00
-9447,2026-08-11,Saturday,Seated leg curl,Seated leg curl,1,10,80.0,0,0,,1,2026-08-18T10:41:35.418751-03:00
-9446,2026-08-11,Saturday,Leg press,Leg press,1,12,160.0,0,0,,1,2026-08-18T10:41:21.208486-03:00
-9445,2026-08-11,Saturday,Leg press,Leg press,1,12,160.0,0,0,,2,2026-08-18T10:41:21.208486-03:00
-9444,2026-08-11,Saturday,Leg press,Leg press,1,10,160.0,0,0,,3,2026-08-18T10:41:21.208486-03:00
-9443,2026-08-11,Saturday,Leg extension,Leg extension,1,12,72.5,0,0,,1,2026-08-18T10:42:03.199571-03:00
-9442,2026-08-11,Saturday,Leg extension,Leg extension,1,12,72.5,0,0,,2,2026-08-18T10:42:03.199571-03:00
-9441,2026-08-11,Saturday,Leg extension,Leg extension,1,12,72.5,0,0,,3,2026-08-18T10:42:03.199571-03:00
-9476,2026-08-10,Friday,Machine or cable curl,Machine or cable curl,1,10,39.0,0,0,,3,2026-08-18T10:40:34.459842-03:00
-9475,2026-08-10,Friday,Machine or cable curl,Machine or cable curl,1,10,39.0,0,0,,2,2026-08-18T10:40:34.459842-03:00
-9474,2026-08-10,Friday,Machine or cable curl,Machine or cable curl,1,15,39.0,0,0,,1,2026-08-18T10:40:34.459842-03:00
-9473,2026-08-10,Friday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,59.0,0,0,,4,2026-08-18T10:39:38.836096-03:00
-9472,2026-08-10,Friday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,59.0,0,0,,3,2026-08-18T10:39:38.836096-03:00
-9471,2026-08-10,Friday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,59.0,0,0,,2,2026-08-18T10:39:38.836096-03:00
-9470,2026-08-10,Friday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,12,59.0,0,0,,1,2026-08-18T10:39:38.836096-03:00
-9469,2026-08-10,Friday,Chest-supported row,Chest-supported row,1,12,62.5,0,0,,3,2026-08-18T10:38:37.383726-03:00
-9468,2026-08-10,Friday,Chest-supported row,Chest-supported row,1,12,62.5,0,0,,2,2026-08-18T10:38:37.383726-03:00
-9467,2026-08-10,Friday,Chest-supported row,Chest-supported row,1,12,62.5,0,0,,1,2026-08-18T10:38:37.383726-03:00
-9466,2026-08-10,Friday,Machine chest press,Machine chest press,1,12,50.0,0,0,,1,2026-08-18T10:38:02.037138-03:00
-9465,2026-08-10,Friday,Machine chest press,Machine chest press,1,11,50.0,0,0,,2,2026-08-18T10:38:02.037138-03:00
-9464,2026-08-10,Friday,Machine chest press,Machine chest press,1,7,55.0,0,0,,3,2026-08-18T10:38:02.037138-03:00
-9463,2026-08-10,Friday,Machine chest press,Machine chest press,1,8,55.0,0,0,,4,2026-08-18T10:38:02.037138-03:00
-9462,2026-08-10,Friday,Machine shoulder press,Machine shoulder press,1,15,27.5,0,0,,1,2026-08-18T10:39:17.188420-03:00
-9461,2026-08-10,Friday,Machine shoulder press,Machine shoulder press,1,12,27.5,0,0,,2,2026-08-18T10:39:17.188420-03:00
-9460,2026-08-10,Friday,Machine shoulder press,Machine shoulder press,1,10,27.5,0,0,,3,2026-08-18T10:39:17.188420-03:00
-9459,2026-08-10,Friday,Cable triceps pushdown,Cable triceps pushdown,1,15,25.0,0,0,,1,2026-08-18T10:40:10.765306-03:00
-9458,2026-08-10,Friday,Cable triceps pushdown,Cable triceps pushdown,1,9,27.5,0,0,,2,2026-08-18T10:40:10.765306-03:00
-9457,2026-08-10,Friday,Cable triceps pushdown,Cable triceps pushdown,1,8,27.5,0,0,,3,2026-08-18T10:40:10.765306-03:00
-9488,2026-08-07,Wednesday,Machine crunch or dead bug,Machine crunch or dead bug,1,15,50.0,0,0,,3,2026-08-18T10:36:36.772400-03:00
-9487,2026-08-07,Wednesday,Machine crunch or dead bug,Machine crunch or dead bug,1,15,50.0,0,0,,2,2026-08-18T10:36:36.772400-03:00
-9486,2026-08-07,Wednesday,Machine crunch or dead bug,Machine crunch or dead bug,1,20,50.0,0,0,,1,2026-08-18T10:36:36.772400-03:00
-9485,2026-08-07,Wednesday,Supported split squat or low step-up,Supported split squat or low step-up,1,8,20.0,0,0,,3,2026-08-18T10:34:50.143404-03:00
-9484,2026-08-07,Wednesday,Supported split squat or low step-up,Supported split squat or low step-up,1,10,20.0,0,0,,2,2026-08-18T10:34:50.143404-03:00
-9483,2026-08-07,Wednesday,Supported split squat or low step-up,Supported split squat or low step-up,1,12,20.0,0,0,,1,2026-08-18T10:34:50.143404-03:00
-9482,2026-08-07,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,120.0,0,0,,1,2026-08-18T10:33:55.368613-03:00
-9481,2026-08-07,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,120.0,0,0,,2,2026-08-18T10:33:55.368613-03:00
-9480,2026-08-07,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,120.0,0,0,,3,2026-08-18T10:33:55.368613-03:00
-9479,2026-08-07,Wednesday,Machine hip thrust,Machine hip thrust,1,20,50.0,2,0,,1,2026-08-18T10:36:04.431198-03:00
-9478,2026-08-07,Wednesday,Machine hip thrust,Machine hip thrust,1,15,50.0,2,0,,2,2026-08-18T10:36:04.431198-03:00
-9477,2026-08-07,Wednesday,Machine hip thrust,Machine hip thrust,1,15,50.0,2,0,,3,2026-08-18T10:36:04.431198-03:00
-9512,2026-08-06,Tuesday,Hammer curl,Hammer curl,1,11,8.0,0,0,,3,2026-08-18T10:15:05.011610-03:00
-9511,2026-08-06,Tuesday,Hammer curl,Hammer curl,1,11,8.0,0,0,,2,2026-08-18T10:15:05.011610-03:00
-9510,2026-08-06,Tuesday,Hammer curl,Hammer curl,1,10,8.0,0,0,,1,2026-08-18T10:15:05.011610-03:00
-9509,2026-08-06,Tuesday,Reverse pec deck,Reverse pec deck,1,10,35.0,0,0,,4,2026-08-18T10:14:08.631053-03:00
-9508,2026-08-06,Tuesday,Reverse pec deck,Reverse pec deck,1,12,35.0,0,0,,3,2026-08-18T10:14:08.631053-03:00
-9507,2026-08-06,Tuesday,Reverse pec deck,Reverse pec deck,1,12,35.0,0,0,,2,2026-08-18T10:14:08.631053-03:00
-9506,2026-08-06,Tuesday,Reverse pec deck,Reverse pec deck,1,12,35.0,0,0,,1,2026-08-18T10:14:08.631053-03:00
-9505,2026-08-06,Tuesday,One-arm cable row,One-arm cable row,1,12,35.0,1,0,,3,2026-08-18T10:10:14.110415-03:00
-9504,2026-08-06,Tuesday,One-arm cable row,One-arm cable row,1,15,35.0,1,0,,2,2026-08-18T10:10:14.110415-03:00
-9503,2026-08-06,Tuesday,One-arm cable row,One-arm cable row,1,13,35.0,1,0,,1,2026-08-18T10:10:14.110415-03:00
-9502,2026-08-06,Tuesday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,11,59.0,1,0,,4,2026-08-18T10:08:51.889969-03:00
-9501,2026-08-06,Tuesday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,10,59.0,1,0,,3,2026-08-18T10:08:51.889969-03:00
-9500,2026-08-06,Tuesday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,12,59.0,1,0,,2,2026-08-18T10:08:51.889969-03:00
-9499,2026-08-06,Tuesday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,12,59.0,1,0,,1,2026-08-18T10:08:51.889969-03:00
-9498,2026-08-06,Tuesday,Chest-supported machine row,Chest-supported machine row,1,12,57.5,2,0,,1,2026-08-18T10:09:28.709683-03:00
-9497,2026-08-06,Tuesday,Chest-supported machine row,Chest-supported machine row,1,12,57.5,2,0,,2,2026-08-18T10:09:28.709683-03:00
-9496,2026-08-06,Tuesday,Chest-supported machine row,Chest-supported machine row,1,12,57.5,2,0,,3,2026-08-18T10:09:28.709683-03:00
-9495,2026-08-06,Tuesday,Chest-supported machine row,Chest-supported machine row,1,12,57.5,2,0,,4,2026-08-18T10:09:28.709683-03:00
-9494,2026-08-06,Tuesday,One-arm cable row,One-arm cable row,1,20,35.0,1,0,,1,2026-08-18T10:13:42.517596-03:00
-9493,2026-08-06,Tuesday,One-arm cable row,One-arm cable row,1,13,35.0,1,0,,2,2026-08-18T10:13:42.517596-03:00
-9492,2026-08-06,Tuesday,One-arm cable row,One-arm cable row,1,15,35.0,1,0,,3,2026-08-18T10:13:42.517596-03:00
-9491,2026-08-06,Tuesday,Cable or machine curl,Cable or machine curl,1,12,39.0,0,0,,1,2026-08-18T10:14:44.096159-03:00
-9490,2026-08-06,Tuesday,Cable or machine curl,Cable or machine curl,1,10,39.0,0,0,,2,2026-08-18T10:14:44.096159-03:00
-9489,2026-08-06,Tuesday,Cable or machine curl,Cable or machine curl,1,9,39.0,0,0,,3,2026-08-18T10:14:44.096159-03:00
-9532,2026-08-05,Wednesday,Cable triceps pushdown,Cable triceps pushdown,1,10,27.5,0,0,,3,2026-08-06T07:37:00.919542-03:00
-9531,2026-08-05,Wednesday,Cable triceps pushdown,Cable triceps pushdown,1,10,27.5,0,0,,2,2026-08-06T07:37:00.919542-03:00
-9530,2026-08-05,Wednesday,Cable triceps pushdown,Cable triceps pushdown,1,13,27.5,0,0,,1,2026-08-06T07:37:00.919542-03:00
-9529,2026-08-05,Wednesday,Machine shoulder press,Machine shoulder press,1,8,27.5,0,0,,3,2026-08-06T07:35:53.797348-03:00
-9528,2026-08-05,Wednesday,Machine shoulder press,Machine shoulder press,1,8,27.5,0,0,,2,2026-08-06T07:35:53.797348-03:00
-9527,2026-08-05,Wednesday,Machine shoulder press,Machine shoulder press,1,12,27.5,0,0,,1,2026-08-06T07:35:53.797348-03:00
-9526,2026-08-05,Wednesday,Incline machine chest press,Incline machine chest press,1,8,50.0,0,0,,4,2026-08-06T07:34:57.374845-03:00
-9525,2026-08-05,Wednesday,Incline machine chest press,Incline machine chest press,1,8,50.0,0,0,,3,2026-08-06T07:34:57.374845-03:00
-9524,2026-08-05,Wednesday,Incline machine chest press,Incline machine chest press,1,9,50.0,0,0,,2,2026-08-06T07:34:57.374845-03:00
-9523,2026-08-05,Wednesday,Incline machine chest press,Incline machine chest press,1,12,50.0,0,0,,1,2026-08-06T07:34:57.374845-03:00
-9522,2026-08-05,Wednesday,Pec deck,Pec deck,1,10,57.5,0,0,,1,2026-08-06T07:35:20.482713-03:00
-9521,2026-08-05,Wednesday,Pec deck,Pec deck,1,10,57.5,0,0,,2,2026-08-06T07:35:20.482713-03:00
-9520,2026-08-05,Wednesday,Pec deck,Pec deck,1,10,57.5,0,0,,3,2026-08-06T07:35:20.482713-03:00
-9519,2026-08-05,Wednesday,Cable or machine lateral raise,Cable or machine lateral raise,1,12,2.5,1,0,,1,2026-08-06T07:36:21.231948-03:00
-9518,2026-08-05,Wednesday,Cable or machine lateral raise,Cable or machine lateral raise,1,12,2.5,1,0,,2,2026-08-06T07:36:21.231948-03:00
-9517,2026-08-05,Wednesday,Cable or machine lateral raise,Cable or machine lateral raise,1,12,2.5,1,0,,3,2026-08-06T07:36:21.231948-03:00
-9516,2026-08-05,Wednesday,Cable or machine lateral raise,Cable or machine lateral raise,1,12,2.5,1,0,,4,2026-08-06T07:36:21.231948-03:00
-9515,2026-08-05,Wednesday,Overhead cable triceps extension,Overhead cable triceps extension,1,10,12.5,1,0,,1,2026-08-06T07:37:29.378641-03:00
-9514,2026-08-05,Wednesday,Overhead cable triceps extension,Overhead cable triceps extension,1,12,10.0,1,0,,2,2026-08-06T07:37:29.378641-03:00
-9513,2026-08-05,Wednesday,Overhead cable triceps extension,Overhead cable triceps extension,1,10,10.0,1,0,,3,2026-08-06T07:37:29.378641-03:00
-9552,2026-08-04,Tuesday,Machine hip thrust,Machine hip thrust,1,10,80.0,0,0,,3,2026-08-06T07:33:38.730402-03:00
-9551,2026-08-04,Tuesday,Machine hip thrust,Machine hip thrust,1,11,80.0,0,0,,2,2026-08-06T07:33:38.730402-03:00
-9550,2026-08-04,Tuesday,Machine hip thrust,Machine hip thrust,1,10,80.0,0,0,,1,2026-08-06T07:33:38.730402-03:00
-9549,2026-08-04,Tuesday,Seated leg curl,Seated leg curl,1,10,80.0,0,0,,3,2026-08-06T07:33:00.774876-03:00
-9548,2026-08-04,Tuesday,Seated leg curl,Seated leg curl,1,10,80.0,0,0,,2,2026-08-06T07:33:00.774876-03:00
-9547,2026-08-04,Tuesday,Seated leg curl,Seated leg curl,1,10,80.0,0,0,,1,2026-08-06T07:33:00.774876-03:00
-9546,2026-08-04,Tuesday,Leg press,Leg press,1,10,160.0,0,0,,2,2026-08-06T07:28:09.440642-03:00
-9545,2026-08-04,Tuesday,Leg press,Leg press,1,10,160.0,0,0,,1,2026-08-06T07:28:09.440642-03:00
-9544,2026-08-04,Tuesday,Pallof press,Pallof press,1,20,10.0,2,0,,1,2026-08-06T07:29:13.842064-03:00
-9543,2026-08-04,Tuesday,Pallof press,Pallof press,1,20,10.0,2,0,,2,2026-08-06T07:29:13.842064-03:00
-9542,2026-08-04,Tuesday,Pallof press,Pallof press,1,20,10.0,2,0,,3,2026-08-06T07:29:13.842064-03:00
-9541,2026-08-04,Tuesday,Pallof press,Pallof press,1,20,10.0,0,0,,1,2026-08-06T07:30:07.570678-03:00
-9540,2026-08-04,Tuesday,Pallof press,Pallof press,1,20,10.0,0,0,,2,2026-08-06T07:30:07.570678-03:00
-9539,2026-08-04,Tuesday,Pallof press,Pallof press,1,15,10.0,0,0,,3,2026-08-06T07:30:07.570678-03:00
-9538,2026-08-04,Tuesday,Leg extension,Leg extension,1,12,72.5,0,0,,1,2026-08-06T07:33:22.028078-03:00
-9537,2026-08-04,Tuesday,Leg extension,Leg extension,1,12,72.5,0,0,,2,2026-08-06T07:33:22.028078-03:00
-9536,2026-08-04,Tuesday,Leg extension,Leg extension,1,12,72.5,0,0,,3,2026-08-06T07:33:22.028078-03:00
-9535,2026-08-04,Tuesday,Seated calf raise,Seated calf raise,1,12,40.0,2,0,,1,2026-08-06T07:34:00.289436-03:00
-9534,2026-08-04,Tuesday,Seated calf raise,Seated calf raise,1,12,40.0,2,0,,2,2026-08-06T07:34:00.289436-03:00
-9533,2026-08-04,Tuesday,Seated calf raise,Seated calf raise,1,12,40.0,2,0,,3,2026-08-06T07:34:00.289436-03:00
-9572,2026-08-03,Monday,Cable triceps pushdown,Cable triceps pushdown,1,12,27.5,0,0,,3,2026-08-03T21:25:49.871868-03:00
-9571,2026-08-03,Monday,Cable triceps pushdown,Cable triceps pushdown,1,13,27.5,0,0,,2,2026-08-03T21:25:49.871868-03:00
-9570,2026-08-03,Monday,Cable triceps pushdown,Cable triceps pushdown,1,15,27.5,0,0,,1,2026-08-03T21:25:49.871868-03:00
-9569,2026-08-03,Monday,Machine shoulder press,Machine shoulder press,1,10,27.5,0,0,,3,2026-08-03T21:24:44.059867-03:00
-9568,2026-08-03,Monday,Machine shoulder press,Machine shoulder press,1,12,27.5,0,0,,2,2026-08-03T21:24:44.059867-03:00
-9567,2026-08-03,Monday,Machine shoulder press,Machine shoulder press,1,12,27.5,0,0,,1,2026-08-03T21:24:44.059867-03:00
-9566,2026-08-03,Monday,Machine chest press,Machine chest press,1,8,50.0,0,0,,4,2026-08-03T21:23:24.401425-03:00
-9565,2026-08-03,Monday,Machine chest press,Machine chest press,1,8,50.0,0,0,,3,2026-08-03T21:23:24.401425-03:00
-9564,2026-08-03,Monday,Machine chest press,Machine chest press,1,10,50.0,0,0,,2,2026-08-03T21:23:24.401425-03:00
-9563,2026-08-03,Monday,Machine chest press,Machine chest press,1,12,50.0,0,0,,1,2026-08-03T21:23:24.401425-03:00
-9562,2026-08-03,Monday,Chest-supported row,Chest-supported row,1,12,57.5,0,0,,1,2026-08-03T21:24:12.844907-03:00
-9561,2026-08-03,Monday,Chest-supported row,Chest-supported row,1,12,57.5,0,0,,2,2026-08-03T21:24:12.844907-03:00
-9560,2026-08-03,Monday,Chest-supported row,Chest-supported row,1,12,57.5,0,0,,3,2026-08-03T21:24:12.844907-03:00
-9559,2026-08-03,Monday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,59.0,0,0,,1,2026-08-03T21:25:09.852964-03:00
-9558,2026-08-03,Monday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,12,54.0,0,0,,2,2026-08-03T21:25:09.852964-03:00
-9557,2026-08-03,Monday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,54.0,0,0,,3,2026-08-03T21:25:09.852964-03:00
-9556,2026-08-03,Monday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,54.0,0,0,,4,2026-08-03T21:25:09.852964-03:00
-9555,2026-08-03,Monday,Machine or cable curl,Machine or cable curl,1,13,39.0,0,0,,1,2026-08-03T21:26:12.809714-03:00
-9554,2026-08-03,Monday,Machine or cable curl,Machine or cable curl,1,10,39.0,0,0,,2,2026-08-03T21:26:12.809714-03:00
-9553,2026-08-03,Monday,Machine or cable curl,Machine or cable curl,1,10,39.0,0,0,,3,2026-08-03T21:26:12.809714-03:00
-9592,2026-08-01,Friday,Machine hip thrust,Machine hip thrust,1,10,80.0,2,0,,4,2026-08-01T15:01:51.132724-03:00
-9591,2026-08-01,Friday,Machine hip thrust,Machine hip thrust,1,8,80.0,2,0,,3,2026-08-01T15:01:51.132724-03:00
-9590,2026-08-01,Friday,Machine hip thrust,Machine hip thrust,1,8,40.0,2,0,,2,2026-08-01T15:01:51.132724-03:00
-9589,2026-08-01,Friday,Machine hip thrust,Machine hip thrust,1,12,0.0,2,0,,1,2026-08-01T15:01:51.132724-03:00
-9588,2026-08-01,Friday,Supported split squat or low step-up,Supported split squat or low step-up,1,10,10.0,2,0,,3,2026-08-01T14:57:14.333722-03:00
-9587,2026-08-01,Friday,Supported split squat or low step-up,Supported split squat or low step-up,1,10,10.0,2,0,,2,2026-08-01T14:57:14.333722-03:00
-9586,2026-08-01,Friday,Supported split squat or low step-up,Supported split squat or low step-up,1,10,0.0,2,0,,1,2026-08-01T14:57:14.333722-03:00
-9585,2026-08-01,Friday,Seated or lying leg curl,Seated or lying leg curl,1,8,80.0,0,0,,4,2026-08-01T14:55:46.655014-03:00
-9584,2026-08-01,Friday,Seated or lying leg curl,Seated or lying leg curl,1,8,80.0,0,0,,3,2026-08-01T14:55:46.655014-03:00
-9583,2026-08-01,Friday,Seated or lying leg curl,Seated or lying leg curl,1,8,80.0,0,0,,2,2026-08-01T14:55:46.655014-03:00
-9582,2026-08-01,Friday,Seated or lying leg curl,Seated or lying leg curl,1,8,80.0,0,0,,1,2026-08-01T14:55:46.655014-03:00
-9581,2026-08-01,Friday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,160.0,0,0,,1,2026-08-01T14:56:31.592403-03:00
-9580,2026-08-01,Friday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,160.0,0,0,,2,2026-08-01T14:56:31.592403-03:00
-9579,2026-08-01,Friday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,160.0,0,0,,3,2026-08-01T14:56:31.592403-03:00
-9578,2026-08-01,Friday,Seated calf raise,Seated calf raise,1,15,40.0,3,0,,1,2026-08-01T14:58:06.158021-03:00
-9577,2026-08-01,Friday,Seated calf raise,Seated calf raise,1,15,40.0,3,0,,2,2026-08-01T14:58:06.158021-03:00
-9576,2026-08-01,Friday,Seated calf raise,Seated calf raise,1,15,40.0,3,0,,3,2026-08-01T14:58:06.158021-03:00
-9575,2026-08-01,Friday,Machine crunch or dead bug,Machine crunch or dead bug,1,12,80.0,0,0,,1,2026-08-01T15:02:44.637698-03:00
-9574,2026-08-01,Friday,Machine crunch or dead bug,Machine crunch or dead bug,1,12,80.0,0,0,,2,2026-08-01T15:02:44.637698-03:00
-9573,2026-08-01,Friday,Machine crunch or dead bug,Machine crunch or dead bug,1,10,80.0,0,0,,3,2026-08-01T15:02:44.637698-03:00
-9613,2026-07-31,Thursday,Cable or machine curl,Cable or machine curl,1,8,39.0,0,0,,3,2026-08-01T15:49:57.943489-03:00
-9612,2026-07-31,Thursday,Cable or machine curl,Cable or machine curl,1,10,39.0,0,0,,2,2026-08-01T15:49:57.943489-03:00
-9611,2026-07-31,Thursday,Cable or machine curl,Cable or machine curl,1,14,39.0,0,0,,1,2026-08-01T15:49:57.943489-03:00
-9610,2026-07-31,Thursday,One-arm cable row,One-arm cable row,1,12,0.0,1,0,,3,2026-08-01T15:48:33.822403-03:00
-9609,2026-07-31,Thursday,One-arm cable row,One-arm cable row,1,12,0.0,1,0,,2,2026-08-01T15:48:33.822403-03:00
-9608,2026-07-31,Thursday,One-arm cable row,One-arm cable row,1,12,15.0,1,0,,1,2026-08-01T15:48:33.822403-03:00
-9607,2026-07-31,Thursday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,59.0,0,0,,4,2026-08-01T15:46:16.899835-03:00
-9606,2026-07-31,Thursday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,59.0,0,0,,3,2026-08-01T15:46:16.899835-03:00
-9605,2026-07-31,Thursday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,59.0,0,0,,2,2026-08-01T15:46:16.899835-03:00
-9604,2026-07-31,Thursday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,59.0,0,0,,1,2026-08-01T15:46:16.899835-03:00
-9603,2026-07-31,Thursday,Chest-supported machine row,Chest-supported machine row,1,8,52.5,0,0,,1,2026-08-01T15:47:24.229334-03:00
-9602,2026-07-31,Thursday,Chest-supported machine row,Chest-supported machine row,1,10,52.5,0,0,,2,2026-08-01T15:47:24.229334-03:00
-9601,2026-07-31,Thursday,Chest-supported machine row,Chest-supported machine row,1,10,52.5,0,0,,3,2026-08-01T15:47:24.229334-03:00
-9600,2026-07-31,Thursday,Chest-supported machine row,Chest-supported machine row,1,9,57.5,0,0,,4,2026-08-01T15:47:24.229334-03:00
-9599,2026-07-31,Thursday,Reverse pec deck,Reverse pec deck,1,12,35.0,0,0,,1,2026-08-01T15:49:32.781373-03:00
-9598,2026-07-31,Thursday,Reverse pec deck,Reverse pec deck,1,12,35.0,0,0,,2,2026-08-01T15:49:32.781373-03:00
-9597,2026-07-31,Thursday,Reverse pec deck,Reverse pec deck,1,12,35.0,0,0,,3,2026-08-01T15:49:32.781373-03:00
-9596,2026-07-31,Thursday,Reverse pec deck,Reverse pec deck,1,12,35.0,0,0,,4,2026-08-01T15:49:32.781373-03:00
-9595,2026-07-31,Thursday,Hammer curl,Hammer curl,1,10,7.0,0,0,,1,2026-08-01T15:50:15.556742-03:00
-9594,2026-07-31,Thursday,Hammer curl,Hammer curl,1,12,0.0,0,0,,2,2026-08-01T15:50:15.556742-03:00
-9593,2026-07-31,Thursday,Hammer curl,Hammer curl,1,10,0.0,0,0,,3,2026-08-01T15:50:15.556742-03:00
-9632,2026-07-30,Wednesday,Cable triceps pushdown,Cable triceps pushdown,1,11,28.75,1,0,,3,2026-07-30T16:32:44.808021-03:00
-9631,2026-07-30,Wednesday,Cable triceps pushdown,Cable triceps pushdown,1,12,28.75,1,0,,2,2026-07-30T16:32:44.808021-03:00
-9630,2026-07-30,Wednesday,Cable triceps pushdown,Cable triceps pushdown,1,11,28.75,1,0,,1,2026-07-30T16:32:44.808021-03:00
-9629,2026-07-30,Wednesday,Machine shoulder press,Machine shoulder press,1,8,27.5,0,0,,3,2026-07-30T16:30:13.846701-03:00
-9628,2026-07-30,Wednesday,Machine shoulder press,Machine shoulder press,1,8,27.5,0,0,,2,2026-07-30T16:30:13.846701-03:00
-9627,2026-07-30,Wednesday,Machine shoulder press,Machine shoulder press,1,8,27.5,0,0,,1,2026-07-30T16:30:13.846701-03:00
-9626,2026-07-30,Wednesday,Incline machine chest press,Incline machine chest press,1,8,52.5,0,0,,4,2026-07-30T16:26:52.948150-03:00
-9625,2026-07-30,Wednesday,Incline machine chest press,Incline machine chest press,1,8,50.0,0,0,,3,2026-07-30T16:26:52.948150-03:00
-9624,2026-07-30,Wednesday,Incline machine chest press,Incline machine chest press,1,8,50.0,0,0,,2,2026-07-30T16:26:52.948150-03:00
-9623,2026-07-30,Wednesday,Incline machine chest press,Incline machine chest press,1,8,50.0,0,0,,1,2026-07-30T16:26:52.948150-03:00
-9622,2026-07-30,Wednesday,Pec deck,Pec deck,1,10,57.5,0,0,,1,2026-07-30T16:29:15.244179-03:00
-9621,2026-07-30,Wednesday,Pec deck,Pec deck,1,10,57.5,0,0,,2,2026-07-30T16:29:15.244179-03:00
-9620,2026-07-30,Wednesday,Pec deck,Pec deck,1,10,57.5,0,0,,3,2026-07-30T16:29:15.244179-03:00
-9619,2026-07-30,Wednesday,Cable or machine lateral raise,Cable or machine lateral raise,1,16,3.75,0,0,,1,2026-07-30T16:32:02.852330-03:00
-9618,2026-07-30,Wednesday,Cable or machine lateral raise,Cable or machine lateral raise,1,12,4.375,0,0,,2,2026-07-30T16:32:02.852330-03:00
-9617,2026-07-30,Wednesday,Cable or machine lateral raise,Cable or machine lateral raise,1,12,4.375,0,0,,3,2026-07-30T16:32:02.852330-03:00
-9616,2026-07-30,Wednesday,Overhead cable triceps extension,Overhead cable triceps extension,1,10,11.25,1,0,,1,2026-07-30T16:33:13.024744-03:00
-9615,2026-07-30,Wednesday,Overhead cable triceps extension,Overhead cable triceps extension,1,10,11.25,1,0,,2,2026-07-30T16:33:13.024744-03:00
-9614,2026-07-30,Wednesday,Overhead cable triceps extension,Overhead cable triceps extension,1,11,11.25,1,0,,3,2026-07-30T16:33:13.024744-03:00
-9638,2026-07-28,Tuesday,Leg press,Leg press,1,9,160.0,0,0,,3,2026-07-28T14:53:31.816753-03:00
-9637,2026-07-28,Tuesday,Leg press,Leg press,1,10,160.0,0,0,,2,2026-07-28T14:53:31.816753-03:00
-9636,2026-07-28,Tuesday,Leg press,Leg press,1,10,160.0,0,0,,1,2026-07-28T14:53:31.816753-03:00
-9635,2026-07-28,Tuesday,Seated leg curl,Seated leg curl,1,12,72.5,0,0,,1,2026-07-28T15:00:25.188491-03:00
-9634,2026-07-28,Tuesday,Seated leg curl,Seated leg curl,1,10,72.5,0,0,,2,2026-07-28T15:00:25.188491-03:00
-9633,2026-07-28,Tuesday,Seated leg curl,Seated leg curl,1,10,72.5,0,0,,3,2026-07-28T15:00:25.188491-03:00
-9658,2026-07-27,Monday,Machine or cable curl,Machine or cable curl,1,8,39.0,0,0,,3,2026-07-27T12:00:00.000000-03:00
-9657,2026-07-27,Monday,Machine or cable curl,Machine or cable curl,1,8,39.0,0,0,,2,2026-07-27T12:00:00.000000-03:00
-9656,2026-07-27,Monday,Machine or cable curl,Machine or cable curl,1,10,39.0,0,0,,1,2026-07-27T12:00:00.000000-03:00
-9655,2026-07-27,Monday,Cable triceps pushdown,Cable triceps pushdown,1,8,27.5,0,0,,3,2026-07-27T12:00:01.000000-03:00
-9654,2026-07-27,Monday,Cable triceps pushdown,Cable triceps pushdown,1,10,27.5,0,0,,2,2026-07-27T12:00:01.000000-03:00
-9653,2026-07-27,Monday,Cable triceps pushdown,Cable triceps pushdown,1,10,27.5,0,0,,1,2026-07-27T12:00:01.000000-03:00
-9652,2026-07-27,Monday,Machine shoulder press,Machine shoulder press,1,8,27.5,0,0,,3,2026-07-27T12:00:02.000000-03:00
-9651,2026-07-27,Monday,Machine shoulder press,Machine shoulder press,1,8,27.5,0,0,,2,2026-07-27T12:00:02.000000-03:00
-9650,2026-07-27,Monday,Machine shoulder press,Machine shoulder press,1,10,27.5,0,0,,1,2026-07-27T12:00:02.000000-03:00
-9649,2026-07-27,Monday,Chest-supported row,Chest-supported row,1,8,57.5,0,0,,3,2026-07-27T12:00:03.000000-03:00
-9648,2026-07-27,Monday,Chest-supported row,Chest-supported row,1,8,57.5,0,0,,2,2026-07-27T12:00:03.000000-03:00
-9647,2026-07-27,Monday,Chest-supported row,Chest-supported row,1,12,50.0,0,0,,1,2026-07-27T12:00:03.000000-03:00
-9646,2026-07-27,Monday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,7,59.0,0,0,,4,2026-07-27T12:00:04.000000-03:00
-9645,2026-07-27,Monday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,7,59.0,0,0,,3,2026-07-27T12:00:04.000000-03:00
-9644,2026-07-27,Monday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,59.0,0,0,,2,2026-07-27T12:00:04.000000-03:00
-9643,2026-07-27,Monday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,59.0,0,0,,1,2026-07-27T12:00:04.000000-03:00
-9642,2026-07-27,Monday,Machine chest press,Machine chest press,1,6,50.0,0,0,,4,2026-07-27T12:00:05.000000-03:00
-9641,2026-07-27,Monday,Machine chest press,Machine chest press,1,8,50.0,0,0,,3,2026-07-27T12:00:05.000000-03:00
-9640,2026-07-27,Monday,Machine chest press,Machine chest press,1,8,50.0,0,0,,2,2026-07-27T12:00:05.000000-03:00
-9639,2026-07-27,Monday,Machine chest press,Machine chest press,1,8,50.0,0,0,,1,2026-07-27T12:00:05.000000-03:00
-9671,2026-07-25,Saturday,Machine crunch or dead bug,Machine crunch or dead bug,1,10,80.0,2,0,,3,2026-07-25T12:00:06.000000-03:00
-9670,2026-07-25,Saturday,Machine crunch or dead bug,Machine crunch or dead bug,1,10,80.0,2,0,,2,2026-07-25T12:00:06.000000-03:00
-9669,2026-07-25,Saturday,Machine crunch or dead bug,Machine crunch or dead bug,1,10,80.0,2,0,,1,2026-07-25T12:00:06.000000-03:00
-9668,2026-07-25,Saturday,Supported split squat or low step-up,Supported split squat or low step-up,1,8,0.0,2,0,,3,2026-07-25T12:00:07.000000-03:00
-9667,2026-07-25,Saturday,Supported split squat or low step-up,Supported split squat or low step-up,1,8,0.0,2,0,,2,2026-07-25T12:00:07.000000-03:00
-9666,2026-07-25,Saturday,Supported split squat or low step-up,Supported split squat or low step-up,1,8,0.0,2,0,,1,2026-07-25T12:00:07.000000-03:00
-9665,2026-07-25,Saturday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,160.0,2,0,,3,2026-07-25T12:00:08.000000-03:00
-9664,2026-07-25,Saturday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,160.0,2,0,,2,2026-07-25T12:00:08.000000-03:00
-9663,2026-07-25,Saturday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,120.0,2,0,,1,2026-07-25T12:00:08.000000-03:00
-9662,2026-07-25,Saturday,Seated or lying leg curl,Seated or lying leg curl,1,8,80.0,0,0,,4,2026-07-25T12:00:09.000000-03:00
-9661,2026-07-25,Saturday,Seated or lying leg curl,Seated or lying leg curl,1,8,80.0,0,0,,3,2026-07-25T12:00:09.000000-03:00
-9660,2026-07-25,Saturday,Seated or lying leg curl,Seated or lying leg curl,1,8,80.0,0,0,,2,2026-07-25T12:00:09.000000-03:00
-9659,2026-07-25,Saturday,Seated or lying leg curl,Seated or lying leg curl,1,12,72.5,0,0,,1,2026-07-25T12:00:09.000000-03:00
-9692,2026-07-23,Thursday,Hammer curl,Hammer curl,1,10,7.0,1,0,,3,2026-07-23T12:00:10.000000-03:00
-9691,2026-07-23,Thursday,Hammer curl,Hammer curl,1,10,7.0,1,0,,2,2026-07-23T12:00:10.000000-03:00
-9690,2026-07-23,Thursday,Hammer curl,Hammer curl,1,10,7.0,1,0,,1,2026-07-23T12:00:10.000000-03:00
-9689,2026-07-23,Thursday,Cable or machine curl,Cable or machine curl,1,8,39.0,0,0,,3,2026-07-23T12:00:11.000000-03:00
-9688,2026-07-23,Thursday,Cable or machine curl,Cable or machine curl,1,10,39.0,0,0,,2,2026-07-23T12:00:11.000000-03:00
-9687,2026-07-23,Thursday,Cable or machine curl,Cable or machine curl,1,10,34.5,0,0,,1,2026-07-23T12:00:11.000000-03:00
-9686,2026-07-23,Thursday,Reverse pec deck,Reverse pec deck,1,12,35.0,0,0,,4,2026-07-23T12:00:12.000000-03:00
-9685,2026-07-23,Thursday,Reverse pec deck,Reverse pec deck,1,12,35.0,0,0,,3,2026-07-23T12:00:12.000000-03:00
-9684,2026-07-23,Thursday,Reverse pec deck,Reverse pec deck,1,12,35.0,0,0,,2,2026-07-23T12:00:12.000000-03:00
-9683,2026-07-23,Thursday,Reverse pec deck,Reverse pec deck,1,12,42.5,0,0,,1,2026-07-23T12:00:12.000000-03:00
-9682,2026-07-23,Thursday,One-arm cable row,One-arm cable row,1,14,15.0,0,0,,3,2026-07-23T12:00:13.000000-03:00
-9681,2026-07-23,Thursday,One-arm cable row,One-arm cable row,1,12,15.0,0,0,,2,2026-07-23T12:00:13.000000-03:00
-9680,2026-07-23,Thursday,One-arm cable row,One-arm cable row,1,15,10.0,0,0,,1,2026-07-23T12:00:13.000000-03:00
-9679,2026-07-23,Thursday,Chest-supported machine row,Chest-supported machine row,1,10,52.0,0,0,,4,2026-07-23T12:00:14.000000-03:00
-9678,2026-07-23,Thursday,Chest-supported machine row,Chest-supported machine row,1,12,45.0,0,0,,3,2026-07-23T12:00:14.000000-03:00
-9677,2026-07-23,Thursday,Chest-supported machine row,Chest-supported machine row,1,12,45.0,0,0,,2,2026-07-23T12:00:14.000000-03:00
-9676,2026-07-23,Thursday,Chest-supported machine row,Chest-supported machine row,1,12,39.0,0,0,,1,2026-07-23T12:00:14.000000-03:00
-9675,2026-07-23,Thursday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,7,59.0,0,0,,4,2026-07-23T12:00:15.000000-03:00
-9674,2026-07-23,Thursday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,59.0,0,0,,3,2026-07-23T12:00:15.000000-03:00
-9673,2026-07-23,Thursday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,10,54.0,0,0,,2,2026-07-23T12:00:15.000000-03:00
-9672,2026-07-23,Thursday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,12,47.0,0,0,,1,2026-07-23T12:00:15.000000-03:00
-9711,2026-07-22,Wednesday,Overhead cable triceps extension,Overhead cable triceps extension,1,10,10.0,1,0,,3,2026-07-22T12:00:16.000000-03:00
-9710,2026-07-22,Wednesday,Overhead cable triceps extension,Overhead cable triceps extension,1,10,10.0,1,0,,2,2026-07-22T12:00:16.000000-03:00
-9709,2026-07-22,Wednesday,Overhead cable triceps extension,Overhead cable triceps extension,1,13,10.0,1,0,,1,2026-07-22T12:00:16.000000-03:00
-9708,2026-07-22,Wednesday,Cable triceps pushdown,Cable triceps pushdown,1,8,27.5,0,0,,3,2026-07-22T12:00:17.000000-03:00
-9707,2026-07-22,Wednesday,Cable triceps pushdown,Cable triceps pushdown,1,10,27.5,0,0,,2,2026-07-22T12:00:17.000000-03:00
-9706,2026-07-22,Wednesday,Cable triceps pushdown,Cable triceps pushdown,1,12,27.5,0,0,,1,2026-07-22T12:00:17.000000-03:00
-9705,2026-07-22,Wednesday,Cable or machine lateral raise,Cable or machine lateral raise,1,10,5.0,2,0,,3,2026-07-22T12:00:18.000000-03:00
-9704,2026-07-22,Wednesday,Cable or machine lateral raise,Cable or machine lateral raise,1,12,5.0,2,0,,2,2026-07-22T12:00:18.000000-03:00
-9703,2026-07-22,Wednesday,Cable or machine lateral raise,Cable or machine lateral raise,1,20,2.5,2,0,,1,2026-07-22T12:00:18.000000-03:00
-9702,2026-07-22,Wednesday,Machine shoulder press,Machine shoulder press,1,9,25.5,0,0,,3,2026-07-22T12:00:19.000000-03:00
-9701,2026-07-22,Wednesday,Machine shoulder press,Machine shoulder press,1,8,27.5,0,0,,2,2026-07-22T12:00:19.000000-03:00
-9700,2026-07-22,Wednesday,Machine shoulder press,Machine shoulder press,1,15,20.0,0,0,,1,2026-07-22T12:00:19.000000-03:00
-9699,2026-07-22,Wednesday,Pec deck,Pec deck,1,9,57.5,0,0,,3,2026-07-22T12:00:20.000000-03:00
-9698,2026-07-22,Wednesday,Pec deck,Pec deck,1,8,57.5,0,0,,2,2026-07-22T12:00:20.000000-03:00
-9697,2026-07-22,Wednesday,Pec deck,Pec deck,1,11,57.5,0,0,,1,2026-07-22T12:00:20.000000-03:00
-9696,2026-07-22,Wednesday,Incline machine chest press,Incline machine chest press,1,8,50.0,0,0,,4,2026-07-22T12:00:21.000000-03:00
-9695,2026-07-22,Wednesday,Incline machine chest press,Incline machine chest press,1,8,50.0,0,0,,3,2026-07-22T12:00:21.000000-03:00
-9694,2026-07-22,Wednesday,Incline machine chest press,Incline machine chest press,1,12,40.0,0,0,,2,2026-07-22T12:00:21.000000-03:00
-9693,2026-07-22,Wednesday,Incline machine chest press,Incline machine chest press,1,13,30.0,0,0,,1,2026-07-22T12:00:21.000000-03:00
-9720,2026-07-21,Tuesday,Leg extension,Leg extension,1,10,72.5,0,0,,3,2026-07-21T12:00:22.000000-03:00
-9719,2026-07-21,Tuesday,Leg extension,Leg extension,1,12,72.5,0,0,,2,2026-07-21T12:00:22.000000-03:00
-9718,2026-07-21,Tuesday,Leg extension,Leg extension,1,12,72.5,0,0,,1,2026-07-21T12:00:22.000000-03:00
-9717,2026-07-21,Tuesday,Seated leg curl,Seated leg curl,1,10,72.5,1,0,,3,2026-07-21T12:00:23.000000-03:00
-9716,2026-07-21,Tuesday,Seated leg curl,Seated leg curl,1,10,72.5,1,0,,2,2026-07-21T12:00:23.000000-03:00
-9715,2026-07-21,Tuesday,Seated leg curl,Seated leg curl,1,11,72.5,1,0,,1,2026-07-21T12:00:23.000000-03:00
-9714,2026-07-21,Tuesday,Leg press,Leg press,1,11,150.0,2,0,,3,2026-07-21T12:00:24.000000-03:00
-9713,2026-07-21,Tuesday,Leg press,Leg press,1,11,130.0,2,0,,2,2026-07-21T12:00:24.000000-03:00
-9712,2026-07-21,Tuesday,Leg press,Leg press,1,15,90.0,2,0,,1,2026-07-21T12:00:24.000000-03:00
-9740,2026-07-20,Monday,Machine or dumbbell curl,Machine or dumbbell curl,1,7,39.0,0,0,,3,2026-07-20T12:00:25.000000-03:00
-9739,2026-07-20,Monday,Machine or dumbbell curl,Machine or dumbbell curl,1,10,39.0,0,0,,2,2026-07-20T12:00:25.000000-03:00
-9738,2026-07-20,Monday,Machine or dumbbell curl,Machine or dumbbell curl,1,12,32.0,0,0,,1,2026-07-20T12:00:25.000000-03:00
-9737,2026-07-20,Monday,Cable triceps pushdown,Cable triceps pushdown,1,8,22.0,0,0,,3,2026-07-20T12:00:26.000000-03:00
-9736,2026-07-20,Monday,Cable triceps pushdown,Cable triceps pushdown,1,9,22.0,0,0,,2,2026-07-20T12:00:26.000000-03:00
-9735,2026-07-20,Monday,Cable triceps pushdown,Cable triceps pushdown,1,9,22.0,0,0,,1,2026-07-20T12:00:26.000000-03:00
-9734,2026-07-20,Monday,Machine shoulder press (neutral grip),Machine shoulder press (neutral grip),1,8,27.5,0,0,,3,2026-07-20T12:00:27.000000-03:00
-9733,2026-07-20,Monday,Machine shoulder press (neutral grip),Machine shoulder press (neutral grip),1,11,25.0,0,0,,2,2026-07-20T12:00:27.000000-03:00
-9732,2026-07-20,Monday,Machine shoulder press (neutral grip),Machine shoulder press (neutral grip),1,12,20.0,0,0,,1,2026-07-20T12:00:27.000000-03:00
-9731,2026-07-20,Monday,Chest-supported machine row,Chest-supported machine row,1,8,50.0,0,0,,3,2026-07-20T12:00:28.000000-03:00
-9730,2026-07-20,Monday,Chest-supported machine row,Chest-supported machine row,1,12,42.5,0,0,,2,2026-07-20T12:00:28.000000-03:00
-9729,2026-07-20,Monday,Chest-supported machine row,Chest-supported machine row,1,12,42.5,0,0,,1,2026-07-20T12:00:28.000000-03:00
-9728,2026-07-20,Monday,Lat pulldown,Lat pulldown,1,9,50.0,0,0,,4,2026-07-20T12:00:29.000000-03:00
-9727,2026-07-20,Monday,Lat pulldown,Lat pulldown,1,12,45.0,0,0,,3,2026-07-20T12:00:29.000000-03:00
-9726,2026-07-20,Monday,Lat pulldown,Lat pulldown,1,12,45.0,0,0,,2,2026-07-20T12:00:29.000000-03:00
-9725,2026-07-20,Monday,Lat pulldown,Lat pulldown,1,12,40.0,0,0,,1,2026-07-20T12:00:29.000000-03:00
-9724,2026-07-20,Monday,Machine chest press,Machine chest press,1,9,40.0,0,0,,4,2026-07-20T12:00:30.000000-03:00
-9723,2026-07-20,Monday,Machine chest press,Machine chest press,1,8,50.0,0,0,,3,2026-07-20T12:00:30.000000-03:00
-9722,2026-07-20,Monday,Machine chest press,Machine chest press,1,12,40.0,0,0,,2,2026-07-20T12:00:30.000000-03:00
-9721,2026-07-20,Monday,Machine chest press,Machine chest press,1,12,40.0,0,0,,1,2026-07-20T12:00:30.000000-03:00
+14697,2026-09-18,Friday,Machine chest press,Machine chest press,1,8,70.0,0,0,,4,2026-09-19T19:24:21.726780-03:00
+14696,2026-09-18,Friday,Machine chest press,Machine chest press,1,8,70.0,0,0,,3,2026-09-19T19:24:21.726780-03:00
+14695,2026-09-18,Friday,Machine chest press,Machine chest press,1,8,70.0,0,0,,2,2026-09-19T19:24:21.726780-03:00
+14694,2026-09-18,Friday,Machine chest press,Machine chest press,1,8,70.0,0,0,,1,2026-09-19T19:24:21.726780-03:00
+14000,2026-09-16,Wednesday,Supported split squat or low step-up,Supported split squat or low step-up,1,8,22.0,2,0,,3,2026-09-19T12:31:07.958517-03:00
+13999,2026-09-16,Wednesday,Supported split squat or low step-up,Supported split squat or low step-up,1,8,22.0,2,0,,2,2026-09-19T12:31:07.958517-03:00
+13998,2026-09-16,Wednesday,Supported split squat or low step-up,Supported split squat or low step-up,1,8,22.0,2,0,,1,2026-09-19T12:31:07.958517-03:00
+13997,2026-09-16,Wednesday,Machine hip thrust,Machine hip thrust,1,10,120.0,1,0,,1,2026-09-19T12:31:46.059172-03:00
+13996,2026-09-16,Wednesday,Machine hip thrust,Machine hip thrust,1,8,160.0,1,0,,2,2026-09-19T12:31:46.059172-03:00
+13995,2026-09-16,Wednesday,Machine hip thrust,Machine hip thrust,1,8,160.0,1,0,,3,2026-09-19T12:31:46.059172-03:00
+13994,2026-09-16,Wednesday,Machine hip thrust,Machine hip thrust,1,8,160.0,1,0,,4,2026-09-19T12:31:46.059172-03:00
+13993,2026-09-16,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,8,95.0,0,0,,4,2026-09-19T12:29:39.127712-03:00
+13992,2026-09-16,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,8,95.0,0,0,,3,2026-09-19T12:29:39.127712-03:00
+13991,2026-09-16,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,8,95.0,0,0,,2,2026-09-19T12:29:39.127712-03:00
+13990,2026-09-16,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,10,95.0,0,0,,1,2026-09-19T12:29:39.127712-03:00
+13989,2026-09-16,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,200.0,1,0,,1,2026-09-19T12:30:03.352595-03:00
+13988,2026-09-16,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,220.0,1,0,,2,2026-09-19T12:30:03.352595-03:00
+13987,2026-09-16,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,220.0,1,0,,3,2026-09-19T12:30:03.352595-03:00
+14021,2026-09-15,Tuesday,Cable or machine curl,Cable or machine curl,1,8,53.0,0,0,,3,2026-09-17T07:58:41.981677-03:00
+14020,2026-09-15,Tuesday,Cable or machine curl,Cable or machine curl,1,10,53.0,0,0,,2,2026-09-17T07:58:41.981677-03:00
+14019,2026-09-15,Tuesday,Cable or machine curl,Cable or machine curl,1,9,53.0,0,0,,1,2026-09-17T07:58:41.981677-03:00
+14018,2026-09-15,Tuesday,One-arm cable row,One-arm cable row,1,12,30.0,1,0,,3,2026-09-17T07:57:47.199513-03:00
+14017,2026-09-15,Tuesday,One-arm cable row,One-arm cable row,1,12,30.0,1,0,,2,2026-09-17T07:57:47.199513-03:00
+14016,2026-09-15,Tuesday,One-arm cable row,One-arm cable row,1,12,30.0,1,0,,1,2026-09-17T07:57:47.199513-03:00
+14015,2026-09-15,Tuesday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,60.0,0,0,,4,2026-09-17T07:56:49.587254-03:00
+14014,2026-09-15,Tuesday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,60.0,0,0,,3,2026-09-17T07:56:49.587254-03:00
+14013,2026-09-15,Tuesday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,55.0,0,0,,2,2026-09-17T07:56:49.587254-03:00
+14012,2026-09-15,Tuesday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,50.0,0,0,,1,2026-09-17T07:56:49.587254-03:00
+14011,2026-09-15,Tuesday,Chest-supported machine row,Chest-supported machine row,1,8,65.0,1,0,,1,2026-09-17T07:57:12.566179-03:00
+14010,2026-09-15,Tuesday,Chest-supported machine row,Chest-supported machine row,1,8,65.0,1,0,,2,2026-09-17T07:57:12.566179-03:00
+14009,2026-09-15,Tuesday,Chest-supported machine row,Chest-supported machine row,1,9,65.0,1,0,,3,2026-09-17T07:57:12.566179-03:00
+14008,2026-09-15,Tuesday,Chest-supported machine row,Chest-supported machine row,1,9,65.0,1,0,,4,2026-09-17T07:57:12.566179-03:00
+14007,2026-09-15,Tuesday,Reverse pec deck,Reverse pec deck,1,12,40.0,1,0,,1,2026-09-17T07:58:22.459804-03:00
+14006,2026-09-15,Tuesday,Reverse pec deck,Reverse pec deck,1,12,40.0,1,0,,2,2026-09-17T07:58:22.459804-03:00
+14005,2026-09-15,Tuesday,Reverse pec deck,Reverse pec deck,1,12,42.5,1,0,,3,2026-09-17T07:58:22.459804-03:00
+14004,2026-09-15,Tuesday,Reverse pec deck,Reverse pec deck,1,12,42.5,1,0,,4,2026-09-17T07:58:22.459804-03:00
+14003,2026-09-15,Tuesday,Hammer curl,Hammer curl,1,10,10.0,0,0,,1,2026-09-17T07:59:10.274409-03:00
+14002,2026-09-15,Tuesday,Hammer curl,Hammer curl,1,10,12.0,0,0,,2,2026-09-17T07:59:10.274409-03:00
+14001,2026-09-15,Tuesday,Hammer curl,Hammer curl,1,10,12.0,0,0,,3,2026-09-17T07:59:10.274409-03:00
+14041,2026-09-14,Monday,Cable triceps pushdown,Cable triceps pushdown,1,11,37.5,0,0,,3,2026-09-17T07:55:41.436782-03:00
+14040,2026-09-14,Monday,Cable triceps pushdown,Cable triceps pushdown,1,10,37.5,0,0,,2,2026-09-17T07:55:41.436782-03:00
+14039,2026-09-14,Monday,Cable triceps pushdown,Cable triceps pushdown,1,10,37.5,0,0,,1,2026-09-17T07:55:41.436782-03:00
+14038,2026-09-14,Monday,Machine shoulder press,Machine shoulder press,1,8,40.0,0,0,,3,2026-09-17T07:54:52.507610-03:00
+14037,2026-09-14,Monday,Machine shoulder press,Machine shoulder press,1,8,40.0,0,0,,2,2026-09-17T07:54:52.507610-03:00
+14036,2026-09-14,Monday,Machine shoulder press,Machine shoulder press,1,8,40.0,0,0,,1,2026-09-17T07:54:52.507610-03:00
+14035,2026-09-14,Monday,Incline machine chest press,Incline machine chest press,1,8,70.0,0,0,,4,2026-09-17T07:54:14.668252-03:00
+14034,2026-09-14,Monday,Incline machine chest press,Incline machine chest press,1,8,70.0,0,0,,3,2026-09-17T07:54:14.668252-03:00
+14033,2026-09-14,Monday,Incline machine chest press,Incline machine chest press,1,8,70.0,0,0,,2,2026-09-17T07:54:14.668252-03:00
+14032,2026-09-14,Monday,Incline machine chest press,Incline machine chest press,1,8,70.0,0,0,,1,2026-09-17T07:54:14.668252-03:00
+14031,2026-09-14,Monday,Pec deck,Pec deck,1,10,65.0,0,0,,1,2026-09-17T07:54:36.295028-03:00
+14030,2026-09-14,Monday,Pec deck,Pec deck,1,10,67.5,0,0,,2,2026-09-17T07:54:36.295028-03:00
+14029,2026-09-14,Monday,Pec deck,Pec deck,1,11,67.5,0,0,,3,2026-09-17T07:54:36.295028-03:00
+14028,2026-09-14,Monday,Cable or machine lateral raise,Dumbbell lateral raise,1,12,8.0,0,0,,1,2026-09-17T07:55:22.611584-03:00
+14027,2026-09-14,Monday,Cable or machine lateral raise,Dumbbell lateral raise,1,12,8.0,0,0,,2,2026-09-17T07:55:22.611584-03:00
+14026,2026-09-14,Monday,Cable or machine lateral raise,Dumbbell lateral raise,1,12,8.0,0,0,,3,2026-09-17T07:55:22.611584-03:00
+14025,2026-09-14,Monday,Cable or machine lateral raise,Dumbbell lateral raise,1,12,8.0,0,0,,4,2026-09-17T07:55:22.611584-03:00
+14024,2026-09-14,Monday,Overhead cable triceps extension,Overhead cable triceps extension,1,10,15.0,0,0,,1,2026-09-17T07:56:02.085493-03:00
+14023,2026-09-14,Monday,Overhead cable triceps extension,Overhead cable triceps extension,1,10,17.5,0,0,,2,2026-09-17T07:56:02.085493-03:00
+14022,2026-09-14,Monday,Overhead cable triceps extension,Overhead cable triceps extension,1,8,17.5,0,0,,3,2026-09-17T07:56:02.085493-03:00
+14053,2026-09-12,Saturday,Leg extension,Leg extension,1,12,87.5,0,0,,3,2026-09-17T07:52:33.887954-03:00
+14052,2026-09-12,Saturday,Leg extension,Leg extension,1,12,87.5,0,0,,2,2026-09-17T07:52:33.887954-03:00
+14051,2026-09-12,Saturday,Leg extension,Leg extension,1,12,87.5,0,0,,1,2026-09-17T07:52:33.887954-03:00
+14050,2026-09-12,Saturday,Leg press,Leg press,1,10,200.0,2,0,,3,2026-09-17T07:51:53.987226-03:00
+14049,2026-09-12,Saturday,Leg press,Leg press,1,10,200.0,2,0,,2,2026-09-17T07:51:53.987226-03:00
+14048,2026-09-12,Saturday,Leg press,Leg press,1,10,200.0,2,0,,1,2026-09-17T07:51:53.987226-03:00
+14047,2026-09-12,Saturday,Seated leg curl,Seated leg curl,1,10,95.0,0,0,,1,2026-09-17T07:52:10.490649-03:00
+14046,2026-09-12,Saturday,Seated leg curl,Seated leg curl,1,10,95.0,0,0,,2,2026-09-17T07:52:10.490649-03:00
+14045,2026-09-12,Saturday,Seated leg curl,Seated leg curl,1,10,95.0,0,0,,3,2026-09-17T07:52:10.490649-03:00
+14044,2026-09-12,Saturday,Machine hip thrust,Machine hip thrust,1,10,120.0,0,0,,1,2026-09-17T07:53:00.092406-03:00
+14043,2026-09-12,Saturday,Machine hip thrust,Machine hip thrust,1,10,120.0,0,0,,2,2026-09-17T07:53:00.092406-03:00
+14042,2026-09-12,Saturday,Machine hip thrust,Machine hip thrust,1,10,120.0,0,0,,3,2026-09-17T07:53:00.092406-03:00
+14073,2026-09-11,Friday,Cable triceps pushdown,Cable triceps pushdown,1,10,35.0,0,0,,3,2026-09-14T16:13:49.194669-03:00
+14072,2026-09-11,Friday,Cable triceps pushdown,Cable triceps pushdown,1,10,35.0,0,0,,2,2026-09-14T16:13:49.194669-03:00
+14071,2026-09-11,Friday,Cable triceps pushdown,Cable triceps pushdown,1,10,35.0,0,0,,1,2026-09-14T16:13:49.194669-03:00
+14070,2026-09-11,Friday,Chest-supported row,Chest-supported row,1,10,65.0,0,0,,3,2026-09-14T16:12:38.255286-03:00
+14069,2026-09-11,Friday,Chest-supported row,Chest-supported row,1,10,65.0,0,0,,2,2026-09-14T16:12:38.255286-03:00
+14068,2026-09-11,Friday,Chest-supported row,Chest-supported row,1,11,65.0,0,0,,1,2026-09-14T16:12:38.255286-03:00
+14067,2026-09-11,Friday,Machine chest press,Machine chest press,1,8,70.0,0,0,,4,2026-09-14T16:11:54.333328-03:00
+14066,2026-09-11,Friday,Machine chest press,Machine chest press,1,8,70.0,0,0,,3,2026-09-14T16:11:54.333328-03:00
+14065,2026-09-11,Friday,Machine chest press,Machine chest press,1,8,70.0,0,0,,2,2026-09-14T16:11:54.333328-03:00
+14064,2026-09-11,Friday,Machine chest press,Machine chest press,1,8,70.0,0,0,,1,2026-09-14T16:11:54.333328-03:00
+14063,2026-09-11,Friday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,68.0,0,0,,1,2026-09-14T16:12:13.338113-03:00
+14062,2026-09-11,Friday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,68.0,0,0,,2,2026-09-14T16:12:13.338113-03:00
+14061,2026-09-11,Friday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,68.0,0,0,,3,2026-09-14T16:12:13.338113-03:00
+14060,2026-09-11,Friday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,68.0,0,0,,4,2026-09-14T16:12:13.338113-03:00
+14059,2026-09-11,Friday,Machine shoulder press,Machine shoulder press,1,8,35.0,0,0,,1,2026-09-14T16:13:16.721330-03:00
+14058,2026-09-11,Friday,Machine shoulder press,Machine shoulder press,1,8,35.0,0,0,,2,2026-09-14T16:13:16.721330-03:00
+14057,2026-09-11,Friday,Machine shoulder press,Machine shoulder press,1,8,35.0,0,0,,3,2026-09-14T16:13:16.721330-03:00
+14056,2026-09-11,Friday,Machine or cable curl,Dumbbell curl,1,10,30.0,0,0,,1,2026-09-14T16:14:18.710211-03:00
+14055,2026-09-11,Friday,Machine or cable curl,Dumbbell curl,1,10,30.0,0,0,,2,2026-09-14T16:14:18.710211-03:00
+14054,2026-09-11,Friday,Machine or cable curl,Dumbbell curl,1,10,30.0,0,0,,3,2026-09-14T16:14:18.710211-03:00
+14087,2026-09-10,Wednesday,Supported split squat or low step-up,Supported split squat or low step-up,1,8,22.0,2,0,,3,2026-09-14T16:10:35.063320-03:00
+14086,2026-09-10,Wednesday,Supported split squat or low step-up,Supported split squat or low step-up,1,8,22.0,2,0,,2,2026-09-14T16:10:35.063320-03:00
+14085,2026-09-10,Wednesday,Supported split squat or low step-up,Supported split squat or low step-up,1,8,22.0,2,0,,1,2026-09-14T16:10:35.063320-03:00
+14084,2026-09-10,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,9,87.5,1,0,,4,2026-09-14T16:09:59.646677-03:00
+14083,2026-09-10,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,9,87.5,1,0,,3,2026-09-14T16:09:59.646677-03:00
+14082,2026-09-10,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,9,87.5,1,0,,2,2026-09-14T16:09:59.646677-03:00
+14081,2026-09-10,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,10,87.5,1,0,,1,2026-09-14T16:09:59.646677-03:00
+14080,2026-09-10,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,200.0,1,0,,1,2026-09-14T16:10:17.457104-03:00
+14079,2026-09-10,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,200.0,1,0,,2,2026-09-14T16:10:17.457104-03:00
+14078,2026-09-10,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,200.0,1,0,,3,2026-09-14T16:10:17.457104-03:00
+14077,2026-09-10,Wednesday,Machine hip thrust,Machine hip thrust,1,8,120.0,0,0,,1,2026-09-14T16:10:57.882355-03:00
+14076,2026-09-10,Wednesday,Machine hip thrust,Machine hip thrust,1,8,120.0,0,0,,2,2026-09-14T16:10:57.882355-03:00
+14075,2026-09-10,Wednesday,Machine hip thrust,Machine hip thrust,1,8,120.0,0,0,,3,2026-09-14T16:10:57.882355-03:00
+14074,2026-09-10,Wednesday,Machine hip thrust,Machine hip thrust,1,8,120.0,0,0,,4,2026-09-14T16:10:57.882355-03:00
+14108,2026-09-08,Tuesday,Cable or machine curl,Cable or machine curl,1,9,46.0,0,0,,3,2026-09-09T15:39:00.333635-03:00
+14107,2026-09-08,Tuesday,Cable or machine curl,Cable or machine curl,1,10,46.0,0,0,,2,2026-09-09T15:39:00.333635-03:00
+14106,2026-09-08,Tuesday,Cable or machine curl,Cable or machine curl,1,10,46.0,0,0,,1,2026-09-09T15:39:00.333635-03:00
+14105,2026-09-08,Tuesday,One-arm cable row,One-arm cable row,1,12,30.0,0,0,,3,2026-09-09T15:38:16.581748-03:00
+14104,2026-09-08,Tuesday,One-arm cable row,One-arm cable row,1,12,30.0,0,0,,2,2026-09-09T15:38:16.581748-03:00
+14103,2026-09-08,Tuesday,One-arm cable row,One-arm cable row,1,12,30.0,0,0,,1,2026-09-09T15:38:16.581748-03:00
+14102,2026-09-08,Tuesday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,7,68.0,0,0,,4,2026-09-09T15:37:40.873222-03:00
+14101,2026-09-08,Tuesday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,68.0,0,0,,3,2026-09-09T15:37:40.873222-03:00
+14100,2026-09-08,Tuesday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,68.0,0,0,,2,2026-09-09T15:37:40.873222-03:00
+14099,2026-09-08,Tuesday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,68.0,0,0,,1,2026-09-09T15:37:40.873222-03:00
+14098,2026-09-08,Tuesday,Chest-supported machine row,Chest-supported machine row,1,8,65.0,0,0,,1,2026-09-09T15:37:58.106632-03:00
+14097,2026-09-08,Tuesday,Chest-supported machine row,Chest-supported machine row,1,8,65.0,0,0,,2,2026-09-09T15:37:58.106632-03:00
+14096,2026-09-08,Tuesday,Chest-supported machine row,Chest-supported machine row,1,8,65.0,0,0,,3,2026-09-09T15:37:58.106632-03:00
+14095,2026-09-08,Tuesday,Chest-supported machine row,Chest-supported machine row,1,12,65.0,0,0,,4,2026-09-09T15:37:58.106632-03:00
+14094,2026-09-08,Tuesday,Reverse pec deck,Reverse pec deck,1,20,35.0,0,0,,1,2026-09-09T15:38:32.452622-03:00
+14093,2026-09-08,Tuesday,Reverse pec deck,Reverse pec deck,1,15,35.0,0,0,,2,2026-09-09T15:38:32.452622-03:00
+14092,2026-09-08,Tuesday,Reverse pec deck,Reverse pec deck,1,12,35.0,0,0,,3,2026-09-09T15:38:32.452622-03:00
+14091,2026-09-08,Tuesday,Reverse pec deck,Reverse pec deck,1,12,0.0,0,0,,4,2026-09-09T15:38:32.452622-03:00
+14090,2026-09-08,Tuesday,Hammer curl,Hammer curl,1,10,10.0,0,0,,1,2026-09-09T15:39:13.073104-03:00
+14089,2026-09-08,Tuesday,Hammer curl,Hammer curl,1,10,10.0,0,0,,2,2026-09-09T15:39:13.073104-03:00
+14088,2026-09-08,Tuesday,Hammer curl,Hammer curl,1,10,10.0,0,0,,3,2026-09-09T15:39:13.073104-03:00
+14128,2026-09-07,Monday,Cable triceps pushdown,Cable triceps pushdown,1,10,32.5,0,0,,3,2026-09-09T15:36:25.615282-03:00
+14127,2026-09-07,Monday,Cable triceps pushdown,Cable triceps pushdown,1,10,30.0,0,0,,2,2026-09-09T15:36:25.615282-03:00
+14126,2026-09-07,Monday,Cable triceps pushdown,Cable triceps pushdown,1,12,30.0,0,0,,1,2026-09-09T15:36:25.615282-03:00
+14125,2026-09-07,Monday,Machine shoulder press,Machine shoulder press,1,8,35.0,0,0,,3,2026-09-09T15:35:15.598244-03:00
+14124,2026-09-07,Monday,Machine shoulder press,Machine shoulder press,1,8,35.0,0,0,,2,2026-09-09T15:35:15.598244-03:00
+14123,2026-09-07,Monday,Machine shoulder press,Machine shoulder press,1,9,32.5,0,0,,1,2026-09-09T15:35:15.598244-03:00
+14122,2026-09-07,Monday,Pec deck,Pec deck,1,10,65.0,0,0,,3,2026-09-09T15:34:49.850838-03:00
+14121,2026-09-07,Monday,Pec deck,Pec deck,1,10,65.0,0,0,,2,2026-09-09T15:34:49.850838-03:00
+14120,2026-09-07,Monday,Pec deck,Pec deck,1,10,65.0,0,0,,1,2026-09-09T15:34:49.850838-03:00
+14119,2026-09-07,Monday,Incline machine chest press,Incline machine chest press,1,8,65.0,0,0,,1,2026-09-09T15:34:35.340960-03:00
+14118,2026-09-07,Monday,Incline machine chest press,Incline machine chest press,1,8,65.0,0,0,,2,2026-09-09T15:34:35.340960-03:00
+14117,2026-09-07,Monday,Incline machine chest press,Incline machine chest press,1,8,65.0,0,0,,3,2026-09-09T15:34:35.340960-03:00
+14116,2026-09-07,Monday,Incline machine chest press,Incline machine chest press,1,6,65.0,0,0,,4,2026-09-09T15:34:35.340960-03:00
+14115,2026-09-07,Monday,Cable or machine lateral raise,Cable or machine lateral raise,1,20,6.0,0,0,,1,2026-09-09T15:35:49.582709-03:00
+14114,2026-09-07,Monday,Cable or machine lateral raise,Cable or machine lateral raise,1,12,6.0,0,0,,2,2026-09-09T15:35:49.582709-03:00
+14113,2026-09-07,Monday,Cable or machine lateral raise,Cable or machine lateral raise,1,12,6.0,0,0,,3,2026-09-09T15:35:49.582709-03:00
+14112,2026-09-07,Monday,Cable or machine lateral raise,Cable or machine lateral raise,1,12,6.0,0,0,,4,2026-09-09T15:35:49.582709-03:00
+14111,2026-09-07,Monday,Overhead cable triceps extension,Overhead cable triceps extension,1,10,15.0,0,0,,1,2026-09-09T15:36:59.029609-03:00
+14110,2026-09-07,Monday,Overhead cable triceps extension,Overhead cable triceps extension,1,10,17.5,0,0,,2,2026-09-09T15:36:59.029609-03:00
+14109,2026-09-07,Monday,Overhead cable triceps extension,Overhead cable triceps extension,1,10,17.5,0,0,,3,2026-09-09T15:36:59.029609-03:00
+14140,2026-09-06,Saturday,Machine hip thrust,Machine hip thrust,1,10,120.0,0,0,,3,2026-09-09T15:33:32.609702-03:00
+14139,2026-09-06,Saturday,Machine hip thrust,Machine hip thrust,1,10,120.0,0,0,,2,2026-09-09T15:33:32.609702-03:00
+14138,2026-09-06,Saturday,Machine hip thrust,Machine hip thrust,1,10,120.0,0,0,,1,2026-09-09T15:33:32.609702-03:00
+14137,2026-09-06,Saturday,Seated leg curl,Seated leg curl,1,10,80.0,0,0,,3,2026-09-09T15:32:57.006423-03:00
+14136,2026-09-06,Saturday,Seated leg curl,Seated leg curl,1,10,80.0,0,0,,2,2026-09-09T15:32:57.006423-03:00
+14135,2026-09-06,Saturday,Seated leg curl,Seated leg curl,1,10,80.0,0,0,,1,2026-09-09T15:32:57.006423-03:00
+14134,2026-09-06,Saturday,Leg press,Leg press,1,10,200.0,0,0,,1,2026-09-09T15:32:30.836860-03:00
+14133,2026-09-06,Saturday,Leg press,Leg press,1,10,200.0,0,0,,2,2026-09-09T15:32:30.836860-03:00
+14132,2026-09-06,Saturday,Leg press,Leg press,1,10,200.0,0,0,,3,2026-09-09T15:32:30.836860-03:00
+14131,2026-09-06,Saturday,Leg extension,Leg extension,1,10,80.0,0,0,,1,2026-09-09T15:33:16.444154-03:00
+14130,2026-09-06,Saturday,Leg extension,Leg extension,1,10,80.0,0,0,,2,2026-09-09T15:33:16.444154-03:00
+14129,2026-09-06,Saturday,Leg extension,Leg extension,1,10,80.0,0,0,,3,2026-09-09T15:33:16.444154-03:00
+14162,2026-09-05,Friday,Machine or cable curl,Machine or cable curl,1,7,53.0,0,0,,3,2026-09-09T15:29:54.941372-03:00
+14161,2026-09-05,Friday,Machine or cable curl,Machine or cable curl,1,10,46.0,0,0,,2,2026-09-09T15:29:54.941372-03:00
+14160,2026-09-05,Friday,Machine or cable curl,Machine or cable curl,1,10,46.0,0,0,,1,2026-09-09T15:29:54.941372-03:00
+14159,2026-09-05,Friday,Chest-supported row,Chest-supported row,1,8,70.0,0,0,,3,2026-09-09T15:28:41.415303-03:00
+14158,2026-09-05,Friday,Chest-supported row,Chest-supported row,1,8,70.0,0,0,,2,2026-09-09T15:28:41.415303-03:00
+14157,2026-09-05,Friday,Chest-supported row,Chest-supported row,1,8,65.0,0,0,,1,2026-09-09T15:28:41.415303-03:00
+14156,2026-09-05,Friday,Machine shoulder press,Machine shoulder press,1,8,32.5,0,0,,3,2026-09-09T15:26:35.323136-03:00
+14155,2026-09-05,Friday,Machine shoulder press,Machine shoulder press,1,10,32.5,0,0,,2,2026-09-09T15:26:35.323136-03:00
+14154,2026-09-05,Friday,Machine shoulder press,Machine shoulder press,1,10,32.5,0,0,,1,2026-09-09T15:26:35.323136-03:00
+14153,2026-09-05,Friday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,68.0,0,0,,4,2026-09-09T15:25:15.654715-03:00
+14152,2026-09-05,Friday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,68.0,0,0,,3,2026-09-09T15:25:15.654715-03:00
+14151,2026-09-05,Friday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,68.0,0,0,,2,2026-09-09T15:25:15.654715-03:00
+14150,2026-09-05,Friday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,68.0,0,0,,1,2026-09-09T15:25:15.654715-03:00
+14149,2026-09-05,Friday,Machine chest press,Machine chest press,1,8,65.0,0,0,,1,2026-09-09T15:24:53.251225-03:00
+14148,2026-09-05,Friday,Machine chest press,Machine chest press,1,8,65.0,0,0,,2,2026-09-09T15:24:53.251225-03:00
+14147,2026-09-05,Friday,Machine chest press,Machine chest press,1,8,65.0,0,0,,3,2026-09-09T15:24:53.251225-03:00
+14146,2026-09-05,Friday,Machine chest press,Machine chest press,1,8,65.0,0,0,,4,2026-09-09T15:24:53.251225-03:00
+14145,2026-09-05,Friday,Machine shoulder press,Machine shoulder press,1,8,65.0,0,0,,1,2026-09-09T15:25:35.758062-03:00
+14144,2026-09-05,Friday,Machine shoulder press,Machine shoulder press,1,8,70.0,0,0,,2,2026-09-09T15:25:35.758062-03:00
+14143,2026-09-05,Friday,Cable triceps pushdown,Cable triceps pushdown,1,10,31.5,0,0,,1,2026-09-09T15:29:02.005477-03:00
+14142,2026-09-05,Friday,Cable triceps pushdown,Cable triceps pushdown,1,10,31.5,0,0,,2,2026-09-09T15:29:02.005477-03:00
+14141,2026-09-05,Friday,Cable triceps pushdown,Cable triceps pushdown,1,10,31.5,0,0,,3,2026-09-09T15:29:02.005477-03:00
+14176,2026-09-03,Wednesday,Machine hip thrust,Machine hip thrust,1,8,120.0,1,0,,4,2026-09-03T21:39:04.000780-03:00
+14175,2026-09-03,Wednesday,Machine hip thrust,Machine hip thrust,1,9,120.0,1,0,,3,2026-09-03T21:39:04.000780-03:00
+14174,2026-09-03,Wednesday,Machine hip thrust,Machine hip thrust,1,8,120.0,1,0,,2,2026-09-03T21:39:04.000780-03:00
+14173,2026-09-03,Wednesday,Machine hip thrust,Machine hip thrust,1,8,120.0,1,0,,1,2026-09-03T21:39:04.000780-03:00
+14172,2026-09-03,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,8,87.5,0,0,,4,2026-09-03T21:38:11.819776-03:00
+14171,2026-09-03,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,10,87.5,0,0,,3,2026-09-03T21:38:11.819776-03:00
+14170,2026-09-03,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,11,87.5,0,0,,2,2026-09-03T21:38:11.819776-03:00
+14169,2026-09-03,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,10,87.5,0,0,,1,2026-09-03T21:38:11.819776-03:00
+14168,2026-09-03,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,200.0,1,0,,1,2026-09-03T21:37:30.587774-03:00
+14167,2026-09-03,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,200.0,1,0,,2,2026-09-03T21:37:30.587774-03:00
+14166,2026-09-03,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,200.0,1,0,,3,2026-09-03T21:37:30.587774-03:00
+14165,2026-09-03,Wednesday,Supported split squat or low step-up,Supported split squat or low step-up,1,8,20.0,1,0,,1,2026-09-03T21:38:40.682544-03:00
+14164,2026-09-03,Wednesday,Supported split squat or low step-up,Supported split squat or low step-up,1,10,20.0,1,0,,2,2026-09-03T21:38:40.682544-03:00
+14163,2026-09-03,Wednesday,Supported split squat or low step-up,Supported split squat or low step-up,1,10,20.0,1,0,,3,2026-09-03T21:38:40.682544-03:00
+14194,2026-09-01,Tuesday,Hammer curl,Hammer curl,1,10,10.0,0,0,,3,2026-09-03T21:36:39.402777-03:00
+14193,2026-09-01,Tuesday,Hammer curl,Hammer curl,1,10,10.0,0,0,,2,2026-09-03T21:36:39.402777-03:00
+14192,2026-09-01,Tuesday,Hammer curl,Hammer curl,1,11,10.0,0,0,,1,2026-09-03T21:36:39.402777-03:00
+14191,2026-09-01,Tuesday,Reverse pec deck,Reverse pec deck,1,12,37.5,0,0,,4,2026-09-03T21:36:00.955774-03:00
+14190,2026-09-01,Tuesday,Reverse pec deck,Reverse pec deck,1,12,35.0,0,0,,3,2026-09-03T21:36:00.955774-03:00
+14189,2026-09-01,Tuesday,Reverse pec deck,Reverse pec deck,1,15,35.0,0,0,,2,2026-09-03T21:36:00.955774-03:00
+14188,2026-09-01,Tuesday,Reverse pec deck,Reverse pec deck,1,20,35.0,0,0,,1,2026-09-03T21:36:00.955774-03:00
+14187,2026-09-01,Tuesday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,66.0,0,0,,4,2026-09-03T21:34:45.213763-03:00
+14186,2026-09-01,Tuesday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,66.0,0,0,,3,2026-09-03T21:34:45.213763-03:00
+14185,2026-09-01,Tuesday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,9,66.0,0,0,,2,2026-09-03T21:34:45.213763-03:00
+14184,2026-09-01,Tuesday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,11,66.0,0,0,,1,2026-09-03T21:34:45.213763-03:00
+14183,2026-09-01,Tuesday,Chest-supported machine row,Chest-supported machine row,1,8,65.0,0,0,,1,2026-09-03T21:35:03.786046-03:00
+14182,2026-09-01,Tuesday,Chest-supported machine row,Chest-supported machine row,1,8,0.0,0,0,,2,2026-09-03T21:35:03.786046-03:00
+14181,2026-09-01,Tuesday,Chest-supported machine row,Chest-supported machine row,1,8,0.0,0,0,,3,2026-09-03T21:35:03.786046-03:00
+14180,2026-09-01,Tuesday,Chest-supported machine row,Chest-supported machine row,1,11,0.0,0,0,,4,2026-09-03T21:35:03.786046-03:00
+14179,2026-09-01,Tuesday,Cable or machine curl,Cable or machine curl,1,10,46.0,0,0,,1,2026-09-03T21:36:21.760162-03:00
+14178,2026-09-01,Tuesday,Cable or machine curl,Cable or machine curl,1,10,46.0,0,0,,2,2026-09-03T21:36:21.760162-03:00
+14177,2026-09-01,Tuesday,Cable or machine curl,Cable or machine curl,1,10,46.0,0,0,,3,2026-09-03T21:36:21.760162-03:00
+14214,2026-08-31,Monday,Cable triceps pushdown,Cable triceps pushdown,1,10,27.5,0,0,,3,2026-09-03T20:36:00.106052-03:00
+14213,2026-08-31,Monday,Cable triceps pushdown,Cable triceps pushdown,1,11,27.5,0,0,,2,2026-09-03T20:36:00.106052-03:00
+14212,2026-08-31,Monday,Cable triceps pushdown,Cable triceps pushdown,1,10,27.5,0,0,,1,2026-09-03T20:36:00.106052-03:00
+14211,2026-08-31,Monday,Machine shoulder press,Machine shoulder press,1,8,0.0,0,0,,3,2026-09-03T20:34:39.614327-03:00
+14210,2026-08-31,Monday,Machine shoulder press,Machine shoulder press,1,9,0.0,0,0,,2,2026-09-03T20:34:39.614327-03:00
+14209,2026-08-31,Monday,Machine shoulder press,Machine shoulder press,1,8,30.0,0,0,,1,2026-09-03T20:34:39.614327-03:00
+14208,2026-08-31,Monday,Incline machine chest press,Incline machine chest press,1,8,60.0,0,0,,4,2026-09-03T20:33:51.815674-03:00
+14207,2026-08-31,Monday,Incline machine chest press,Incline machine chest press,1,8,60.0,0,0,,3,2026-09-03T20:33:51.815674-03:00
+14206,2026-08-31,Monday,Incline machine chest press,Incline machine chest press,1,8,60.0,0,0,,2,2026-09-03T20:33:51.815674-03:00
+14205,2026-08-31,Monday,Incline machine chest press,Incline machine chest press,1,8,60.0,0,0,,1,2026-09-03T20:33:51.815674-03:00
+14204,2026-08-31,Monday,Pec deck,Pec deck,1,15,57.5,0,0,,1,2026-09-03T20:34:20.103889-03:00
+14203,2026-08-31,Monday,Pec deck,Pec deck,1,10,65.0,0,0,,2,2026-09-03T20:34:20.103889-03:00
+14202,2026-08-31,Monday,Pec deck,Pec deck,1,10,65.0,0,0,,3,2026-09-03T20:34:20.103889-03:00
+14201,2026-08-31,Monday,Cable or machine lateral raise,Dumbbell lateral raise,1,12,7.0,0,0,,1,2026-09-03T20:35:25.277065-03:00
+14200,2026-08-31,Monday,Cable or machine lateral raise,Dumbbell lateral raise,1,12,8.0,0,0,,2,2026-09-03T20:35:25.277065-03:00
+14199,2026-08-31,Monday,Cable or machine lateral raise,Dumbbell lateral raise,1,11,8.0,0,0,,3,2026-09-03T20:35:25.277065-03:00
+14198,2026-08-31,Monday,Cable or machine lateral raise,Dumbbell lateral raise,1,8,8.0,0,0,,4,2026-09-03T20:35:25.277065-03:00
+14197,2026-08-31,Monday,Overhead cable triceps extension,Overhead cable triceps extension,1,10,12.5,0,0,,1,2026-09-03T21:25:38.129174-03:00
+14196,2026-08-31,Monday,Overhead cable triceps extension,Overhead cable triceps extension,1,10,12.5,0,0,,2,2026-09-03T21:25:38.129174-03:00
+14195,2026-08-31,Monday,Overhead cable triceps extension,Overhead cable triceps extension,1,11,12.5,0,0,,3,2026-09-03T21:25:38.129174-03:00
+14226,2026-08-29,Saturday,Leg extension,Leg extension,1,12,72.5,0,0,,3,2026-08-31T11:15:23.983345-03:00
+14225,2026-08-29,Saturday,Leg extension,Leg extension,1,12,72.5,0,0,,2,2026-08-31T11:15:23.983345-03:00
+14224,2026-08-29,Saturday,Leg extension,Leg extension,1,12,72.5,0,0,,1,2026-08-31T11:15:23.983345-03:00
+14223,2026-08-29,Saturday,Leg press,Leg press,1,10,200.0,0,0,,3,2026-08-31T11:14:38.663214-03:00
+14222,2026-08-29,Saturday,Leg press,Leg press,1,10,200.0,0,0,,2,2026-08-31T11:14:38.663214-03:00
+14221,2026-08-29,Saturday,Leg press,Leg press,1,10,200.0,0,0,,1,2026-08-31T11:14:38.663214-03:00
+14220,2026-08-29,Saturday,Seated leg curl,Seated leg curl,1,12,80.0,0,0,,1,2026-08-31T11:15:03.101556-03:00
+14219,2026-08-29,Saturday,Seated leg curl,Seated leg curl,1,12,80.0,0,0,,2,2026-08-31T11:15:03.101556-03:00
+14218,2026-08-29,Saturday,Seated leg curl,Seated leg curl,1,12,80.0,0,0,,3,2026-08-31T11:15:03.101556-03:00
+14217,2026-08-29,Saturday,Machine hip thrust,Machine hip thrust,1,10,120.0,1,0,,1,2026-08-31T11:15:46.867911-03:00
+14216,2026-08-29,Saturday,Machine hip thrust,Machine hip thrust,1,10,120.0,1,0,,2,2026-08-31T11:15:46.867911-03:00
+14215,2026-08-29,Saturday,Machine hip thrust,Machine hip thrust,1,10,120.0,1,0,,3,2026-08-31T11:15:46.867911-03:00
+14246,2026-08-28,Friday,Cable triceps pushdown,Cable triceps pushdown,1,10,30.0,0,0,,3,2026-08-31T11:13:16.989095-03:00
+14245,2026-08-28,Friday,Cable triceps pushdown,Cable triceps pushdown,1,9,30.0,0,0,,2,2026-08-31T11:13:16.989095-03:00
+14244,2026-08-28,Friday,Cable triceps pushdown,Cable triceps pushdown,1,10,27.5,0,0,,1,2026-08-31T11:13:16.989095-03:00
+14243,2026-08-28,Friday,Chest-supported row,Chest-supported row,1,9,65.0,0,0,,3,2026-08-31T11:12:05.906954-03:00
+14242,2026-08-28,Friday,Chest-supported row,Chest-supported row,1,8,65.0,0,0,,2,2026-08-31T11:12:05.906954-03:00
+14241,2026-08-28,Friday,Chest-supported row,Chest-supported row,1,10,65.0,0,0,,1,2026-08-31T11:12:05.906954-03:00
+14240,2026-08-28,Friday,Machine chest press,Machine chest press,1,9,60.0,0,0,,4,2026-08-31T11:10:30.491647-03:00
+14239,2026-08-28,Friday,Machine chest press,Machine chest press,1,8,60.0,0,0,,3,2026-08-31T11:10:30.491647-03:00
+14238,2026-08-28,Friday,Machine chest press,Machine chest press,1,8,55.0,0,0,,2,2026-08-31T11:10:30.491647-03:00
+14237,2026-08-28,Friday,Machine chest press,Machine chest press,1,8,55.0,0,0,,1,2026-08-31T11:10:30.491647-03:00
+14236,2026-08-28,Friday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,61.0,0,0,,1,2026-08-31T11:11:22.038720-03:00
+14235,2026-08-28,Friday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,61.0,0,0,,2,2026-08-31T11:11:22.038720-03:00
+14234,2026-08-28,Friday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,63.5,0,0,,3,2026-08-31T11:11:22.038720-03:00
+14233,2026-08-28,Friday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,63.5,0,0,,4,2026-08-31T11:11:22.038720-03:00
+14232,2026-08-28,Friday,Machine shoulder press,Machine shoulder press,1,12,27.5,1,0,,1,2026-08-31T11:12:41.600353-03:00
+14231,2026-08-28,Friday,Machine shoulder press,Machine shoulder press,1,8,30.0,1,0,,2,2026-08-31T11:12:41.600353-03:00
+14230,2026-08-28,Friday,Machine shoulder press,Machine shoulder press,1,8,30.0,1,0,,3,2026-08-31T11:12:41.600353-03:00
+14229,2026-08-28,Friday,Machine or cable curl,Machine or cable curl,1,10,46.0,0,0,,1,2026-08-31T11:13:39.224797-03:00
+14228,2026-08-28,Friday,Machine or cable curl,Machine or cable curl,1,10,46.0,0,0,,2,2026-08-31T11:13:39.224797-03:00
+14227,2026-08-28,Friday,Machine or cable curl,Machine or cable curl,1,10,46.0,0,0,,3,2026-08-31T11:13:39.224797-03:00
+14260,2026-08-26,Wednesday,Supported split squat or low step-up,Supported split squat or low step-up,1,8,20.0,1,0,,3,2026-08-27T07:06:55.364930-03:00
+14259,2026-08-26,Wednesday,Supported split squat or low step-up,Supported split squat or low step-up,1,8,20.0,1,0,,2,2026-08-27T07:06:55.364930-03:00
+14258,2026-08-26,Wednesday,Supported split squat or low step-up,Supported split squat or low step-up,1,8,20.0,1,0,,1,2026-08-27T07:06:55.364930-03:00
+14257,2026-08-26,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,8,80.0,0,0,,4,2026-08-27T07:06:03.451256-03:00
+14256,2026-08-26,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,10,80.0,0,0,,3,2026-08-27T07:06:03.451256-03:00
+14255,2026-08-26,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,12,80.0,0,0,,2,2026-08-27T07:06:03.451256-03:00
+14254,2026-08-26,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,12,80.0,0,0,,1,2026-08-27T07:06:03.451256-03:00
+14253,2026-08-26,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,200.0,1,0,,1,2026-08-27T07:06:31.075409-03:00
+14252,2026-08-26,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,200.0,1,0,,2,2026-08-27T07:06:31.075409-03:00
+14251,2026-08-26,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,9,200.0,1,0,,3,2026-08-27T07:06:31.075409-03:00
+14250,2026-08-26,Wednesday,Machine hip thrust,Machine hip thrust,1,8,110.0,1,0,,1,2026-08-27T07:07:27.359659-03:00
+14249,2026-08-26,Wednesday,Machine hip thrust,Machine hip thrust,1,8,110.0,1,0,,2,2026-08-27T07:07:27.359659-03:00
+14248,2026-08-26,Wednesday,Machine hip thrust,Machine hip thrust,1,8,110.0,1,0,,3,2026-08-27T07:07:27.359659-03:00
+14247,2026-08-26,Wednesday,Machine hip thrust,Machine hip thrust,1,8,110.0,1,0,,4,2026-08-27T07:07:27.359659-03:00
+14281,2026-08-25,Tuesday,Cable or machine curl,Cable or machine curl,1,8,46.0,0,0,,3,2026-08-25T16:29:16.735193-03:00
+14280,2026-08-25,Tuesday,Cable or machine curl,Cable or machine curl,1,8,46.0,0,0,,2,2026-08-25T16:29:16.735193-03:00
+14279,2026-08-25,Tuesday,Cable or machine curl,Cable or machine curl,1,12,39.0,0,0,,1,2026-08-25T16:29:16.735193-03:00
+14278,2026-08-25,Tuesday,One-arm cable row,One-arm cable row,1,10,20.0,2,0,,3,2026-08-25T16:27:53.264503-03:00
+14277,2026-08-25,Tuesday,One-arm cable row,One-arm cable row,1,13,20.0,2,0,,2,2026-08-25T16:27:53.264503-03:00
+14276,2026-08-25,Tuesday,One-arm cable row,One-arm cable row,1,13,20.0,2,0,,1,2026-08-25T16:27:53.264503-03:00
+14275,2026-08-25,Tuesday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,60.0,0,0,,4,2026-08-25T16:25:27.992993-03:00
+14274,2026-08-25,Tuesday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,60.0,0,0,,3,2026-08-25T16:25:27.992993-03:00
+14273,2026-08-25,Tuesday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,60.0,0,0,,2,2026-08-25T16:25:27.992993-03:00
+14272,2026-08-25,Tuesday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,60.0,0,0,,1,2026-08-25T16:25:27.992993-03:00
+14271,2026-08-25,Tuesday,Chest-supported machine row,Chest-supported machine row,1,10,60.0,0,0,,1,2026-08-25T16:25:53.635007-03:00
+14270,2026-08-25,Tuesday,Chest-supported machine row,Chest-supported machine row,1,9,60.0,0,0,,2,2026-08-25T16:25:53.635007-03:00
+14269,2026-08-25,Tuesday,Chest-supported machine row,Chest-supported machine row,1,10,60.0,0,0,,3,2026-08-25T16:25:53.635007-03:00
+14268,2026-08-25,Tuesday,Chest-supported machine row,Chest-supported machine row,1,10,60.0,0,0,,4,2026-08-25T16:25:53.635007-03:00
+14267,2026-08-25,Tuesday,Reverse pec deck,Reverse pec deck,1,20,35.0,0,0,,1,2026-08-25T16:28:48.511019-03:00
+14266,2026-08-25,Tuesday,Reverse pec deck,Reverse pec deck,1,16,35.0,0,0,,2,2026-08-25T16:28:48.511019-03:00
+14265,2026-08-25,Tuesday,Reverse pec deck,Reverse pec deck,1,12,35.0,0,0,,3,2026-08-25T16:28:48.511019-03:00
+14264,2026-08-25,Tuesday,Reverse pec deck,Reverse pec deck,1,12,35.0,0,0,,4,2026-08-25T16:28:48.511019-03:00
+14263,2026-08-25,Tuesday,Hammer curl,Hammer curl,1,15,9.0,0,0,,1,2026-08-25T16:29:36.363780-03:00
+14262,2026-08-25,Tuesday,Hammer curl,Hammer curl,1,10,10.0,0,0,,2,2026-08-25T16:29:36.363780-03:00
+14261,2026-08-25,Tuesday,Hammer curl,Hammer curl,1,10,10.0,0,0,,3,2026-08-25T16:29:36.363780-03:00
+14301,2026-08-24,Monday,Cable triceps pushdown,Cable triceps pushdown,1,9,31.25,0,0,,3,2026-08-24T16:58:53.740521-03:00
+14300,2026-08-24,Monday,Cable triceps pushdown,Cable triceps pushdown,1,10,31.25,0,0,,2,2026-08-24T16:56:56.272659-03:00
+14299,2026-08-24,Monday,Cable triceps pushdown,Cable triceps pushdown,1,12,28.75,0,0,,1,2026-08-24T16:56:56.272659-03:00
+14298,2026-08-24,Monday,Machine shoulder press,Machine shoulder press,1,8,30.0,0,0,,3,2026-08-24T16:55:37.680944-03:00
+14297,2026-08-24,Monday,Machine shoulder press,Machine shoulder press,1,9,30.0,0,0,,2,2026-08-24T16:55:37.680944-03:00
+14296,2026-08-24,Monday,Machine shoulder press,Machine shoulder press,1,10,30.0,0,0,,1,2026-08-24T16:55:37.680944-03:00
+14295,2026-08-24,Monday,Incline machine chest press,Incline machine chest press,1,8,55.0,0,0,,4,2026-08-24T16:54:56.765350-03:00
+14294,2026-08-24,Monday,Incline machine chest press,Incline machine chest press,1,8,55.0,0,0,,3,2026-08-24T16:54:56.765350-03:00
+14293,2026-08-24,Monday,Incline machine chest press,Incline machine chest press,1,11,50.0,0,0,,2,2026-08-24T16:54:56.765350-03:00
+14292,2026-08-24,Monday,Incline machine chest press,Incline machine chest press,1,12,50.0,0,0,,1,2026-08-24T16:54:56.765350-03:00
+14291,2026-08-24,Monday,Pec deck,Pec deck,1,13,57.5,0,0,,1,2026-08-24T16:55:19.034909-03:00
+14290,2026-08-24,Monday,Pec deck,Pec deck,1,10,65.0,0,0,,2,2026-08-24T16:55:19.034909-03:00
+14289,2026-08-24,Monday,Pec deck,Pec deck,1,10,65.0,0,0,,3,2026-08-24T16:55:19.034909-03:00
+14288,2026-08-24,Monday,Cable or machine lateral raise,Cable or machine lateral raise,1,12,6.25,0,0,,1,2026-08-24T16:56:15.346062-03:00
+14287,2026-08-24,Monday,Cable or machine lateral raise,Cable or machine lateral raise,1,12,6.25,0,0,,2,2026-08-24T16:56:15.346062-03:00
+14286,2026-08-24,Monday,Cable or machine lateral raise,Cable or machine lateral raise,1,12,6.25,0,0,,3,2026-08-24T16:56:15.346062-03:00
+14285,2026-08-24,Monday,Cable or machine lateral raise,Cable or machine lateral raise,1,12,3.75,0,0,,4,2026-08-24T16:56:15.346062-03:00
+14284,2026-08-24,Monday,Overhead cable triceps extension,Overhead cable triceps extension,1,10,13.75,1,0,,1,2026-08-24T16:59:42.836698-03:00
+14283,2026-08-24,Monday,Overhead cable triceps extension,Overhead cable triceps extension,1,10,13.75,1,0,,2,2026-08-24T16:59:42.836698-03:00
+14282,2026-08-24,Monday,Overhead cable triceps extension,Overhead cable triceps extension,1,10,13.75,1,0,,3,2026-08-24T16:59:42.836698-03:00
+14316,2026-08-22,Saturday,Machine hip thrust,Machine hip thrust,1,12,80.0,0,0,,3,2026-08-24T12:37:39.012252-03:00
+14315,2026-08-22,Saturday,Machine hip thrust,Machine hip thrust,1,12,80.0,0,0,,2,2026-08-24T12:37:39.012252-03:00
+14314,2026-08-22,Saturday,Machine hip thrust,Machine hip thrust,1,12,80.0,0,0,,1,2026-08-24T12:37:39.012252-03:00
+14313,2026-08-22,Saturday,Seated leg curl,Seated leg curl,1,10,80.0,0,0,,3,2026-08-24T12:37:03.520589-03:00
+14312,2026-08-22,Saturday,Seated leg curl,Seated leg curl,1,10,80.0,0,0,,2,2026-08-24T12:37:03.520589-03:00
+14311,2026-08-22,Saturday,Seated leg curl,Seated leg curl,1,10,80.0,0,0,,1,2026-08-24T12:37:03.520589-03:00
+14310,2026-08-22,Saturday,Leg press,Leg press,1,10,160.0,0,0,,1,2026-08-24T12:36:46.360960-03:00
+14309,2026-08-22,Saturday,Leg press,Leg press,1,10,160.0,0,0,,2,2026-08-24T12:36:46.360960-03:00
+14308,2026-08-22,Saturday,Leg press,Leg press,1,10,160.0,0,0,,3,2026-08-24T12:36:46.360960-03:00
+14307,2026-08-22,Saturday,Leg extension,Leg extension,1,12,72.5,0,0,,1,2026-08-24T12:37:20.261434-03:00
+14306,2026-08-22,Saturday,Leg extension,Leg extension,1,12,72.5,0,0,,2,2026-08-24T12:37:20.261434-03:00
+14305,2026-08-22,Saturday,Leg extension,Leg extension,1,12,72.5,0,0,,3,2026-08-24T12:37:20.261434-03:00
+14304,2026-08-22,Saturday,Pallof press,Pallof press,1,10,10.0,2,0,,1,2026-08-24T12:38:01.502749-03:00
+14303,2026-08-22,Saturday,Pallof press,Pallof press,1,15,10.0,2,0,,2,2026-08-24T12:38:01.502749-03:00
+14302,2026-08-22,Saturday,Pallof press,Pallof press,1,12,10.0,2,0,,3,2026-08-24T12:38:01.502749-03:00
+14336,2026-08-21,Friday,Machine or cable curl,Machine or cable curl,1,10,46.0,0,0,,3,2026-08-24T12:36:07.360128-03:00
+14335,2026-08-21,Friday,Machine or cable curl,Machine or cable curl,1,11,39.0,0,0,,2,2026-08-24T12:36:07.360128-03:00
+14334,2026-08-21,Friday,Machine or cable curl,Machine or cable curl,1,15,39.0,0,0,,1,2026-08-24T12:36:07.360128-03:00
+14333,2026-08-21,Friday,Chest-supported row,Chest-supported row,1,9,0.0,2,0,,3,2026-08-24T12:34:57.260928-03:00
+14332,2026-08-21,Friday,Chest-supported row,Chest-supported row,1,10,0.0,2,0,,2,2026-08-24T12:34:57.260928-03:00
+14331,2026-08-21,Friday,Chest-supported row,Chest-supported row,1,12,65.0,2,0,,1,2026-08-24T12:34:57.260928-03:00
+14330,2026-08-21,Friday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,61.0,0,0,,4,2026-08-24T12:34:00.273442-03:00
+14329,2026-08-21,Friday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,61.0,0,0,,3,2026-08-24T12:34:00.273442-03:00
+14328,2026-08-21,Friday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,9,59.0,0,0,,2,2026-08-24T12:34:00.273442-03:00
+14327,2026-08-21,Friday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,12,59.0,0,0,,1,2026-08-24T12:34:00.273442-03:00
+14326,2026-08-21,Friday,Machine chest press,Machine chest press,1,12,50.0,0,0,,1,2026-08-24T12:33:26.579740-03:00
+14325,2026-08-21,Friday,Machine chest press,Machine chest press,1,10,50.0,0,0,,2,2026-08-24T12:33:26.579740-03:00
+14324,2026-08-21,Friday,Machine chest press,Machine chest press,1,8,50.0,0,0,,3,2026-08-24T12:33:26.579740-03:00
+14323,2026-08-21,Friday,Machine chest press,Machine chest press,1,8,50.0,0,0,,4,2026-08-24T12:33:26.579740-03:00
+14322,2026-08-21,Friday,Machine shoulder press,Machine shoulder press,1,12,27.5,0,0,,1,2026-08-24T12:34:34.688248-03:00
+14321,2026-08-21,Friday,Machine shoulder press,Machine shoulder press,1,9,27.5,0,0,,2,2026-08-24T12:34:34.688248-03:00
+14320,2026-08-21,Friday,Machine shoulder press,Machine shoulder press,1,8,27.5,0,0,,3,2026-08-24T12:34:34.688248-03:00
+14319,2026-08-21,Friday,Cable triceps pushdown,Cable triceps pushdown,1,12,28.5,0,0,,1,2026-08-24T12:35:36.686856-03:00
+14318,2026-08-21,Friday,Cable triceps pushdown,Cable triceps pushdown,1,11,31.5,0,0,,2,2026-08-24T12:35:36.686856-03:00
+14317,2026-08-21,Friday,Cable triceps pushdown,Cable triceps pushdown,1,10,31.5,0,0,,3,2026-08-24T12:35:36.686856-03:00
+14352,2026-08-19,Wednesday,Supported split squat or low step-up,Supported split squat or low step-up,1,8,20.0,0,0,,3,2026-08-20T13:35:39.532817-03:00
+14351,2026-08-19,Wednesday,Supported split squat or low step-up,Supported split squat or low step-up,1,8,20.0,0,0,,2,2026-08-20T13:35:39.532817-03:00
+14350,2026-08-19,Wednesday,Supported split squat or low step-up,Supported split squat or low step-up,1,8,20.0,0,0,,1,2026-08-20T13:35:39.532817-03:00
+14349,2026-08-19,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,8,80.0,0,0,,4,2026-08-20T13:34:24.422625-03:00
+14348,2026-08-19,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,8,80.0,0,0,,3,2026-08-20T13:34:24.422625-03:00
+14347,2026-08-19,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,10,80.0,0,0,,2,2026-08-20T13:34:24.422625-03:00
+14346,2026-08-19,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,12,80.0,0,0,,1,2026-08-20T13:34:24.422625-03:00
+14345,2026-08-19,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,15,160.0,0,0,,1,2026-08-20T13:34:57.698644-03:00
+14344,2026-08-19,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,160.0,0,0,,2,2026-08-20T13:34:57.698644-03:00
+14343,2026-08-19,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,160.0,0,0,,3,2026-08-20T13:34:57.698644-03:00
+14342,2026-08-19,Wednesday,Machine hip thrust,Machine hip thrust,1,10,40.0,0,0,,1,2026-08-20T13:36:18.852402-03:00
+14341,2026-08-19,Wednesday,Machine hip thrust,Machine hip thrust,1,10,40.0,0,0,,2,2026-08-20T13:36:18.852402-03:00
+14340,2026-08-19,Wednesday,Machine hip thrust,Machine hip thrust,1,10,40.0,0,0,,3,2026-08-20T13:36:18.852402-03:00
+14339,2026-08-19,Wednesday,Machine crunch or dead bug,Machine crunch or dead bug,1,10,60.0,2,0,,1,2026-08-20T13:38:05.336538-03:00
+14338,2026-08-19,Wednesday,Machine crunch or dead bug,Machine crunch or dead bug,1,10,60.0,2,0,,2,2026-08-20T13:38:05.336538-03:00
+14337,2026-08-19,Wednesday,Machine crunch or dead bug,Machine crunch or dead bug,1,10,60.0,2,0,,3,2026-08-20T13:38:05.336538-03:00
+14373,2026-08-18,Tuesday,Cable or machine curl,Cable or machine curl,1,9,0.0,0,0,,3,2026-08-20T13:33:17.002347-03:00
+14372,2026-08-18,Tuesday,Cable or machine curl,Cable or machine curl,1,9,0.0,0,0,,2,2026-08-20T13:33:17.002347-03:00
+14371,2026-08-18,Tuesday,Cable or machine curl,Cable or machine curl,1,12,39.0,0,0,,1,2026-08-20T13:33:17.002347-03:00
+14370,2026-08-18,Tuesday,One-arm cable row,One-arm cable row,1,10,20.0,0,0,,3,2026-08-20T13:32:27.228789-03:00
+14369,2026-08-18,Tuesday,One-arm cable row,One-arm cable row,1,10,20.0,0,0,,2,2026-08-20T13:32:27.228789-03:00
+14368,2026-08-18,Tuesday,One-arm cable row,One-arm cable row,1,10,15.0,0,0,,1,2026-08-20T13:32:27.228789-03:00
+14367,2026-08-18,Tuesday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,9,59.0,0,0,,4,2026-08-20T13:31:26.342767-03:00
+14366,2026-08-18,Tuesday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,10,59.0,0,0,,3,2026-08-20T13:31:26.342767-03:00
+14365,2026-08-18,Tuesday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,12,59.0,0,0,,2,2026-08-20T13:31:26.342767-03:00
+14364,2026-08-18,Tuesday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,12,59.0,0,0,,1,2026-08-20T13:31:26.342767-03:00
+14363,2026-08-18,Tuesday,Chest-supported machine row,Chest-supported machine row,1,10,57.5,0,0,,1,2026-08-20T13:31:56.252146-03:00
+14362,2026-08-18,Tuesday,Chest-supported machine row,Chest-supported machine row,1,10,57.5,0,0,,2,2026-08-20T13:31:56.252146-03:00
+14361,2026-08-18,Tuesday,Chest-supported machine row,Chest-supported machine row,1,9,57.5,0,0,,3,2026-08-20T13:31:56.252146-03:00
+14360,2026-08-18,Tuesday,Chest-supported machine row,Chest-supported machine row,1,10,57.5,0,0,,4,2026-08-20T13:31:56.252146-03:00
+14359,2026-08-18,Tuesday,Reverse pec deck,Reverse pec deck,1,20,35.0,0,0,,1,2026-08-20T13:32:56.300051-03:00
+14358,2026-08-18,Tuesday,Reverse pec deck,Reverse pec deck,1,14,35.0,0,0,,2,2026-08-20T13:32:56.300051-03:00
+14357,2026-08-18,Tuesday,Reverse pec deck,Reverse pec deck,1,12,35.0,0,0,,3,2026-08-20T13:32:56.300051-03:00
+14356,2026-08-18,Tuesday,Reverse pec deck,Reverse pec deck,1,12,35.0,0,0,,4,2026-08-20T13:32:56.300051-03:00
+14355,2026-08-18,Tuesday,Hammer curl,Hammer curl,1,15,9.0,0,0,,1,2026-08-20T13:33:37.615483-03:00
+14354,2026-08-18,Tuesday,Hammer curl,Hammer curl,1,14,9.0,0,0,,2,2026-08-20T13:33:37.615483-03:00
+14353,2026-08-18,Tuesday,Hammer curl,Hammer curl,1,10,9.0,0,0,,3,2026-08-20T13:33:37.615483-03:00
+14393,2026-08-17,Monday,Cable triceps pushdown,Cable triceps pushdown,1,10,25.0,0,0,,3,2026-08-18T10:53:37.017900-03:00
+14392,2026-08-17,Monday,Cable triceps pushdown,Cable triceps pushdown,1,12,25.0,0,0,,2,2026-08-18T10:53:37.017900-03:00
+14391,2026-08-17,Monday,Cable triceps pushdown,Cable triceps pushdown,1,12,25.0,0,0,,1,2026-08-18T10:53:37.017900-03:00
+14390,2026-08-17,Monday,Pec deck,Pec deck,1,10,57.5,0,0,,3,2026-08-18T10:52:19.152147-03:00
+14389,2026-08-17,Monday,Pec deck,Pec deck,1,10,57.5,0,0,,2,2026-08-18T10:52:19.152147-03:00
+14388,2026-08-17,Monday,Pec deck,Pec deck,1,15,50.0,0,0,,1,2026-08-18T10:52:19.152147-03:00
+14387,2026-08-17,Monday,Incline machine chest press,Incline machine chest press,1,8,50.0,0,0,,4,2026-08-18T10:51:32.794740-03:00
+14386,2026-08-17,Monday,Incline machine chest press,Incline machine chest press,1,8,50.0,0,0,,3,2026-08-18T10:51:32.794740-03:00
+14385,2026-08-17,Monday,Incline machine chest press,Incline machine chest press,1,12,50.0,0,0,,2,2026-08-18T10:51:32.794740-03:00
+14384,2026-08-17,Monday,Incline machine chest press,Incline machine chest press,1,12,50.0,0,0,,1,2026-08-18T10:51:32.794740-03:00
+14383,2026-08-17,Monday,Machine shoulder press,Machine shoulder press,1,10,20.0,0,0,,1,2026-08-18T10:51:56.842732-03:00
+14382,2026-08-17,Monday,Machine shoulder press,Machine shoulder press,1,10,20.0,0,0,,2,2026-08-18T10:51:56.842732-03:00
+14381,2026-08-17,Monday,Machine shoulder press,Machine shoulder press,1,11,20.0,0,0,,3,2026-08-18T10:51:56.842732-03:00
+14380,2026-08-17,Monday,Cable or machine lateral raise,Cable or machine lateral raise,1,12,2.5,0,0,,1,2026-08-18T10:53:13.460578-03:00
+14379,2026-08-17,Monday,Cable or machine lateral raise,Cable or machine lateral raise,1,12,2.5,0,0,,2,2026-08-18T10:53:13.460578-03:00
+14378,2026-08-17,Monday,Cable or machine lateral raise,Cable or machine lateral raise,1,12,2.5,0,0,,3,2026-08-18T10:53:13.460578-03:00
+14377,2026-08-17,Monday,Cable or machine lateral raise,Cable or machine lateral raise,1,12,2.5,0,0,,4,2026-08-18T10:53:13.460578-03:00
+14376,2026-08-17,Monday,Overhead cable triceps extension,Overhead cable triceps extension,1,10,10.0,0,0,,1,2026-08-18T10:54:15.700949-03:00
+14375,2026-08-17,Monday,Overhead cable triceps extension,Overhead cable triceps extension,1,10,10.0,0,0,,2,2026-08-18T10:54:15.700949-03:00
+14374,2026-08-17,Monday,Overhead cable triceps extension,Overhead cable triceps extension,1,10,10.0,0,0,,3,2026-08-18T10:54:15.700949-03:00
+14409,2026-08-11,Saturday,Leg extension,Leg extension,1,12,72.5,0,0,,3,2026-08-18T10:42:03.199571-03:00
+14408,2026-08-11,Saturday,Leg extension,Leg extension,1,12,72.5,0,0,,2,2026-08-18T10:42:03.199571-03:00
+14407,2026-08-11,Saturday,Leg extension,Leg extension,1,12,72.5,0,0,,1,2026-08-18T10:42:03.199571-03:00
+14406,2026-08-11,Saturday,Leg press,Leg press,1,10,160.0,0,0,,3,2026-08-18T10:41:21.208486-03:00
+14405,2026-08-11,Saturday,Leg press,Leg press,1,12,160.0,0,0,,2,2026-08-18T10:41:21.208486-03:00
+14404,2026-08-11,Saturday,Leg press,Leg press,1,12,160.0,0,0,,1,2026-08-18T10:41:21.208486-03:00
+14403,2026-08-11,Saturday,Seated leg curl,Seated leg curl,1,10,80.0,0,0,,1,2026-08-18T10:41:35.418751-03:00
+14402,2026-08-11,Saturday,Seated leg curl,Seated leg curl,1,10,80.0,0,0,,2,2026-08-18T10:41:35.418751-03:00
+14401,2026-08-11,Saturday,Seated leg curl,Seated leg curl,1,10,80.0,0,0,,3,2026-08-18T10:41:35.418751-03:00
+14400,2026-08-11,Saturday,Pallof press,Pallof press,1,15,12.5,2,0,,1,2026-08-18T10:42:40.697144-03:00
+14399,2026-08-11,Saturday,Pallof press,Pallof press,1,15,12.5,2,0,,2,2026-08-18T10:42:40.697144-03:00
+14398,2026-08-11,Saturday,Pallof press,Pallof press,1,15,12.5,2,0,,3,2026-08-18T10:42:40.697144-03:00
+14397,2026-08-11,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,10,60.0,0,0,,1,2026-08-18T10:33:44.037653-03:00
+14396,2026-08-11,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,10,60.0,0,0,,2,2026-08-18T10:33:44.037653-03:00
+14395,2026-08-11,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,10,60.0,0,0,,3,2026-08-18T10:33:44.037653-03:00
+14394,2026-08-11,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,10,60.0,0,0,,4,2026-08-18T10:33:44.037653-03:00
+14429,2026-08-10,Friday,Cable triceps pushdown,Cable triceps pushdown,1,8,27.5,0,0,,3,2026-08-18T10:40:10.765306-03:00
+14428,2026-08-10,Friday,Cable triceps pushdown,Cable triceps pushdown,1,9,27.5,0,0,,2,2026-08-18T10:40:10.765306-03:00
+14427,2026-08-10,Friday,Cable triceps pushdown,Cable triceps pushdown,1,15,25.0,0,0,,1,2026-08-18T10:40:10.765306-03:00
+14426,2026-08-10,Friday,Machine shoulder press,Machine shoulder press,1,10,27.5,0,0,,3,2026-08-18T10:39:17.188420-03:00
+14425,2026-08-10,Friday,Machine shoulder press,Machine shoulder press,1,12,27.5,0,0,,2,2026-08-18T10:39:17.188420-03:00
+14424,2026-08-10,Friday,Machine shoulder press,Machine shoulder press,1,15,27.5,0,0,,1,2026-08-18T10:39:17.188420-03:00
+14423,2026-08-10,Friday,Machine chest press,Machine chest press,1,8,55.0,0,0,,4,2026-08-18T10:38:02.037138-03:00
+14422,2026-08-10,Friday,Machine chest press,Machine chest press,1,7,55.0,0,0,,3,2026-08-18T10:38:02.037138-03:00
+14421,2026-08-10,Friday,Machine chest press,Machine chest press,1,11,50.0,0,0,,2,2026-08-18T10:38:02.037138-03:00
+14420,2026-08-10,Friday,Machine chest press,Machine chest press,1,12,50.0,0,0,,1,2026-08-18T10:38:02.037138-03:00
+14419,2026-08-10,Friday,Chest-supported row,Chest-supported row,1,12,62.5,0,0,,1,2026-08-18T10:38:37.383726-03:00
+14418,2026-08-10,Friday,Chest-supported row,Chest-supported row,1,12,62.5,0,0,,2,2026-08-18T10:38:37.383726-03:00
+14417,2026-08-10,Friday,Chest-supported row,Chest-supported row,1,12,62.5,0,0,,3,2026-08-18T10:38:37.383726-03:00
+14416,2026-08-10,Friday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,12,59.0,0,0,,1,2026-08-18T10:39:38.836096-03:00
+14415,2026-08-10,Friday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,59.0,0,0,,2,2026-08-18T10:39:38.836096-03:00
+14414,2026-08-10,Friday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,59.0,0,0,,3,2026-08-18T10:39:38.836096-03:00
+14413,2026-08-10,Friday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,59.0,0,0,,4,2026-08-18T10:39:38.836096-03:00
+14412,2026-08-10,Friday,Machine or cable curl,Machine or cable curl,1,15,39.0,0,0,,1,2026-08-18T10:40:34.459842-03:00
+14411,2026-08-10,Friday,Machine or cable curl,Machine or cable curl,1,10,39.0,0,0,,2,2026-08-18T10:40:34.459842-03:00
+14410,2026-08-10,Friday,Machine or cable curl,Machine or cable curl,1,10,39.0,0,0,,3,2026-08-18T10:40:34.459842-03:00
+14441,2026-08-07,Wednesday,Machine hip thrust,Machine hip thrust,1,15,50.0,2,0,,3,2026-08-18T10:36:04.431198-03:00
+14440,2026-08-07,Wednesday,Machine hip thrust,Machine hip thrust,1,15,50.0,2,0,,2,2026-08-18T10:36:04.431198-03:00
+14439,2026-08-07,Wednesday,Machine hip thrust,Machine hip thrust,1,20,50.0,2,0,,1,2026-08-18T10:36:04.431198-03:00
+14438,2026-08-07,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,120.0,0,0,,3,2026-08-18T10:33:55.368613-03:00
+14437,2026-08-07,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,120.0,0,0,,2,2026-08-18T10:33:55.368613-03:00
+14436,2026-08-07,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,120.0,0,0,,1,2026-08-18T10:33:55.368613-03:00
+14435,2026-08-07,Wednesday,Supported split squat or low step-up,Supported split squat or low step-up,1,12,20.0,0,0,,1,2026-08-18T10:34:50.143404-03:00
+14434,2026-08-07,Wednesday,Supported split squat or low step-up,Supported split squat or low step-up,1,10,20.0,0,0,,2,2026-08-18T10:34:50.143404-03:00
+14433,2026-08-07,Wednesday,Supported split squat or low step-up,Supported split squat or low step-up,1,8,20.0,0,0,,3,2026-08-18T10:34:50.143404-03:00
+14432,2026-08-07,Wednesday,Machine crunch or dead bug,Machine crunch or dead bug,1,20,50.0,0,0,,1,2026-08-18T10:36:36.772400-03:00
+14431,2026-08-07,Wednesday,Machine crunch or dead bug,Machine crunch or dead bug,1,15,50.0,0,0,,2,2026-08-18T10:36:36.772400-03:00
+14430,2026-08-07,Wednesday,Machine crunch or dead bug,Machine crunch or dead bug,1,15,50.0,0,0,,3,2026-08-18T10:36:36.772400-03:00
+14465,2026-08-06,Tuesday,Cable or machine curl,Cable or machine curl,1,9,39.0,0,0,,3,2026-08-18T10:14:44.096159-03:00
+14464,2026-08-06,Tuesday,Cable or machine curl,Cable or machine curl,1,10,39.0,0,0,,2,2026-08-18T10:14:44.096159-03:00
+14463,2026-08-06,Tuesday,Cable or machine curl,Cable or machine curl,1,12,39.0,0,0,,1,2026-08-18T10:14:44.096159-03:00
+14462,2026-08-06,Tuesday,One-arm cable row,One-arm cable row,1,15,35.0,1,0,,3,2026-08-18T10:13:42.517596-03:00
+14461,2026-08-06,Tuesday,One-arm cable row,One-arm cable row,1,13,35.0,1,0,,2,2026-08-18T10:13:42.517596-03:00
+14460,2026-08-06,Tuesday,One-arm cable row,One-arm cable row,1,20,35.0,1,0,,1,2026-08-18T10:13:42.517596-03:00
+14459,2026-08-06,Tuesday,Chest-supported machine row,Chest-supported machine row,1,12,57.5,2,0,,4,2026-08-18T10:09:28.709683-03:00
+14458,2026-08-06,Tuesday,Chest-supported machine row,Chest-supported machine row,1,12,57.5,2,0,,3,2026-08-18T10:09:28.709683-03:00
+14457,2026-08-06,Tuesday,Chest-supported machine row,Chest-supported machine row,1,12,57.5,2,0,,2,2026-08-18T10:09:28.709683-03:00
+14456,2026-08-06,Tuesday,Chest-supported machine row,Chest-supported machine row,1,12,57.5,2,0,,1,2026-08-18T10:09:28.709683-03:00
+14455,2026-08-06,Tuesday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,12,59.0,1,0,,1,2026-08-18T10:08:51.889969-03:00
+14454,2026-08-06,Tuesday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,12,59.0,1,0,,2,2026-08-18T10:08:51.889969-03:00
+14453,2026-08-06,Tuesday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,10,59.0,1,0,,3,2026-08-18T10:08:51.889969-03:00
+14452,2026-08-06,Tuesday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,11,59.0,1,0,,4,2026-08-18T10:08:51.889969-03:00
+14451,2026-08-06,Tuesday,One-arm cable row,One-arm cable row,1,13,35.0,1,0,,1,2026-08-18T10:10:14.110415-03:00
+14450,2026-08-06,Tuesday,One-arm cable row,One-arm cable row,1,15,35.0,1,0,,2,2026-08-18T10:10:14.110415-03:00
+14449,2026-08-06,Tuesday,One-arm cable row,One-arm cable row,1,12,35.0,1,0,,3,2026-08-18T10:10:14.110415-03:00
+14448,2026-08-06,Tuesday,Reverse pec deck,Reverse pec deck,1,12,35.0,0,0,,1,2026-08-18T10:14:08.631053-03:00
+14447,2026-08-06,Tuesday,Reverse pec deck,Reverse pec deck,1,12,35.0,0,0,,2,2026-08-18T10:14:08.631053-03:00
+14446,2026-08-06,Tuesday,Reverse pec deck,Reverse pec deck,1,12,35.0,0,0,,3,2026-08-18T10:14:08.631053-03:00
+14445,2026-08-06,Tuesday,Reverse pec deck,Reverse pec deck,1,10,35.0,0,0,,4,2026-08-18T10:14:08.631053-03:00
+14444,2026-08-06,Tuesday,Hammer curl,Hammer curl,1,10,8.0,0,0,,1,2026-08-18T10:15:05.011610-03:00
+14443,2026-08-06,Tuesday,Hammer curl,Hammer curl,1,11,8.0,0,0,,2,2026-08-18T10:15:05.011610-03:00
+14442,2026-08-06,Tuesday,Hammer curl,Hammer curl,1,11,8.0,0,0,,3,2026-08-18T10:15:05.011610-03:00
+14485,2026-08-05,Wednesday,Overhead cable triceps extension,Overhead cable triceps extension,1,10,10.0,1,0,,3,2026-08-06T07:37:29.378641-03:00
+14484,2026-08-05,Wednesday,Overhead cable triceps extension,Overhead cable triceps extension,1,12,10.0,1,0,,2,2026-08-06T07:37:29.378641-03:00
+14483,2026-08-05,Wednesday,Overhead cable triceps extension,Overhead cable triceps extension,1,10,12.5,1,0,,1,2026-08-06T07:37:29.378641-03:00
+14482,2026-08-05,Wednesday,Cable or machine lateral raise,Cable or machine lateral raise,1,12,2.5,1,0,,4,2026-08-06T07:36:21.231948-03:00
+14481,2026-08-05,Wednesday,Cable or machine lateral raise,Cable or machine lateral raise,1,12,2.5,1,0,,3,2026-08-06T07:36:21.231948-03:00
+14480,2026-08-05,Wednesday,Cable or machine lateral raise,Cable or machine lateral raise,1,12,2.5,1,0,,2,2026-08-06T07:36:21.231948-03:00
+14479,2026-08-05,Wednesday,Cable or machine lateral raise,Cable or machine lateral raise,1,12,2.5,1,0,,1,2026-08-06T07:36:21.231948-03:00
+14478,2026-08-05,Wednesday,Pec deck,Pec deck,1,10,57.5,0,0,,3,2026-08-06T07:35:20.482713-03:00
+14477,2026-08-05,Wednesday,Pec deck,Pec deck,1,10,57.5,0,0,,2,2026-08-06T07:35:20.482713-03:00
+14476,2026-08-05,Wednesday,Pec deck,Pec deck,1,10,57.5,0,0,,1,2026-08-06T07:35:20.482713-03:00
+14475,2026-08-05,Wednesday,Incline machine chest press,Incline machine chest press,1,12,50.0,0,0,,1,2026-08-06T07:34:57.374845-03:00
+14474,2026-08-05,Wednesday,Incline machine chest press,Incline machine chest press,1,9,50.0,0,0,,2,2026-08-06T07:34:57.374845-03:00
+14473,2026-08-05,Wednesday,Incline machine chest press,Incline machine chest press,1,8,50.0,0,0,,3,2026-08-06T07:34:57.374845-03:00
+14472,2026-08-05,Wednesday,Incline machine chest press,Incline machine chest press,1,8,50.0,0,0,,4,2026-08-06T07:34:57.374845-03:00
+14471,2026-08-05,Wednesday,Machine shoulder press,Machine shoulder press,1,12,27.5,0,0,,1,2026-08-06T07:35:53.797348-03:00
+14470,2026-08-05,Wednesday,Machine shoulder press,Machine shoulder press,1,8,27.5,0,0,,2,2026-08-06T07:35:53.797348-03:00
+14469,2026-08-05,Wednesday,Machine shoulder press,Machine shoulder press,1,8,27.5,0,0,,3,2026-08-06T07:35:53.797348-03:00
+14468,2026-08-05,Wednesday,Cable triceps pushdown,Cable triceps pushdown,1,13,27.5,0,0,,1,2026-08-06T07:37:00.919542-03:00
+14467,2026-08-05,Wednesday,Cable triceps pushdown,Cable triceps pushdown,1,10,27.5,0,0,,2,2026-08-06T07:37:00.919542-03:00
+14466,2026-08-05,Wednesday,Cable triceps pushdown,Cable triceps pushdown,1,10,27.5,0,0,,3,2026-08-06T07:37:00.919542-03:00
+14505,2026-08-04,Tuesday,Seated calf raise,Seated calf raise,1,12,40.0,2,0,,3,2026-08-06T07:34:00.289436-03:00
+14504,2026-08-04,Tuesday,Seated calf raise,Seated calf raise,1,12,40.0,2,0,,2,2026-08-06T07:34:00.289436-03:00
+14503,2026-08-04,Tuesday,Seated calf raise,Seated calf raise,1,12,40.0,2,0,,1,2026-08-06T07:34:00.289436-03:00
+14502,2026-08-04,Tuesday,Leg extension,Leg extension,1,12,72.5,0,0,,3,2026-08-06T07:33:22.028078-03:00
+14501,2026-08-04,Tuesday,Leg extension,Leg extension,1,12,72.5,0,0,,2,2026-08-06T07:33:22.028078-03:00
+14500,2026-08-04,Tuesday,Leg extension,Leg extension,1,12,72.5,0,0,,1,2026-08-06T07:33:22.028078-03:00
+14499,2026-08-04,Tuesday,Pallof press,Pallof press,1,15,10.0,0,0,,3,2026-08-06T07:30:07.570678-03:00
+14498,2026-08-04,Tuesday,Pallof press,Pallof press,1,20,10.0,0,0,,2,2026-08-06T07:30:07.570678-03:00
+14497,2026-08-04,Tuesday,Pallof press,Pallof press,1,20,10.0,0,0,,1,2026-08-06T07:30:07.570678-03:00
+14496,2026-08-04,Tuesday,Pallof press,Pallof press,1,20,10.0,2,0,,3,2026-08-06T07:29:13.842064-03:00
+14495,2026-08-04,Tuesday,Pallof press,Pallof press,1,20,10.0,2,0,,2,2026-08-06T07:29:13.842064-03:00
+14494,2026-08-04,Tuesday,Pallof press,Pallof press,1,20,10.0,2,0,,1,2026-08-06T07:29:13.842064-03:00
+14493,2026-08-04,Tuesday,Leg press,Leg press,1,10,160.0,0,0,,1,2026-08-06T07:28:09.440642-03:00
+14492,2026-08-04,Tuesday,Leg press,Leg press,1,10,160.0,0,0,,2,2026-08-06T07:28:09.440642-03:00
+14491,2026-08-04,Tuesday,Seated leg curl,Seated leg curl,1,10,80.0,0,0,,1,2026-08-06T07:33:00.774876-03:00
+14490,2026-08-04,Tuesday,Seated leg curl,Seated leg curl,1,10,80.0,0,0,,2,2026-08-06T07:33:00.774876-03:00
+14489,2026-08-04,Tuesday,Seated leg curl,Seated leg curl,1,10,80.0,0,0,,3,2026-08-06T07:33:00.774876-03:00
+14488,2026-08-04,Tuesday,Machine hip thrust,Machine hip thrust,1,10,80.0,0,0,,1,2026-08-06T07:33:38.730402-03:00
+14487,2026-08-04,Tuesday,Machine hip thrust,Machine hip thrust,1,11,80.0,0,0,,2,2026-08-06T07:33:38.730402-03:00
+14486,2026-08-04,Tuesday,Machine hip thrust,Machine hip thrust,1,10,80.0,0,0,,3,2026-08-06T07:33:38.730402-03:00
+14525,2026-08-03,Monday,Machine or cable curl,Machine or cable curl,1,10,39.0,0,0,,3,2026-08-03T21:26:12.809714-03:00
+14524,2026-08-03,Monday,Machine or cable curl,Machine or cable curl,1,10,39.0,0,0,,2,2026-08-03T21:26:12.809714-03:00
+14523,2026-08-03,Monday,Machine or cable curl,Machine or cable curl,1,13,39.0,0,0,,1,2026-08-03T21:26:12.809714-03:00
+14522,2026-08-03,Monday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,54.0,0,0,,4,2026-08-03T21:25:09.852964-03:00
+14521,2026-08-03,Monday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,54.0,0,0,,3,2026-08-03T21:25:09.852964-03:00
+14520,2026-08-03,Monday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,12,54.0,0,0,,2,2026-08-03T21:25:09.852964-03:00
+14519,2026-08-03,Monday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,59.0,0,0,,1,2026-08-03T21:25:09.852964-03:00
+14518,2026-08-03,Monday,Chest-supported row,Chest-supported row,1,12,57.5,0,0,,3,2026-08-03T21:24:12.844907-03:00
+14517,2026-08-03,Monday,Chest-supported row,Chest-supported row,1,12,57.5,0,0,,2,2026-08-03T21:24:12.844907-03:00
+14516,2026-08-03,Monday,Chest-supported row,Chest-supported row,1,12,57.5,0,0,,1,2026-08-03T21:24:12.844907-03:00
+14515,2026-08-03,Monday,Machine chest press,Machine chest press,1,12,50.0,0,0,,1,2026-08-03T21:23:24.401425-03:00
+14514,2026-08-03,Monday,Machine chest press,Machine chest press,1,10,50.0,0,0,,2,2026-08-03T21:23:24.401425-03:00
+14513,2026-08-03,Monday,Machine chest press,Machine chest press,1,8,50.0,0,0,,3,2026-08-03T21:23:24.401425-03:00
+14512,2026-08-03,Monday,Machine chest press,Machine chest press,1,8,50.0,0,0,,4,2026-08-03T21:23:24.401425-03:00
+14511,2026-08-03,Monday,Machine shoulder press,Machine shoulder press,1,12,27.5,0,0,,1,2026-08-03T21:24:44.059867-03:00
+14510,2026-08-03,Monday,Machine shoulder press,Machine shoulder press,1,12,27.5,0,0,,2,2026-08-03T21:24:44.059867-03:00
+14509,2026-08-03,Monday,Machine shoulder press,Machine shoulder press,1,10,27.5,0,0,,3,2026-08-03T21:24:44.059867-03:00
+14508,2026-08-03,Monday,Cable triceps pushdown,Cable triceps pushdown,1,15,27.5,0,0,,1,2026-08-03T21:25:49.871868-03:00
+14507,2026-08-03,Monday,Cable triceps pushdown,Cable triceps pushdown,1,13,27.5,0,0,,2,2026-08-03T21:25:49.871868-03:00
+14506,2026-08-03,Monday,Cable triceps pushdown,Cable triceps pushdown,1,12,27.5,0,0,,3,2026-08-03T21:25:49.871868-03:00
+14545,2026-08-01,Friday,Machine crunch or dead bug,Machine crunch or dead bug,1,10,80.0,0,0,,3,2026-08-01T15:02:44.637698-03:00
+14544,2026-08-01,Friday,Machine crunch or dead bug,Machine crunch or dead bug,1,12,80.0,0,0,,2,2026-08-01T15:02:44.637698-03:00
+14543,2026-08-01,Friday,Machine crunch or dead bug,Machine crunch or dead bug,1,12,80.0,0,0,,1,2026-08-01T15:02:44.637698-03:00
+14542,2026-08-01,Friday,Seated calf raise,Seated calf raise,1,15,40.0,3,0,,3,2026-08-01T14:58:06.158021-03:00
+14541,2026-08-01,Friday,Seated calf raise,Seated calf raise,1,15,40.0,3,0,,2,2026-08-01T14:58:06.158021-03:00
+14540,2026-08-01,Friday,Seated calf raise,Seated calf raise,1,15,40.0,3,0,,1,2026-08-01T14:58:06.158021-03:00
+14539,2026-08-01,Friday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,160.0,0,0,,3,2026-08-01T14:56:31.592403-03:00
+14538,2026-08-01,Friday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,160.0,0,0,,2,2026-08-01T14:56:31.592403-03:00
+14537,2026-08-01,Friday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,160.0,0,0,,1,2026-08-01T14:56:31.592403-03:00
+14536,2026-08-01,Friday,Seated or lying leg curl,Seated or lying leg curl,1,8,80.0,0,0,,1,2026-08-01T14:55:46.655014-03:00
+14535,2026-08-01,Friday,Seated or lying leg curl,Seated or lying leg curl,1,8,80.0,0,0,,2,2026-08-01T14:55:46.655014-03:00
+14534,2026-08-01,Friday,Seated or lying leg curl,Seated or lying leg curl,1,8,80.0,0,0,,3,2026-08-01T14:55:46.655014-03:00
+14533,2026-08-01,Friday,Seated or lying leg curl,Seated or lying leg curl,1,8,80.0,0,0,,4,2026-08-01T14:55:46.655014-03:00
+14532,2026-08-01,Friday,Supported split squat or low step-up,Supported split squat or low step-up,1,10,0.0,2,0,,1,2026-08-01T14:57:14.333722-03:00
+14531,2026-08-01,Friday,Supported split squat or low step-up,Supported split squat or low step-up,1,10,10.0,2,0,,2,2026-08-01T14:57:14.333722-03:00
+14530,2026-08-01,Friday,Supported split squat or low step-up,Supported split squat or low step-up,1,10,10.0,2,0,,3,2026-08-01T14:57:14.333722-03:00
+14529,2026-08-01,Friday,Machine hip thrust,Machine hip thrust,1,12,0.0,2,0,,1,2026-08-01T15:01:51.132724-03:00
+14528,2026-08-01,Friday,Machine hip thrust,Machine hip thrust,1,8,40.0,2,0,,2,2026-08-01T15:01:51.132724-03:00
+14527,2026-08-01,Friday,Machine hip thrust,Machine hip thrust,1,8,80.0,2,0,,3,2026-08-01T15:01:51.132724-03:00
+14526,2026-08-01,Friday,Machine hip thrust,Machine hip thrust,1,10,80.0,2,0,,4,2026-08-01T15:01:51.132724-03:00
+14566,2026-07-31,Thursday,Hammer curl,Hammer curl,1,10,0.0,0,0,,3,2026-08-01T15:50:15.556742-03:00
+14565,2026-07-31,Thursday,Hammer curl,Hammer curl,1,12,0.0,0,0,,2,2026-08-01T15:50:15.556742-03:00
+14564,2026-07-31,Thursday,Hammer curl,Hammer curl,1,10,7.0,0,0,,1,2026-08-01T15:50:15.556742-03:00
+14563,2026-07-31,Thursday,Reverse pec deck,Reverse pec deck,1,12,35.0,0,0,,4,2026-08-01T15:49:32.781373-03:00
+14562,2026-07-31,Thursday,Reverse pec deck,Reverse pec deck,1,12,35.0,0,0,,3,2026-08-01T15:49:32.781373-03:00
+14561,2026-07-31,Thursday,Reverse pec deck,Reverse pec deck,1,12,35.0,0,0,,2,2026-08-01T15:49:32.781373-03:00
+14560,2026-07-31,Thursday,Reverse pec deck,Reverse pec deck,1,12,35.0,0,0,,1,2026-08-01T15:49:32.781373-03:00
+14559,2026-07-31,Thursday,Chest-supported machine row,Chest-supported machine row,1,9,57.5,0,0,,4,2026-08-01T15:47:24.229334-03:00
+14558,2026-07-31,Thursday,Chest-supported machine row,Chest-supported machine row,1,10,52.5,0,0,,3,2026-08-01T15:47:24.229334-03:00
+14557,2026-07-31,Thursday,Chest-supported machine row,Chest-supported machine row,1,10,52.5,0,0,,2,2026-08-01T15:47:24.229334-03:00
+14556,2026-07-31,Thursday,Chest-supported machine row,Chest-supported machine row,1,8,52.5,0,0,,1,2026-08-01T15:47:24.229334-03:00
+14555,2026-07-31,Thursday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,59.0,0,0,,1,2026-08-01T15:46:16.899835-03:00
+14554,2026-07-31,Thursday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,59.0,0,0,,2,2026-08-01T15:46:16.899835-03:00
+14553,2026-07-31,Thursday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,59.0,0,0,,3,2026-08-01T15:46:16.899835-03:00
+14552,2026-07-31,Thursday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,59.0,0,0,,4,2026-08-01T15:46:16.899835-03:00
+14551,2026-07-31,Thursday,One-arm cable row,One-arm cable row,1,12,15.0,1,0,,1,2026-08-01T15:48:33.822403-03:00
+14550,2026-07-31,Thursday,One-arm cable row,One-arm cable row,1,12,0.0,1,0,,2,2026-08-01T15:48:33.822403-03:00
+14549,2026-07-31,Thursday,One-arm cable row,One-arm cable row,1,12,0.0,1,0,,3,2026-08-01T15:48:33.822403-03:00
+14548,2026-07-31,Thursday,Cable or machine curl,Cable or machine curl,1,14,39.0,0,0,,1,2026-08-01T15:49:57.943489-03:00
+14547,2026-07-31,Thursday,Cable or machine curl,Cable or machine curl,1,10,39.0,0,0,,2,2026-08-01T15:49:57.943489-03:00
+14546,2026-07-31,Thursday,Cable or machine curl,Cable or machine curl,1,8,39.0,0,0,,3,2026-08-01T15:49:57.943489-03:00
+14585,2026-07-30,Wednesday,Overhead cable triceps extension,Overhead cable triceps extension,1,11,11.25,1,0,,3,2026-07-30T16:33:13.024744-03:00
+14584,2026-07-30,Wednesday,Overhead cable triceps extension,Overhead cable triceps extension,1,10,11.25,1,0,,2,2026-07-30T16:33:13.024744-03:00
+14583,2026-07-30,Wednesday,Overhead cable triceps extension,Overhead cable triceps extension,1,10,11.25,1,0,,1,2026-07-30T16:33:13.024744-03:00
+14582,2026-07-30,Wednesday,Cable or machine lateral raise,Cable or machine lateral raise,1,12,4.375,0,0,,3,2026-07-30T16:32:02.852330-03:00
+14581,2026-07-30,Wednesday,Cable or machine lateral raise,Cable or machine lateral raise,1,12,4.375,0,0,,2,2026-07-30T16:32:02.852330-03:00
+14580,2026-07-30,Wednesday,Cable or machine lateral raise,Cable or machine lateral raise,1,16,3.75,0,0,,1,2026-07-30T16:32:02.852330-03:00
+14579,2026-07-30,Wednesday,Pec deck,Pec deck,1,10,57.5,0,0,,3,2026-07-30T16:29:15.244179-03:00
+14578,2026-07-30,Wednesday,Pec deck,Pec deck,1,10,57.5,0,0,,2,2026-07-30T16:29:15.244179-03:00
+14577,2026-07-30,Wednesday,Pec deck,Pec deck,1,10,57.5,0,0,,1,2026-07-30T16:29:15.244179-03:00
+14576,2026-07-30,Wednesday,Incline machine chest press,Incline machine chest press,1,8,50.0,0,0,,1,2026-07-30T16:26:52.948150-03:00
+14575,2026-07-30,Wednesday,Incline machine chest press,Incline machine chest press,1,8,50.0,0,0,,2,2026-07-30T16:26:52.948150-03:00
+14574,2026-07-30,Wednesday,Incline machine chest press,Incline machine chest press,1,8,50.0,0,0,,3,2026-07-30T16:26:52.948150-03:00
+14573,2026-07-30,Wednesday,Incline machine chest press,Incline machine chest press,1,8,52.5,0,0,,4,2026-07-30T16:26:52.948150-03:00
+14572,2026-07-30,Wednesday,Machine shoulder press,Machine shoulder press,1,8,27.5,0,0,,1,2026-07-30T16:30:13.846701-03:00
+14571,2026-07-30,Wednesday,Machine shoulder press,Machine shoulder press,1,8,27.5,0,0,,2,2026-07-30T16:30:13.846701-03:00
+14570,2026-07-30,Wednesday,Machine shoulder press,Machine shoulder press,1,8,27.5,0,0,,3,2026-07-30T16:30:13.846701-03:00
+14569,2026-07-30,Wednesday,Cable triceps pushdown,Cable triceps pushdown,1,11,28.75,1,0,,1,2026-07-30T16:32:44.808021-03:00
+14568,2026-07-30,Wednesday,Cable triceps pushdown,Cable triceps pushdown,1,12,28.75,1,0,,2,2026-07-30T16:32:44.808021-03:00
+14567,2026-07-30,Wednesday,Cable triceps pushdown,Cable triceps pushdown,1,11,28.75,1,0,,3,2026-07-30T16:32:44.808021-03:00
+14591,2026-07-28,Tuesday,Seated leg curl,Seated leg curl,1,10,72.5,0,0,,3,2026-07-28T15:00:25.188491-03:00
+14590,2026-07-28,Tuesday,Seated leg curl,Seated leg curl,1,10,72.5,0,0,,2,2026-07-28T15:00:25.188491-03:00
+14589,2026-07-28,Tuesday,Seated leg curl,Seated leg curl,1,12,72.5,0,0,,1,2026-07-28T15:00:25.188491-03:00
+14588,2026-07-28,Tuesday,Leg press,Leg press,1,10,160.0,0,0,,1,2026-07-28T14:53:31.816753-03:00
+14587,2026-07-28,Tuesday,Leg press,Leg press,1,10,160.0,0,0,,2,2026-07-28T14:53:31.816753-03:00
+14586,2026-07-28,Tuesday,Leg press,Leg press,1,9,160.0,0,0,,3,2026-07-28T14:53:31.816753-03:00
+14611,2026-07-27,Monday,Machine chest press,Machine chest press,1,8,50.0,0,0,,1,2026-07-27T12:00:05.000000-03:00
+14610,2026-07-27,Monday,Machine chest press,Machine chest press,1,8,50.0,0,0,,2,2026-07-27T12:00:05.000000-03:00
+14609,2026-07-27,Monday,Machine chest press,Machine chest press,1,8,50.0,0,0,,3,2026-07-27T12:00:05.000000-03:00
+14608,2026-07-27,Monday,Machine chest press,Machine chest press,1,6,50.0,0,0,,4,2026-07-27T12:00:05.000000-03:00
+14607,2026-07-27,Monday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,59.0,0,0,,1,2026-07-27T12:00:04.000000-03:00
+14606,2026-07-27,Monday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,59.0,0,0,,2,2026-07-27T12:00:04.000000-03:00
+14605,2026-07-27,Monday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,7,59.0,0,0,,3,2026-07-27T12:00:04.000000-03:00
+14604,2026-07-27,Monday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,7,59.0,0,0,,4,2026-07-27T12:00:04.000000-03:00
+14603,2026-07-27,Monday,Chest-supported row,Chest-supported row,1,12,50.0,0,0,,1,2026-07-27T12:00:03.000000-03:00
+14602,2026-07-27,Monday,Chest-supported row,Chest-supported row,1,8,57.5,0,0,,2,2026-07-27T12:00:03.000000-03:00
+14601,2026-07-27,Monday,Chest-supported row,Chest-supported row,1,8,57.5,0,0,,3,2026-07-27T12:00:03.000000-03:00
+14600,2026-07-27,Monday,Machine shoulder press,Machine shoulder press,1,10,27.5,0,0,,1,2026-07-27T12:00:02.000000-03:00
+14599,2026-07-27,Monday,Machine shoulder press,Machine shoulder press,1,8,27.5,0,0,,2,2026-07-27T12:00:02.000000-03:00
+14598,2026-07-27,Monday,Machine shoulder press,Machine shoulder press,1,8,27.5,0,0,,3,2026-07-27T12:00:02.000000-03:00
+14597,2026-07-27,Monday,Cable triceps pushdown,Cable triceps pushdown,1,10,27.5,0,0,,1,2026-07-27T12:00:01.000000-03:00
+14596,2026-07-27,Monday,Cable triceps pushdown,Cable triceps pushdown,1,10,27.5,0,0,,2,2026-07-27T12:00:01.000000-03:00
+14595,2026-07-27,Monday,Cable triceps pushdown,Cable triceps pushdown,1,8,27.5,0,0,,3,2026-07-27T12:00:01.000000-03:00
+14594,2026-07-27,Monday,Machine or cable curl,Machine or cable curl,1,10,39.0,0,0,,1,2026-07-27T12:00:00.000000-03:00
+14593,2026-07-27,Monday,Machine or cable curl,Machine or cable curl,1,8,39.0,0,0,,2,2026-07-27T12:00:00.000000-03:00
+14592,2026-07-27,Monday,Machine or cable curl,Machine or cable curl,1,8,39.0,0,0,,3,2026-07-27T12:00:00.000000-03:00
+14624,2026-07-25,Saturday,Seated or lying leg curl,Seated or lying leg curl,1,12,72.5,0,0,,1,2026-07-25T12:00:09.000000-03:00
+14623,2026-07-25,Saturday,Seated or lying leg curl,Seated or lying leg curl,1,8,80.0,0,0,,2,2026-07-25T12:00:09.000000-03:00
+14622,2026-07-25,Saturday,Seated or lying leg curl,Seated or lying leg curl,1,8,80.0,0,0,,3,2026-07-25T12:00:09.000000-03:00
+14621,2026-07-25,Saturday,Seated or lying leg curl,Seated or lying leg curl,1,8,80.0,0,0,,4,2026-07-25T12:00:09.000000-03:00
+14620,2026-07-25,Saturday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,120.0,2,0,,1,2026-07-25T12:00:08.000000-03:00
+14619,2026-07-25,Saturday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,160.0,2,0,,2,2026-07-25T12:00:08.000000-03:00
+14618,2026-07-25,Saturday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,160.0,2,0,,3,2026-07-25T12:00:08.000000-03:00
+14617,2026-07-25,Saturday,Supported split squat or low step-up,Supported split squat or low step-up,1,8,0.0,2,0,,1,2026-07-25T12:00:07.000000-03:00
+14616,2026-07-25,Saturday,Supported split squat or low step-up,Supported split squat or low step-up,1,8,0.0,2,0,,2,2026-07-25T12:00:07.000000-03:00
+14615,2026-07-25,Saturday,Supported split squat or low step-up,Supported split squat or low step-up,1,8,0.0,2,0,,3,2026-07-25T12:00:07.000000-03:00
+14614,2026-07-25,Saturday,Machine crunch or dead bug,Machine crunch or dead bug,1,10,80.0,2,0,,1,2026-07-25T12:00:06.000000-03:00
+14613,2026-07-25,Saturday,Machine crunch or dead bug,Machine crunch or dead bug,1,10,80.0,2,0,,2,2026-07-25T12:00:06.000000-03:00
+14612,2026-07-25,Saturday,Machine crunch or dead bug,Machine crunch or dead bug,1,10,80.0,2,0,,3,2026-07-25T12:00:06.000000-03:00
+14645,2026-07-23,Thursday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,12,47.0,0,0,,1,2026-07-23T12:00:15.000000-03:00
+14644,2026-07-23,Thursday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,10,54.0,0,0,,2,2026-07-23T12:00:15.000000-03:00
+14643,2026-07-23,Thursday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,59.0,0,0,,3,2026-07-23T12:00:15.000000-03:00
+14642,2026-07-23,Thursday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,7,59.0,0,0,,4,2026-07-23T12:00:15.000000-03:00
+14641,2026-07-23,Thursday,Chest-supported machine row,Chest-supported machine row,1,12,39.0,0,0,,1,2026-07-23T12:00:14.000000-03:00
+14640,2026-07-23,Thursday,Chest-supported machine row,Chest-supported machine row,1,12,45.0,0,0,,2,2026-07-23T12:00:14.000000-03:00
+14639,2026-07-23,Thursday,Chest-supported machine row,Chest-supported machine row,1,12,45.0,0,0,,3,2026-07-23T12:00:14.000000-03:00
+14638,2026-07-23,Thursday,Chest-supported machine row,Chest-supported machine row,1,10,52.0,0,0,,4,2026-07-23T12:00:14.000000-03:00
+14637,2026-07-23,Thursday,One-arm cable row,One-arm cable row,1,15,10.0,0,0,,1,2026-07-23T12:00:13.000000-03:00
+14636,2026-07-23,Thursday,One-arm cable row,One-arm cable row,1,12,15.0,0,0,,2,2026-07-23T12:00:13.000000-03:00
+14635,2026-07-23,Thursday,One-arm cable row,One-arm cable row,1,14,15.0,0,0,,3,2026-07-23T12:00:13.000000-03:00
+14634,2026-07-23,Thursday,Reverse pec deck,Reverse pec deck,1,12,42.5,0,0,,1,2026-07-23T12:00:12.000000-03:00
+14633,2026-07-23,Thursday,Reverse pec deck,Reverse pec deck,1,12,35.0,0,0,,2,2026-07-23T12:00:12.000000-03:00
+14632,2026-07-23,Thursday,Reverse pec deck,Reverse pec deck,1,12,35.0,0,0,,3,2026-07-23T12:00:12.000000-03:00
+14631,2026-07-23,Thursday,Reverse pec deck,Reverse pec deck,1,12,35.0,0,0,,4,2026-07-23T12:00:12.000000-03:00
+14630,2026-07-23,Thursday,Cable or machine curl,Cable or machine curl,1,10,34.5,0,0,,1,2026-07-23T12:00:11.000000-03:00
+14629,2026-07-23,Thursday,Cable or machine curl,Cable or machine curl,1,10,39.0,0,0,,2,2026-07-23T12:00:11.000000-03:00
+14628,2026-07-23,Thursday,Cable or machine curl,Cable or machine curl,1,8,39.0,0,0,,3,2026-07-23T12:00:11.000000-03:00
+14627,2026-07-23,Thursday,Hammer curl,Hammer curl,1,10,7.0,1,0,,1,2026-07-23T12:00:10.000000-03:00
+14626,2026-07-23,Thursday,Hammer curl,Hammer curl,1,10,7.0,1,0,,2,2026-07-23T12:00:10.000000-03:00
+14625,2026-07-23,Thursday,Hammer curl,Hammer curl,1,10,7.0,1,0,,3,2026-07-23T12:00:10.000000-03:00
+14664,2026-07-22,Wednesday,Incline machine chest press,Incline machine chest press,1,13,30.0,0,0,,1,2026-07-22T12:00:21.000000-03:00
+14663,2026-07-22,Wednesday,Incline machine chest press,Incline machine chest press,1,12,40.0,0,0,,2,2026-07-22T12:00:21.000000-03:00
+14662,2026-07-22,Wednesday,Incline machine chest press,Incline machine chest press,1,8,50.0,0,0,,3,2026-07-22T12:00:21.000000-03:00
+14661,2026-07-22,Wednesday,Incline machine chest press,Incline machine chest press,1,8,50.0,0,0,,4,2026-07-22T12:00:21.000000-03:00
+14660,2026-07-22,Wednesday,Pec deck,Pec deck,1,11,57.5,0,0,,1,2026-07-22T12:00:20.000000-03:00
+14659,2026-07-22,Wednesday,Pec deck,Pec deck,1,8,57.5,0,0,,2,2026-07-22T12:00:20.000000-03:00
+14658,2026-07-22,Wednesday,Pec deck,Pec deck,1,9,57.5,0,0,,3,2026-07-22T12:00:20.000000-03:00
+14657,2026-07-22,Wednesday,Machine shoulder press,Machine shoulder press,1,15,20.0,0,0,,1,2026-07-22T12:00:19.000000-03:00
+14656,2026-07-22,Wednesday,Machine shoulder press,Machine shoulder press,1,8,27.5,0,0,,2,2026-07-22T12:00:19.000000-03:00
+14655,2026-07-22,Wednesday,Machine shoulder press,Machine shoulder press,1,9,25.5,0,0,,3,2026-07-22T12:00:19.000000-03:00
+14654,2026-07-22,Wednesday,Cable or machine lateral raise,Cable or machine lateral raise,1,20,2.5,2,0,,1,2026-07-22T12:00:18.000000-03:00
+14653,2026-07-22,Wednesday,Cable or machine lateral raise,Cable or machine lateral raise,1,12,5.0,2,0,,2,2026-07-22T12:00:18.000000-03:00
+14652,2026-07-22,Wednesday,Cable or machine lateral raise,Cable or machine lateral raise,1,10,5.0,2,0,,3,2026-07-22T12:00:18.000000-03:00
+14651,2026-07-22,Wednesday,Cable triceps pushdown,Cable triceps pushdown,1,12,27.5,0,0,,1,2026-07-22T12:00:17.000000-03:00
+14650,2026-07-22,Wednesday,Cable triceps pushdown,Cable triceps pushdown,1,10,27.5,0,0,,2,2026-07-22T12:00:17.000000-03:00
+14649,2026-07-22,Wednesday,Cable triceps pushdown,Cable triceps pushdown,1,8,27.5,0,0,,3,2026-07-22T12:00:17.000000-03:00
+14648,2026-07-22,Wednesday,Overhead cable triceps extension,Overhead cable triceps extension,1,13,10.0,1,0,,1,2026-07-22T12:00:16.000000-03:00
+14647,2026-07-22,Wednesday,Overhead cable triceps extension,Overhead cable triceps extension,1,10,10.0,1,0,,2,2026-07-22T12:00:16.000000-03:00
+14646,2026-07-22,Wednesday,Overhead cable triceps extension,Overhead cable triceps extension,1,10,10.0,1,0,,3,2026-07-22T12:00:16.000000-03:00
+14673,2026-07-21,Tuesday,Leg press,Leg press,1,15,90.0,2,0,,1,2026-07-21T12:00:24.000000-03:00
+14672,2026-07-21,Tuesday,Leg press,Leg press,1,11,130.0,2,0,,2,2026-07-21T12:00:24.000000-03:00
+14671,2026-07-21,Tuesday,Leg press,Leg press,1,11,150.0,2,0,,3,2026-07-21T12:00:24.000000-03:00
+14670,2026-07-21,Tuesday,Seated leg curl,Seated leg curl,1,11,72.5,1,0,,1,2026-07-21T12:00:23.000000-03:00
+14669,2026-07-21,Tuesday,Seated leg curl,Seated leg curl,1,10,72.5,1,0,,2,2026-07-21T12:00:23.000000-03:00
+14668,2026-07-21,Tuesday,Seated leg curl,Seated leg curl,1,10,72.5,1,0,,3,2026-07-21T12:00:23.000000-03:00
+14667,2026-07-21,Tuesday,Leg extension,Leg extension,1,12,72.5,0,0,,1,2026-07-21T12:00:22.000000-03:00
+14666,2026-07-21,Tuesday,Leg extension,Leg extension,1,12,72.5,0,0,,2,2026-07-21T12:00:22.000000-03:00
+14665,2026-07-21,Tuesday,Leg extension,Leg extension,1,10,72.5,0,0,,3,2026-07-21T12:00:22.000000-03:00
+14693,2026-07-20,Monday,Machine chest press,Machine chest press,1,12,40.0,0,0,,1,2026-07-20T12:00:30.000000-03:00
+14692,2026-07-20,Monday,Machine chest press,Machine chest press,1,12,40.0,0,0,,2,2026-07-20T12:00:30.000000-03:00
+14691,2026-07-20,Monday,Machine chest press,Machine chest press,1,8,50.0,0,0,,3,2026-07-20T12:00:30.000000-03:00
+14690,2026-07-20,Monday,Machine chest press,Machine chest press,1,9,40.0,0,0,,4,2026-07-20T12:00:30.000000-03:00
+14689,2026-07-20,Monday,Lat pulldown,Lat pulldown,1,12,40.0,0,0,,1,2026-07-20T12:00:29.000000-03:00
+14688,2026-07-20,Monday,Lat pulldown,Lat pulldown,1,12,45.0,0,0,,2,2026-07-20T12:00:29.000000-03:00
+14687,2026-07-20,Monday,Lat pulldown,Lat pulldown,1,12,45.0,0,0,,3,2026-07-20T12:00:29.000000-03:00
+14686,2026-07-20,Monday,Lat pulldown,Lat pulldown,1,9,50.0,0,0,,4,2026-07-20T12:00:29.000000-03:00
+14685,2026-07-20,Monday,Chest-supported machine row,Chest-supported machine row,1,12,42.5,0,0,,1,2026-07-20T12:00:28.000000-03:00
+14684,2026-07-20,Monday,Chest-supported machine row,Chest-supported machine row,1,12,42.5,0,0,,2,2026-07-20T12:00:28.000000-03:00
+14683,2026-07-20,Monday,Chest-supported machine row,Chest-supported machine row,1,8,50.0,0,0,,3,2026-07-20T12:00:28.000000-03:00
+14682,2026-07-20,Monday,Machine shoulder press (neutral grip),Machine shoulder press (neutral grip),1,12,20.0,0,0,,1,2026-07-20T12:00:27.000000-03:00
+14681,2026-07-20,Monday,Machine shoulder press (neutral grip),Machine shoulder press (neutral grip),1,11,25.0,0,0,,2,2026-07-20T12:00:27.000000-03:00
+14680,2026-07-20,Monday,Machine shoulder press (neutral grip),Machine shoulder press (neutral grip),1,8,27.5,0,0,,3,2026-07-20T12:00:27.000000-03:00
+14679,2026-07-20,Monday,Cable triceps pushdown,Cable triceps pushdown,1,9,22.0,0,0,,1,2026-07-20T12:00:26.000000-03:00
+14678,2026-07-20,Monday,Cable triceps pushdown,Cable triceps pushdown,1,9,22.0,0,0,,2,2026-07-20T12:00:26.000000-03:00
+14677,2026-07-20,Monday,Cable triceps pushdown,Cable triceps pushdown,1,8,22.0,0,0,,3,2026-07-20T12:00:26.000000-03:00
+14676,2026-07-20,Monday,Machine or dumbbell curl,Machine or dumbbell curl,1,12,32.0,0,0,,1,2026-07-20T12:00:25.000000-03:00
+14675,2026-07-20,Monday,Machine or dumbbell curl,Machine or dumbbell curl,1,10,39.0,0,0,,2,2026-07-20T12:00:25.000000-03:00
+14674,2026-07-20,Monday,Machine or dumbbell curl,Machine or dumbbell curl,1,7,39.0,0,0,,3,2026-07-20T12:00:25.000000-03:00
