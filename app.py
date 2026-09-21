@@ -53,9 +53,7 @@ EXERCISE_IMAGES = {
     "Cable or machine curl": "machine-curl.jpg",
     "Hammer curl": "hammer-curl.jpg",
     "Seated or lying leg curl": "seated-leg-curl.jpg",
-    "Leg press, feet slightly higher": "leg-press.jpg",
     "Supported split squat or low step-up": "split-squat.jpg",
-    "Machine crunch or dead bug": "ab-crunch.jpg",
     "Machine crunch": "ab-crunch.jpg",
     "Hip adductor machine": "hip-adductor.jpg",
     "Hip abductor machine": "hip-abductor.jpg",
@@ -327,7 +325,7 @@ STARTER_PLAN = {
             ["Standing machine leg curl", "Stability-ball leg curl"],
         ),
         exercise(
-            "Leg press, feet slightly higher", 3, "10–15",
+            "Leg press", 3, "10–15",
             ["Box squat", "Supported goblet squat"],
             "Use a comfortable depth and keep the lower back from rounding.",
         ),

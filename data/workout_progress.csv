@@ -31,9 +31,9 @@ id,performed_on,day_name,planned_exercise,performed_exercise,sets,reps,weight,ri
 9487,2026-09-18,Friday,Cable triceps pushdown,Cable triceps pushdown,1,10,37.5,0,0,,1,2026-09-19T19:25:22.005560-03:00
 9486,2026-09-18,Friday,Cable triceps pushdown,Cable triceps pushdown,1,10,37.5,0,0,,2,2026-09-19T19:25:22.005560-03:00
 9485,2026-09-18,Friday,Cable triceps pushdown,Cable triceps pushdown,1,10,37.5,0,0,,3,2026-09-19T19:25:22.005560-03:00
-9518,2026-09-16,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,220.0,1,0,,3,2026-09-19T12:30:03.352595-03:00
-9517,2026-09-16,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,220.0,1,0,,2,2026-09-19T12:30:03.352595-03:00
-9516,2026-09-16,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,200.0,1,0,,1,2026-09-19T12:30:03.352595-03:00
+9518,2026-09-16,Wednesday,Leg press,Leg press,1,10,220.0,1,0,,3,2026-09-19T12:30:03.352595-03:00
+9517,2026-09-16,Wednesday,Leg press,Leg press,1,10,220.0,1,0,,2,2026-09-19T12:30:03.352595-03:00
+9516,2026-09-16,Wednesday,Leg press,Leg press,1,10,200.0,1,0,,1,2026-09-19T12:30:03.352595-03:00
 9515,2026-09-16,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,10,95.0,0,0,,1,2026-09-19T12:29:39.127712-03:00
 9514,2026-09-16,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,8,95.0,0,0,,2,2026-09-19T12:29:39.127712-03:00
 9513,2026-09-16,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,8,95.0,0,0,,3,2026-09-19T12:29:39.127712-03:00
@@ -122,9 +122,9 @@ id,performed_on,day_name,planned_exercise,performed_exercise,sets,reps,weight,ri
 9604,2026-09-10,Wednesday,Machine hip thrust,Machine hip thrust,1,8,120.0,0,0,,3,2026-09-14T16:10:57.882355-03:00
 9603,2026-09-10,Wednesday,Machine hip thrust,Machine hip thrust,1,8,120.0,0,0,,2,2026-09-14T16:10:57.882355-03:00
 9602,2026-09-10,Wednesday,Machine hip thrust,Machine hip thrust,1,8,120.0,0,0,,1,2026-09-14T16:10:57.882355-03:00
-9601,2026-09-10,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,200.0,1,0,,3,2026-09-14T16:10:17.457104-03:00
-9600,2026-09-10,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,200.0,1,0,,2,2026-09-14T16:10:17.457104-03:00
-9599,2026-09-10,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,200.0,1,0,,1,2026-09-14T16:10:17.457104-03:00
+9601,2026-09-10,Wednesday,Leg press,Leg press,1,10,200.0,1,0,,3,2026-09-14T16:10:17.457104-03:00
+9600,2026-09-10,Wednesday,Leg press,Leg press,1,10,200.0,1,0,,2,2026-09-14T16:10:17.457104-03:00
+9599,2026-09-10,Wednesday,Leg press,Leg press,1,10,200.0,1,0,,1,2026-09-14T16:10:17.457104-03:00
 9598,2026-09-10,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,10,87.5,1,0,,1,2026-09-14T16:09:59.646677-03:00
 9597,2026-09-10,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,9,87.5,1,0,,2,2026-09-14T16:09:59.646677-03:00
 9596,2026-09-10,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,9,87.5,1,0,,3,2026-09-14T16:09:59.646677-03:00
@@ -210,9 +210,9 @@ id,performed_on,day_name,planned_exercise,performed_exercise,sets,reps,weight,ri
 9694,2026-09-03,Wednesday,Supported split squat or low step-up,Supported split squat or low step-up,1,10,20.0,1,0,,3,2026-09-03T21:38:40.682544-03:00
 9693,2026-09-03,Wednesday,Supported split squat or low step-up,Supported split squat or low step-up,1,10,20.0,1,0,,2,2026-09-03T21:38:40.682544-03:00
 9692,2026-09-03,Wednesday,Supported split squat or low step-up,Supported split squat or low step-up,1,8,20.0,1,0,,1,2026-09-03T21:38:40.682544-03:00
-9691,2026-09-03,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,200.0,1,0,,3,2026-09-03T21:37:30.587774-03:00
-9690,2026-09-03,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,200.0,1,0,,2,2026-09-03T21:37:30.587774-03:00
-9689,2026-09-03,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,200.0,1,0,,1,2026-09-03T21:37:30.587774-03:00
+9691,2026-09-03,Wednesday,Leg press,Leg press,1,10,200.0,1,0,,3,2026-09-03T21:37:30.587774-03:00
+9690,2026-09-03,Wednesday,Leg press,Leg press,1,10,200.0,1,0,,2,2026-09-03T21:37:30.587774-03:00
+9689,2026-09-03,Wednesday,Leg press,Leg press,1,10,200.0,1,0,,1,2026-09-03T21:37:30.587774-03:00
 9688,2026-09-03,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,10,87.5,0,0,,1,2026-09-03T21:38:11.819776-03:00
 9687,2026-09-03,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,11,87.5,0,0,,2,2026-09-03T21:38:11.819776-03:00
 9686,2026-09-03,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,10,87.5,0,0,,3,2026-09-03T21:38:11.819776-03:00
@@ -295,9 +295,9 @@ id,performed_on,day_name,planned_exercise,performed_exercise,sets,reps,weight,ri
 9777,2026-08-26,Wednesday,Machine hip thrust,Machine hip thrust,1,8,110.0,1,0,,3,2026-08-27T07:07:27.359659-03:00
 9776,2026-08-26,Wednesday,Machine hip thrust,Machine hip thrust,1,8,110.0,1,0,,2,2026-08-27T07:07:27.359659-03:00
 9775,2026-08-26,Wednesday,Machine hip thrust,Machine hip thrust,1,8,110.0,1,0,,1,2026-08-27T07:07:27.359659-03:00
-9774,2026-08-26,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,9,200.0,1,0,,3,2026-08-27T07:06:31.075409-03:00
-9773,2026-08-26,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,200.0,1,0,,2,2026-08-27T07:06:31.075409-03:00
-9772,2026-08-26,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,200.0,1,0,,1,2026-08-27T07:06:31.075409-03:00
+9774,2026-08-26,Wednesday,Leg press,Leg press,1,9,200.0,1,0,,3,2026-08-27T07:06:31.075409-03:00
+9773,2026-08-26,Wednesday,Leg press,Leg press,1,10,200.0,1,0,,2,2026-08-27T07:06:31.075409-03:00
+9772,2026-08-26,Wednesday,Leg press,Leg press,1,10,200.0,1,0,,1,2026-08-27T07:06:31.075409-03:00
 9771,2026-08-26,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,12,80.0,0,0,,1,2026-08-27T07:06:03.451256-03:00
 9770,2026-08-26,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,12,80.0,0,0,,2,2026-08-27T07:06:03.451256-03:00
 9769,2026-08-26,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,10,80.0,0,0,,3,2026-08-27T07:06:03.451256-03:00
@@ -381,15 +381,15 @@ id,performed_on,day_name,planned_exercise,performed_exercise,sets,reps,weight,ri
 9837,2026-08-21,Friday,Machine or cable curl,Machine or cable curl,1,15,39.0,0,0,,1,2026-08-24T12:36:07.360128-03:00
 9836,2026-08-21,Friday,Machine or cable curl,Machine or cable curl,1,11,39.0,0,0,,2,2026-08-24T12:36:07.360128-03:00
 9835,2026-08-21,Friday,Machine or cable curl,Machine or cable curl,1,10,46.0,0,0,,3,2026-08-24T12:36:07.360128-03:00
-9870,2026-08-19,Wednesday,Machine crunch or dead bug,Machine crunch or dead bug,1,10,60.0,2,0,,3,2026-08-20T13:38:05.336538-03:00
-9869,2026-08-19,Wednesday,Machine crunch or dead bug,Machine crunch or dead bug,1,10,60.0,2,0,,2,2026-08-20T13:38:05.336538-03:00
-9868,2026-08-19,Wednesday,Machine crunch or dead bug,Machine crunch or dead bug,1,10,60.0,2,0,,1,2026-08-20T13:38:05.336538-03:00
+9870,2026-08-19,Wednesday,Machine crunch,Machine crunch,1,10,60.0,2,0,,3,2026-08-20T13:38:05.336538-03:00
+9869,2026-08-19,Wednesday,Machine crunch,Machine crunch,1,10,60.0,2,0,,2,2026-08-20T13:38:05.336538-03:00
+9868,2026-08-19,Wednesday,Machine crunch,Machine crunch,1,10,60.0,2,0,,1,2026-08-20T13:38:05.336538-03:00
 9867,2026-08-19,Wednesday,Machine hip thrust,Machine hip thrust,1,10,40.0,0,0,,3,2026-08-20T13:36:18.852402-03:00
 9866,2026-08-19,Wednesday,Machine hip thrust,Machine hip thrust,1,10,40.0,0,0,,2,2026-08-20T13:36:18.852402-03:00
 9865,2026-08-19,Wednesday,Machine hip thrust,Machine hip thrust,1,10,40.0,0,0,,1,2026-08-20T13:36:18.852402-03:00
-9864,2026-08-19,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,160.0,0,0,,3,2026-08-20T13:34:57.698644-03:00
-9863,2026-08-19,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,160.0,0,0,,2,2026-08-20T13:34:57.698644-03:00
-9862,2026-08-19,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,15,160.0,0,0,,1,2026-08-20T13:34:57.698644-03:00
+9864,2026-08-19,Wednesday,Leg press,Leg press,1,10,160.0,0,0,,3,2026-08-20T13:34:57.698644-03:00
+9863,2026-08-19,Wednesday,Leg press,Leg press,1,10,160.0,0,0,,2,2026-08-20T13:34:57.698644-03:00
+9862,2026-08-19,Wednesday,Leg press,Leg press,1,15,160.0,0,0,,1,2026-08-20T13:34:57.698644-03:00
 9861,2026-08-19,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,12,80.0,0,0,,1,2026-08-20T13:34:24.422625-03:00
 9860,2026-08-19,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,10,80.0,0,0,,2,2026-08-20T13:34:24.422625-03:00
 9859,2026-08-19,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,8,80.0,0,0,,3,2026-08-20T13:34:24.422625-03:00
@@ -474,15 +474,15 @@ id,performed_on,day_name,planned_exercise,performed_exercise,sets,reps,weight,ri
 9930,2026-08-10,Friday,Cable triceps pushdown,Cable triceps pushdown,1,15,25.0,0,0,,1,2026-08-18T10:40:10.765306-03:00
 9929,2026-08-10,Friday,Cable triceps pushdown,Cable triceps pushdown,1,9,27.5,0,0,,2,2026-08-18T10:40:10.765306-03:00
 9928,2026-08-10,Friday,Cable triceps pushdown,Cable triceps pushdown,1,8,27.5,0,0,,3,2026-08-18T10:40:10.765306-03:00
-9959,2026-08-07,Wednesday,Machine crunch or dead bug,Machine crunch or dead bug,1,15,50.0,0,0,,3,2026-08-18T10:36:36.772400-03:00
-9958,2026-08-07,Wednesday,Machine crunch or dead bug,Machine crunch or dead bug,1,15,50.0,0,0,,2,2026-08-18T10:36:36.772400-03:00
-9957,2026-08-07,Wednesday,Machine crunch or dead bug,Machine crunch or dead bug,1,20,50.0,0,0,,1,2026-08-18T10:36:36.772400-03:00
+9959,2026-08-07,Wednesday,Machine crunch,Machine crunch,1,15,50.0,0,0,,3,2026-08-18T10:36:36.772400-03:00
+9958,2026-08-07,Wednesday,Machine crunch,Machine crunch,1,15,50.0,0,0,,2,2026-08-18T10:36:36.772400-03:00
+9957,2026-08-07,Wednesday,Machine crunch,Machine crunch,1,20,50.0,0,0,,1,2026-08-18T10:36:36.772400-03:00
 9956,2026-08-07,Wednesday,Supported split squat or low step-up,Supported split squat or low step-up,1,8,20.0,0,0,,3,2026-08-18T10:34:50.143404-03:00
 9955,2026-08-07,Wednesday,Supported split squat or low step-up,Supported split squat or low step-up,1,10,20.0,0,0,,2,2026-08-18T10:34:50.143404-03:00
 9954,2026-08-07,Wednesday,Supported split squat or low step-up,Supported split squat or low step-up,1,12,20.0,0,0,,1,2026-08-18T10:34:50.143404-03:00
-9953,2026-08-07,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,120.0,0,0,,1,2026-08-18T10:33:55.368613-03:00
-9952,2026-08-07,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,120.0,0,0,,2,2026-08-18T10:33:55.368613-03:00
-9951,2026-08-07,Wednesday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,120.0,0,0,,3,2026-08-18T10:33:55.368613-03:00
+9953,2026-08-07,Wednesday,Leg press,Leg press,1,10,120.0,0,0,,1,2026-08-18T10:33:55.368613-03:00
+9952,2026-08-07,Wednesday,Leg press,Leg press,1,10,120.0,0,0,,2,2026-08-18T10:33:55.368613-03:00
+9951,2026-08-07,Wednesday,Leg press,Leg press,1,10,120.0,0,0,,3,2026-08-18T10:33:55.368613-03:00
 9950,2026-08-07,Wednesday,Machine hip thrust,Machine hip thrust,1,20,50.0,2,0,,1,2026-08-18T10:36:04.431198-03:00
 9949,2026-08-07,Wednesday,Machine hip thrust,Machine hip thrust,1,15,50.0,2,0,,2,2026-08-18T10:36:04.431198-03:00
 9948,2026-08-07,Wednesday,Machine hip thrust,Machine hip thrust,1,15,50.0,2,0,,3,2026-08-18T10:36:04.431198-03:00
@@ -581,15 +581,15 @@ id,performed_on,day_name,planned_exercise,performed_exercise,sets,reps,weight,ri
 10055,2026-08-01,Friday,Seated or lying leg curl,Seated or lying leg curl,1,8,80.0,0,0,,3,2026-08-01T14:55:46.655014-03:00
 10054,2026-08-01,Friday,Seated or lying leg curl,Seated or lying leg curl,1,8,80.0,0,0,,2,2026-08-01T14:55:46.655014-03:00
 10053,2026-08-01,Friday,Seated or lying leg curl,Seated or lying leg curl,1,8,80.0,0,0,,1,2026-08-01T14:55:46.655014-03:00
-10052,2026-08-01,Friday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,160.0,0,0,,1,2026-08-01T14:56:31.592403-03:00
-10051,2026-08-01,Friday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,160.0,0,0,,2,2026-08-01T14:56:31.592403-03:00
-10050,2026-08-01,Friday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,160.0,0,0,,3,2026-08-01T14:56:31.592403-03:00
+10052,2026-08-01,Friday,Leg press,Leg press,1,10,160.0,0,0,,1,2026-08-01T14:56:31.592403-03:00
+10051,2026-08-01,Friday,Leg press,Leg press,1,10,160.0,0,0,,2,2026-08-01T14:56:31.592403-03:00
+10050,2026-08-01,Friday,Leg press,Leg press,1,10,160.0,0,0,,3,2026-08-01T14:56:31.592403-03:00
 10049,2026-08-01,Friday,Seated calf raise,Seated calf raise,1,15,40.0,3,0,,1,2026-08-01T14:58:06.158021-03:00
 10048,2026-08-01,Friday,Seated calf raise,Seated calf raise,1,15,40.0,3,0,,2,2026-08-01T14:58:06.158021-03:00
 10047,2026-08-01,Friday,Seated calf raise,Seated calf raise,1,15,40.0,3,0,,3,2026-08-01T14:58:06.158021-03:00
-10046,2026-08-01,Friday,Machine crunch or dead bug,Machine crunch or dead bug,1,12,80.0,0,0,,1,2026-08-01T15:02:44.637698-03:00
-10045,2026-08-01,Friday,Machine crunch or dead bug,Machine crunch or dead bug,1,12,80.0,0,0,,2,2026-08-01T15:02:44.637698-03:00
-10044,2026-08-01,Friday,Machine crunch or dead bug,Machine crunch or dead bug,1,10,80.0,0,0,,3,2026-08-01T15:02:44.637698-03:00
+10046,2026-08-01,Friday,Machine crunch,Machine crunch,1,12,80.0,0,0,,1,2026-08-01T15:02:44.637698-03:00
+10045,2026-08-01,Friday,Machine crunch,Machine crunch,1,12,80.0,0,0,,2,2026-08-01T15:02:44.637698-03:00
+10044,2026-08-01,Friday,Machine crunch,Machine crunch,1,10,80.0,0,0,,3,2026-08-01T15:02:44.637698-03:00
 10084,2026-07-31,Thursday,Cable or machine curl,Cable or machine curl,1,8,39.0,0,0,,3,2026-08-01T15:49:57.943489-03:00
 10083,2026-07-31,Thursday,Cable or machine curl,Cable or machine curl,1,10,39.0,0,0,,2,2026-08-01T15:49:57.943489-03:00
 10082,2026-07-31,Thursday,Cable or machine curl,Cable or machine curl,1,14,39.0,0,0,,1,2026-08-01T15:49:57.943489-03:00
@@ -656,15 +656,15 @@ id,performed_on,day_name,planned_exercise,performed_exercise,sets,reps,weight,ri
 10112,2026-07-27,Monday,Machine chest press,Machine chest press,1,8,50.0,0,0,,3,2026-07-27T12:00:05.000000-03:00
 10111,2026-07-27,Monday,Machine chest press,Machine chest press,1,8,50.0,0,0,,2,2026-07-27T12:00:05.000000-03:00
 10110,2026-07-27,Monday,Machine chest press,Machine chest press,1,8,50.0,0,0,,1,2026-07-27T12:00:05.000000-03:00
-10142,2026-07-25,Saturday,Machine crunch or dead bug,Machine crunch or dead bug,1,10,80.0,2,0,,3,2026-07-25T12:00:06.000000-03:00
-10141,2026-07-25,Saturday,Machine crunch or dead bug,Machine crunch or dead bug,1,10,80.0,2,0,,2,2026-07-25T12:00:06.000000-03:00
-10140,2026-07-25,Saturday,Machine crunch or dead bug,Machine crunch or dead bug,1,10,80.0,2,0,,1,2026-07-25T12:00:06.000000-03:00
+10142,2026-07-25,Saturday,Machine crunch,Machine crunch,1,10,80.0,2,0,,3,2026-07-25T12:00:06.000000-03:00
+10141,2026-07-25,Saturday,Machine crunch,Machine crunch,1,10,80.0,2,0,,2,2026-07-25T12:00:06.000000-03:00
+10140,2026-07-25,Saturday,Machine crunch,Machine crunch,1,10,80.0,2,0,,1,2026-07-25T12:00:06.000000-03:00
 10139,2026-07-25,Saturday,Supported split squat or low step-up,Supported split squat or low step-up,1,8,0.0,2,0,,3,2026-07-25T12:00:07.000000-03:00
 10138,2026-07-25,Saturday,Supported split squat or low step-up,Supported split squat or low step-up,1,8,0.0,2,0,,2,2026-07-25T12:00:07.000000-03:00
 10137,2026-07-25,Saturday,Supported split squat or low step-up,Supported split squat or low step-up,1,8,0.0,2,0,,1,2026-07-25T12:00:07.000000-03:00
-10136,2026-07-25,Saturday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,160.0,2,0,,3,2026-07-25T12:00:08.000000-03:00
-10135,2026-07-25,Saturday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,160.0,2,0,,2,2026-07-25T12:00:08.000000-03:00
-10134,2026-07-25,Saturday,"Leg press, feet slightly higher","Leg press, feet slightly higher",1,10,120.0,2,0,,1,2026-07-25T12:00:08.000000-03:00
+10136,2026-07-25,Saturday,Leg press,Leg press,1,10,160.0,2,0,,3,2026-07-25T12:00:08.000000-03:00
+10135,2026-07-25,Saturday,Leg press,Leg press,1,10,160.0,2,0,,2,2026-07-25T12:00:08.000000-03:00
+10134,2026-07-25,Saturday,Leg press,Leg press,1,10,120.0,2,0,,1,2026-07-25T12:00:08.000000-03:00
 10133,2026-07-25,Saturday,Seated or lying leg curl,Seated or lying leg curl,1,8,80.0,0,0,,4,2026-07-25T12:00:09.000000-03:00
 10132,2026-07-25,Saturday,Seated or lying leg curl,Seated or lying leg curl,1,8,80.0,0,0,,3,2026-07-25T12:00:09.000000-03:00
 10131,2026-07-25,Saturday,Seated or lying leg curl,Seated or lying leg curl,1,8,80.0,0,0,,2,2026-07-25T12:00:09.000000-03:00
