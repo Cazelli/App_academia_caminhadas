@@ -28,7 +28,7 @@ DAYS = ["Monday", "Tuesday", "Wednesday", "Friday", "Saturday"]
 BRASILIA_TZ = ZoneInfo("America/Sao_Paulo")
 MUSCLE_GROUPS = [
     "Chest", "Back", "Shoulders", "Biceps", "Triceps", "Quadriceps",
-    "Hamstrings", "Glutes", "Calves", "Core",
+    "Hamstrings", "Glutes", "Adductors", "Abductors", "Calves", "Core",
 ]
 EXERCISE_IMAGES = {
     "Machine chest press": "machine-bench-press.jpg",
@@ -56,6 +56,9 @@ EXERCISE_IMAGES = {
     "Leg press, feet slightly higher": "leg-press.jpg",
     "Supported split squat or low step-up": "split-squat.jpg",
     "Machine crunch or dead bug": "ab-crunch.jpg",
+    "Machine crunch": "ab-crunch.jpg",
+    "Hip adductor machine": "hip-adductor.jpg",
+    "Hip abductor machine": "hip-abductor.jpg",
 }
 
 
@@ -231,6 +234,8 @@ def infer_muscle_groups(name: str) -> list[str]:
         (("leg press", "split squat", "step-up", "leg extension", "goblet squat"), ["Quadriceps", "Glutes"]),
         (("leg curl",), ["Hamstrings"]),
         (("hip thrust", "glute bridge", "pull-through", "hip abduction"), ["Glutes"]),
+        (("hip adductor", "hip adduction"), ["Adductors"]),
+        (("hip abductor", "hip abduction"), ["Abductors"]),
         (("calf",), ["Calves"]),
         (("pallof", "crunch", "dead bug"), ["Core"]),
     ]
@@ -284,8 +289,8 @@ STARTER_PLAN = {
         exercise("Seated leg curl", 3, "10–15", ["Lying leg curl", "Standing machine leg curl"]),
         exercise("Leg extension", 3, "12–15", ["Supported low step-up", "Spanish squat"]),
         exercise("Machine hip thrust", 3, "10–15", ["Glute bridge", "Cable pull-through"]),
-        exercise("Seated calf raise", 3, "12–20", ["Standing calf raise", "Calf press on leg press"]),
-        exercise("Pallof press", 3, "10–15 per side", ["Dead bug", "Machine crunch"]),
+        exercise("Hip abductor machine", 3, "10–15", ["Cable hip abduction", "Banded lateral walk"]),
+        exercise("Machine crunch", 3, "10–15", ["Cable crunch", "Dead bug"]),
     ],
     "Monday": [
         exercise("Incline machine chest press", 4, "8–12", ["Incline dumbbell press", "Incline Smith-machine press"]),
@@ -302,6 +307,7 @@ STARTER_PLAN = {
         exercise("Cable or machine lateral raise", 4, "12–20", ["Dumbbell lateral raise", "Single-arm cable lateral raise"]),
         exercise("Cable triceps pushdown", 3, "10–15", ["Machine triceps extension", "Resistance-band pushdown"]),
         exercise("Overhead cable triceps extension", 3, "10–15", ["Single-arm cable extension", "Dumbbell overhead extension"]),
+        exercise("Machine crunch", 3, "10–15", ["Cable crunch", "Dead bug"]),
     ],
     "Tuesday": [
         exercise("Neutral-grip lat pulldown", 4, "8–12", ["Assisted neutral-grip pull-up", "Regular lat pulldown"]),
@@ -331,8 +337,8 @@ STARTER_PLAN = {
             "Hold a fixed support and use controlled technique.",
         ),
         exercise("Machine hip thrust", 4, "8–12", ["Glute bridge", "Cable pull-through"]),
-        exercise("Seated calf raise", 3, "12–20", ["Standing calf raise", "Calf press on leg press"]),
-        exercise("Machine crunch or dead bug", 3, "10–15", ["Pallof press", "Cable crunch"]),
+        exercise("Hip adductor machine", 3, "10–15", ["Cable hip adduction", "Side-lying hip adduction"]),
+        exercise("Pallof press", 3, "10–15 per side", ["Dead bug", "Cable anti-rotation hold"]),
     ],
 }
 

@@ -8,3 +8,6 @@ domain exercise dataset released under the
 Images are stored locally so the Streamlit app works without an internet
 connection. Some planned machine exercises use the closest matching movement
 available in the dataset.
+
+The hip machine photos are from [Thigh Adductor](https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Thigh_Adductor/0.jpg)
+and [Thigh Abductor](https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Thigh_Abductor/0.jpg).

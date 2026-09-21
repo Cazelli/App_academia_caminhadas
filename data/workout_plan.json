@@ -150,26 +150,26 @@
       ]
     },
     {
-      "name": "Seated calf raise",
+      "name": "Hip abductor machine",
       "sets": 3,
-      "reps": "12–20",
+      "reps": "10–15",
       "alternatives": [
-        "Standing calf raise",
-        "Calf press on leg press"
+        "Cable hip abduction",
+        "Banded lateral walk"
       ],
       "notes": "Use controlled technique and finish with about 3 repetitions in reserve.",
       "source": "Custom",
       "muscle_groups": [
-        "Calves"
+        "Abductors"
       ]
     },
     {
-      "name": "Pallof press",
+      "name": "Machine crunch",
       "sets": 3,
-      "reps": "10–15 per side",
+      "reps": "10–15",
       "alternatives": [
-        "Dead bug",
-        "Machine crunch"
+        "Cable crunch",
+        "Dead bug"
       ],
       "notes": "Use controlled technique and finish with about 3 repetitions in reserve.",
       "source": "Custom",
@@ -264,6 +264,20 @@
       "source": "Custom",
       "muscle_groups": [
         "Triceps"
+      ]
+    },
+    {
+      "name": "Machine crunch",
+      "sets": 3,
+      "reps": "10–15",
+      "alternatives": [
+        "Cable crunch",
+        "Dead bug"
+      ],
+      "notes": "Use controlled technique and finish with about 3 repetitions in reserve.",
+      "source": "Custom",
+      "muscle_groups": [
+        "Core"
       ]
     }
   ],
@@ -417,26 +431,26 @@
       ]
     },
     {
-      "name": "Seated calf raise",
+      "name": "Hip adductor machine",
       "sets": 3,
-      "reps": "12–20",
+      "reps": "10–15",
       "alternatives": [
-        "Standing calf raise",
-        "Calf press on leg press"
+        "Cable hip adduction",
+        "Side-lying hip adduction"
       ],
       "notes": "Use controlled technique and finish with about 3 repetitions in reserve.",
       "source": "Custom",
       "muscle_groups": [
-        "Calves"
+        "Adductors"
       ]
     },
     {
-      "name": "Machine crunch or dead bug",
+      "name": "Pallof press",
       "sets": 3,
-      "reps": "10–15",
+      "reps": "10–15 per side",
       "alternatives": [
-        "Pallof press",
-        "Cable crunch"
+        "Dead bug",
+        "Cable anti-rotation hold"
       ],
       "notes": "Use controlled technique and finish with about 3 repetitions in reserve.",
       "source": "Custom",
