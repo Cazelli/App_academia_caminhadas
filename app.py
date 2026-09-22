@@ -264,6 +264,11 @@ def exercise(
 STARTER_PLAN = {
     "Friday": [
         exercise("Machine chest press", 4, "8–12", ["Dumbbell bench press", "Smith-machine bench press"]),
+        exercise(
+            "Pec deck", 3, "10–15", ["Cable chest fly", "Dumbbell chest fly"],
+            "Keep your back and head on the pad and a slight elbow bend. Move slowly; "
+            "do not let the arms travel excessively behind the body.",
+        ),
         exercise("Neutral-grip lat pulldown", 4, "8–12", ["Assisted pull-up", "Regular lat pulldown"]),
         exercise(
             "Chest-supported row", 3, "8–12",
@@ -285,10 +290,10 @@ STARTER_PLAN = {
             "Use a comfortable depth. Do not force the knees toward the chest if the lower back rounds.",
         ),
         exercise("Seated leg curl", 3, "10–15", ["Lying leg curl", "Standing machine leg curl"]),
-        exercise("Leg extension", 3, "12–15", ["Supported low step-up", "Spanish squat"]),
+        exercise("Leg extension", 4, "12–15", ["Supported low step-up", "Spanish squat"]),
         exercise("Machine hip thrust", 3, "10–15", ["Glute bridge", "Cable pull-through"]),
         exercise("Hip abductor machine", 3, "10–15", ["Cable hip abduction", "Banded lateral walk"]),
-        exercise("Machine crunch", 3, "10–15", ["Cable crunch", "Dead bug"]),
+        exercise("Machine crunch", 4, "10–15", ["Cable crunch", "Dead bug"]),
     ],
     "Monday": [
         exercise("Incline machine chest press", 4, "8–12", ["Incline dumbbell press", "Incline Smith-machine press"]),
@@ -305,7 +310,7 @@ STARTER_PLAN = {
         exercise("Cable or machine lateral raise", 4, "12–20", ["Dumbbell lateral raise", "Single-arm cable lateral raise"]),
         exercise("Cable triceps pushdown", 3, "10–15", ["Machine triceps extension", "Resistance-band pushdown"]),
         exercise("Overhead cable triceps extension", 3, "10–15", ["Single-arm cable extension", "Dumbbell overhead extension"]),
-        exercise("Machine crunch", 3, "10–15", ["Cable crunch", "Dead bug"]),
+        exercise("Machine crunch", 4, "10–15", ["Cable crunch", "Dead bug"]),
     ],
     "Tuesday": [
         exercise("Neutral-grip lat pulldown", 4, "8–12", ["Assisted neutral-grip pull-up", "Regular lat pulldown"]),
@@ -336,7 +341,7 @@ STARTER_PLAN = {
         ),
         exercise("Machine hip thrust", 4, "8–12", ["Glute bridge", "Cable pull-through"]),
         exercise("Hip adductor machine", 3, "10–15", ["Cable hip adduction", "Side-lying hip adduction"]),
-        exercise("Pallof press", 3, "10–15 per side", ["Dead bug", "Cable anti-rotation hold"]),
+        exercise("Pallof press", 4, "10–15 per side", ["Dead bug", "Cable anti-rotation hold"]),
     ],
 }
 
