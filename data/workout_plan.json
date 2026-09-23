@@ -32,7 +32,36 @@
         "Triceps"
       ]
     },
+   {
+      "name": "Machine shoulder press",
+      "sets": 3,
+      "reps": "8–12",
+      "alternatives": [
+        "Dumbbell shoulder press (neutral grip)",
+        "Landmine press"
+      ],
+      "notes": "Neutral grip is the default. Keep elbows slightly forward and your back and head on the pad. Do not lower excessively deep or continue through pinching.",
+      "source": "Custom",
+      "muscle_groups": [
+        "Shoulders",
+        "Triceps"
+      ]
+    },
     {
+      "name": "Cable triceps pushdown",
+      "sets": 3,
+      "reps": "10–15",
+      "alternatives": [
+        "Machine triceps extension",
+        "Resistance-band pushdown"
+      ],
+      "notes": "Use controlled technique and finish with about 3 repetitions in reserve.",
+      "source": "Custom",
+      "muscle_groups": [
+        "Triceps"
+      ]
+    },
+     {
       "name": "Neutral-grip lat pulldown",
       "sets": 4,
       "reps": "8–12",
@@ -60,35 +89,6 @@
       "muscle_groups": [
         "Back",
         "Biceps"
-      ]
-    },
-    {
-      "name": "Machine shoulder press",
-      "sets": 3,
-      "reps": "8–12",
-      "alternatives": [
-        "Dumbbell shoulder press (neutral grip)",
-        "Landmine press"
-      ],
-      "notes": "Neutral grip is the default. Keep elbows slightly forward and your back and head on the pad. Do not lower excessively deep or continue through pinching.",
-      "source": "Custom",
-      "muscle_groups": [
-        "Shoulders",
-        "Triceps"
-      ]
-    },
-    {
-      "name": "Cable triceps pushdown",
-      "sets": 3,
-      "reps": "10–15",
-      "alternatives": [
-        "Machine triceps extension",
-        "Resistance-band pushdown"
-      ],
-      "notes": "Use controlled technique and finish with about 3 repetitions in reserve.",
-      "source": "Custom",
-      "muscle_groups": [
-        "Triceps"
       ]
     },
     {
