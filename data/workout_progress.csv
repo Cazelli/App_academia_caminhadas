@@ -1,24 +1,24 @@
 id,performed_on,day_name,planned_exercise,performed_exercise,sets,reps,weight,rir,pain,notes,set_number,created_at
-10733,2026-10-04,Wednesday,Pallof press,Pallof press,1,15,12.5,2,0,,3,2026-10-04T07:26:57.785150-03:00
-10732,2026-10-04,Wednesday,Pallof press,Pallof press,1,15,12.5,2,0,,2,2026-10-04T07:26:57.785150-03:00
-10731,2026-10-04,Wednesday,Pallof press,Pallof press,1,15,12.5,2,0,,1,2026-10-04T07:26:57.785150-03:00
-9843,2026-10-04,Wednesday,Machine hip thrust,Machine hip thrust,1,8,160.0,0,0,,4,2026-10-04T07:25:25.980412-03:00
-9842,2026-10-04,Wednesday,Machine hip thrust,Machine hip thrust,1,8,160.0,0,0,,3,2026-10-04T07:25:25.980412-03:00
-9841,2026-10-04,Wednesday,Machine hip thrust,Machine hip thrust,1,8,160.0,0,0,,2,2026-10-04T07:25:25.980412-03:00
-9840,2026-10-04,Wednesday,Machine hip thrust,Machine hip thrust,1,8,160.0,0,0,,1,2026-10-04T07:25:25.980412-03:00
-9839,2026-10-04,Wednesday,Leg press,Leg press,1,9,280.0,0,0,,3,2026-10-04T07:24:23.913422-03:00
-9838,2026-10-04,Wednesday,Leg press,Leg press,1,10,280.0,0,0,,2,2026-10-04T07:24:23.913422-03:00
-9837,2026-10-04,Wednesday,Leg press,Leg press,1,10,260.0,0,0,,1,2026-10-04T07:24:23.913422-03:00
-9836,2026-10-04,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,8,102.5,0,0,,1,2026-10-04T07:23:53.299724-03:00
-9835,2026-10-04,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,8,102.5,0,0,,2,2026-10-04T07:23:53.299724-03:00
-9834,2026-10-04,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,8,102.5,0,0,,3,2026-10-04T07:23:53.299724-03:00
-9833,2026-10-04,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,8,102.5,0,0,,4,2026-10-04T07:23:53.299724-03:00
-9832,2026-10-04,Wednesday,Supported split squat or low step-up,Supported split squat or low step-up,1,8,32.0,0,0,,1,2026-10-04T07:24:42.382533-03:00
-9831,2026-10-04,Wednesday,Supported split squat or low step-up,Supported split squat or low step-up,1,8,32.0,0,0,,2,2026-10-04T07:24:42.382533-03:00
-9830,2026-10-04,Wednesday,Supported split squat or low step-up,Supported split squat or low step-up,1,8,32.0,0,0,,3,2026-10-04T07:24:42.382533-03:00
-9829,2026-10-04,Wednesday,Hip adductor machine,Hip adductor machine,1,12,110.0,0,0,,1,2026-10-04T07:26:07.683416-03:00
-9828,2026-10-04,Wednesday,Hip adductor machine,Hip adductor machine,1,10,110.0,0,0,,2,2026-10-04T07:26:07.683416-03:00
-9827,2026-10-04,Wednesday,Hip adductor machine,Hip adductor machine,1,10,110.0,0,0,,3,2026-10-04T07:26:07.683416-03:00
+10733,2026-10-01,Wednesday,Pallof press,Pallof press,1,15,12.5,2,0,,3,2026-10-04T07:26:57.785150-03:00
+10732,2026-10-01,Wednesday,Pallof press,Pallof press,1,15,12.5,2,0,,2,2026-10-04T07:26:57.785150-03:00
+10731,2026-10-01,Wednesday,Pallof press,Pallof press,1,15,12.5,2,0,,1,2026-10-04T07:26:57.785150-03:00
+9843,2026-10-01,Wednesday,Machine hip thrust,Machine hip thrust,1,8,160.0,0,0,,4,2026-10-04T07:25:25.980412-03:00
+9842,2026-10-01,Wednesday,Machine hip thrust,Machine hip thrust,1,8,160.0,0,0,,3,2026-10-04T07:25:25.980412-03:00
+9841,2026-10-01,Wednesday,Machine hip thrust,Machine hip thrust,1,8,160.0,0,0,,2,2026-10-04T07:25:25.980412-03:00
+9840,2026-10-01,Wednesday,Machine hip thrust,Machine hip thrust,1,8,160.0,0,0,,1,2026-10-04T07:25:25.980412-03:00
+9839,2026-10-01,Wednesday,Leg press,Leg press,1,9,280.0,0,0,,3,2026-10-04T07:24:23.913422-03:00
+9838,2026-10-01,Wednesday,Leg press,Leg press,1,10,280.0,0,0,,2,2026-10-04T07:24:23.913422-03:00
+9837,2026-10-01,Wednesday,Leg press,Leg press,1,10,260.0,0,0,,1,2026-10-04T07:24:23.913422-03:00
+9836,2026-10-01,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,8,102.5,0,0,,1,2026-10-04T07:23:53.299724-03:00
+9835,2026-10-01,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,8,102.5,0,0,,2,2026-10-04T07:23:53.299724-03:00
+9834,2026-10-01,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,8,102.5,0,0,,3,2026-10-04T07:23:53.299724-03:00
+9833,2026-10-01,Wednesday,Seated or lying leg curl,Seated or lying leg curl,1,8,102.5,0,0,,4,2026-10-04T07:23:53.299724-03:00
+9832,2026-10-01,Wednesday,Supported split squat or low step-up,Supported split squat or low step-up,1,8,32.0,0,0,,1,2026-10-04T07:24:42.382533-03:00
+9831,2026-10-01,Wednesday,Supported split squat or low step-up,Supported split squat or low step-up,1,8,32.0,0,0,,2,2026-10-04T07:24:42.382533-03:00
+9830,2026-10-01,Wednesday,Supported split squat or low step-up,Supported split squat or low step-up,1,8,32.0,0,0,,3,2026-10-04T07:24:42.382533-03:00
+9829,2026-10-01,Wednesday,Hip adductor machine,Hip adductor machine,1,12,110.0,0,0,,1,2026-10-04T07:26:07.683416-03:00
+9828,2026-10-01,Wednesday,Hip adductor machine,Hip adductor machine,1,10,110.0,0,0,,2,2026-10-04T07:26:07.683416-03:00
+9827,2026-10-01,Wednesday,Hip adductor machine,Hip adductor machine,1,10,110.0,0,0,,3,2026-10-04T07:26:07.683416-03:00
 9864,2026-09-30,Tuesday,Hammer curl,Hammer curl,1,10,10.0,0,0,,3,2026-10-01T19:47:18.461174-03:00
 9863,2026-09-30,Tuesday,Hammer curl,Hammer curl,1,10,10.0,0,0,,2,2026-10-01T19:47:18.461174-03:00
 9862,2026-09-30,Tuesday,Hammer curl,Hammer curl,1,9,12.0,0,0,,1,2026-10-01T19:47:18.461174-03:00

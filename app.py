@@ -792,14 +792,23 @@ with tab_today:
         st.caption(f"{len(exercises)} exercises · Log each movement after you finish it.")
 
         for index, item in enumerate(exercises):
+            alternatives = item.get("alternatives", [])
+            choices = [item["name"], *alternatives]
+            performed_key = f"performed_{selected_day}_{index}"
+            selected_exercise = st.session_state.get(performed_key, item["name"])
+            if selected_exercise not in choices:
+                selected_exercise = item["name"]
+                st.session_state[performed_key] = selected_exercise
             with st.container(border=True):
                 details_col, image_col = st.columns([3, 1.15], vertical_alignment="top")
                 with details_col:
                     title_col, target_col = st.columns([3, 1])
                     title_col.markdown(f"#### {index + 1}. {item['name']}")
                     target_col.markdown(f"### {item['sets']} × {item['reps']}")
-                    best = exercise_bests.get(item["name"])
-                    recommendation = html.escape(today_recommendation(today_log, item))
+                    best = exercise_bests.get(selected_exercise)
+                    recommendation = html.escape(
+                        today_recommendation(today_log, {**item, "name": selected_exercise})
+                    )
                     if best:
                         best_weight, reps_at_best_weight, best_reps, weight_at_best_reps = best
                         st.markdown(
@@ -830,13 +839,11 @@ with tab_today:
                             width="stretch",
                         )
 
-                alternatives = item.get("alternatives", [])
-                choices = [item["name"], *alternatives]
                 with st.expander("Alternatives & workout log"):
                     performed = st.selectbox(
                         "Exercise performed",
                         choices,
-                        key=f"performed_{selected_day}_{index}",
+                        key=performed_key,
                         help="Choose the planned movement or an alternative.",
                     )
                     set_count = st.selectbox(
@@ -1030,6 +1037,17 @@ with tab_progress:
             st.subheader("Training activity")
             st.bar_chart(completed_days, x_label="Date", y_label="Completed sets")
 
+            daily_volume = (
+                sessions.groupby("performed_on")["volume_load"]
+                .sum()
+                .rename("Workout volume")
+            )
+            st.subheader("Workout volume")
+            st.bar_chart(daily_volume, x_label="Date", y_label="Volume (kg × reps)")
+            st.caption(
+                "Daily volume adds weight × repetitions for every logged set across all exercises."
+            )
+
             sessions_by_week = (
                 sessions.assign(week=sessions["performed_on"].dt.to_period("W-SUN").dt.start_time)
                 .groupby("week")["performed_on"]
@@ -1167,6 +1185,17 @@ with tab_progress:
             st.caption(
                 "Estimated 1RM uses the Epley formula and is a trend estimate—not a "
                 "recommendation to attempt a maximum lift."
+            )
+
+            exercise_volume = (
+                exercise_sessions.groupby("performed_on")["volume_load"]
+                .sum()
+                .rename("Workout volume")
+            )
+            st.subheader("Workout volume")
+            st.bar_chart(exercise_volume, x_label="Date", y_label="Volume (kg × reps)")
+            st.caption(
+                "Daily volume adds weight × repetitions for every logged set of the selected exercise."
             )
 
             st.subheader("Recent set-by-set performance")
