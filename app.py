@@ -1037,15 +1037,16 @@ with tab_progress:
             st.subheader("Training activity")
             st.bar_chart(completed_days, x_label="Date", y_label="Completed sets")
 
-            daily_volume = (
-                sessions.groupby("performed_on")["volume_load"]
+            weekly_volume = (
+                sessions.set_index("performed_on")["volume_load"]
+                .resample("W-MON", label="left", closed="left")
                 .sum()
                 .rename("Workout volume")
             )
             st.subheader("Workout volume")
-            st.bar_chart(daily_volume, x_label="Date", y_label="Volume (kg × reps)")
+            st.line_chart(weekly_volume, x_label="Week starting Monday", y_label="Volume (kg × reps)")
             st.caption(
-                "Daily volume adds weight × repetitions for every logged set across all exercises."
+                "Weekly volume adds weight × repetitions for every logged set across all exercises, Monday through Sunday."
             )
 
             sessions_by_week = (
@@ -1188,14 +1189,15 @@ with tab_progress:
             )
 
             exercise_volume = (
-                exercise_sessions.groupby("performed_on")["volume_load"]
+                exercise_sessions.set_index("performed_on")["volume_load"]
+                .resample("W-MON", label="left", closed="left")
                 .sum()
                 .rename("Workout volume")
             )
             st.subheader("Workout volume")
-            st.bar_chart(exercise_volume, x_label="Date", y_label="Volume (kg × reps)")
+            st.line_chart(exercise_volume, x_label="Week starting Monday", y_label="Volume (kg × reps)")
             st.caption(
-                "Daily volume adds weight × repetitions for every logged set of the selected exercise."
+                "Weekly volume adds weight × repetitions for every logged set of the selected exercise, Monday through Sunday."
             )
 
             st.subheader("Recent set-by-set performance")
