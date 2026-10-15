@@ -1,12 +1,12 @@
 id,performed_on,day_name,planned_exercise,performed_exercise,sets,reps,weight,rir,pain,notes,set_number,created_at
-74428,2026-10-15,Tuesday,Chest-supported machine row,Chest-supported machine row,1,8,72.5,0,0,,4,2026-10-15T10:05:22.664438-03:00
-74427,2026-10-15,Tuesday,Chest-supported machine row,Chest-supported machine row,1,8,72.5,0,0,,3,2026-10-15T10:05:22.664438-03:00
-74426,2026-10-15,Tuesday,Chest-supported machine row,Chest-supported machine row,1,8,72.5,0,0,,2,2026-10-15T10:05:22.664438-03:00
-74425,2026-10-15,Tuesday,Chest-supported machine row,Chest-supported machine row,1,8,72.5,0,0,,1,2026-10-15T10:05:22.664438-03:00
-73341,2026-10-15,Tuesday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,70.5,0,0,,1,2026-10-15T10:04:56.787076-03:00
-73340,2026-10-15,Tuesday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,70.5,0,0,,2,2026-10-15T10:04:56.787076-03:00
-73339,2026-10-15,Tuesday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,70.5,0,0,,3,2026-10-15T10:04:56.787076-03:00
-73338,2026-10-15,Tuesday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,70.5,0,0,,4,2026-10-15T10:04:56.787076-03:00
+74428,2026-10-13,Tuesday,Chest-supported machine row,Chest-supported machine row,1,8,72.5,0,0,,4,2026-10-15T10:05:22.664438-03:00
+74427,2026-10-13,Tuesday,Chest-supported machine row,Chest-supported machine row,1,8,72.5,0,0,,3,2026-10-15T10:05:22.664438-03:00
+74426,2026-10-13,Tuesday,Chest-supported machine row,Chest-supported machine row,1,8,72.5,0,0,,2,2026-10-15T10:05:22.664438-03:00
+74425,2026-10-13,Tuesday,Chest-supported machine row,Chest-supported machine row,1,8,72.5,0,0,,1,2026-10-15T10:05:22.664438-03:00
+73341,2026-10-13,Tuesday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,70.5,0,0,,1,2026-10-15T10:04:56.787076-03:00
+73340,2026-10-13,Tuesday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,70.5,0,0,,2,2026-10-15T10:04:56.787076-03:00
+73339,2026-10-13,Tuesday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,70.5,0,0,,3,2026-10-15T10:04:56.787076-03:00
+73338,2026-10-13,Tuesday,Neutral-grip lat pulldown,Neutral-grip lat pulldown,1,8,70.5,0,0,,4,2026-10-15T10:04:56.787076-03:00
 73365,2026-10-12,Monday,Machine crunch,Machine crunch,1,10,85.0,0,0,,4,2026-10-15T10:00:27.655427-03:00
 73364,2026-10-12,Monday,Machine crunch,Machine crunch,1,15,85.0,0,0,,3,2026-10-15T10:00:27.655427-03:00
 73363,2026-10-12,Monday,Machine crunch,Machine crunch,1,15,85.0,0,0,,2,2026-10-15T10:00:27.655427-03:00
