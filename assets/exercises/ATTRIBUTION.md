@@ -11,3 +11,5 @@ available in the dataset.
 
 The hip machine photos are from [Thigh Adductor](https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Thigh_Adductor/0.jpg)
 and [Thigh Abductor](https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Thigh_Abductor/0.jpg).
+
+The cable curl photo is from [Standing Biceps Cable Curl](https://github.com/yuhonas/free-exercise-db/blob/main/exercises/Standing_Biceps_Cable_Curl/1.jpg).

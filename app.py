@@ -36,7 +36,8 @@ EXERCISE_IMAGES = {
     "Chest-supported row": "chest-supported-row.jpg",
     "Machine shoulder press": "machine-shoulder-press.jpg",
     "Cable triceps pushdown": "triceps-pushdown.jpg",
-    "Machine or cable curl": "machine-curl.jpg",
+    "Machine curl": "machine-curl.jpg",
+    "Cable curl": "cable-curl.jpg",
     "Leg press": "leg-press.jpg",
     "Seated leg curl": "seated-leg-curl.jpg",
     "Leg extension": "leg-extension.jpg",
@@ -282,7 +283,7 @@ STARTER_PLAN = {
             "head on the pad. Do not lower excessively deep or continue through pinching.",
         ),
         exercise("Cable triceps pushdown", 3, "10–15", ["Machine triceps extension", "Resistance-band pushdown"]),
-        exercise("Machine or cable curl", 3, "10–15", ["Dumbbell curl", "Hammer curl"]),
+        exercise("Cable curl", 3, "10–15", ["Machine curl", "Dumbbell curl", "Hammer curl"]),
     ],
     "Saturday": [
         exercise(
@@ -321,7 +322,7 @@ STARTER_PLAN = {
         ),
         exercise("One-arm cable row", 3, "10–15 per side", ["One-arm machine row", "Chest-supported dumbbell row"]),
         exercise("Reverse pec deck", 4, "12–20", ["Cable rear-delt fly", "Face pull"]),
-        exercise("Cable or machine curl", 3, "10–15", ["Dumbbell curl", "Preacher curl"]),
+        exercise("Cable curl", 3, "10–15", ["Machine curl", "Dumbbell curl", "Preacher curl"]),
         exercise("Hammer curl", 3, "10–15", ["Rope cable hammer curl", "Machine curl"]),
     ],
     "Wednesday": [

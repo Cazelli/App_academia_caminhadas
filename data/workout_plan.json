@@ -92,10 +92,11 @@
       ]
     },
     {
-      "name": "Machine or cable curl",
+      "name": "Cable curl",
       "sets": 3,
       "reps": "10–15",
       "alternatives": [
+        "Machine curl",
         "Dumbbell curl",
         "Hammer curl"
       ],
@@ -359,10 +360,11 @@
       ]
     },
     {
-      "name": "Cable or machine curl",
+      "name": "Cable curl",
       "sets": 3,
       "reps": "10–15",
       "alternatives": [
+        "Machine curl",
         "Dumbbell curl",
         "Preacher curl"
       ],
