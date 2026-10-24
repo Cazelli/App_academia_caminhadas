@@ -655,10 +655,7 @@ def today_recommendation(log: pd.DataFrame, item: dict) -> str:
         max_volume = session_summary(exercise_log)["volume_load"].max()
         if pd.notna(max_volume) and max_volume > 0:
             equivalent_reps = math.ceil(max_volume / current_weight)
-            volume_comparison = (
-                f" · Match max workout volume · {equivalent_reps} total reps "
-                f"at {current_weight:g} kg"
-            )
+            volume_comparison = f" · MWV - {equivalent_reps} total reps"
 
     if pd.notna(average_pain) and average_pain >= 4:
         return (
