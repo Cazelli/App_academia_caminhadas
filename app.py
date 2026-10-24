@@ -3,6 +3,7 @@ from __future__ import annotations
 import base64
 import html
 import json
+import math
 import re
 import sqlite3
 import urllib.error
@@ -649,11 +650,20 @@ def today_recommendation(log: pd.DataFrame, item: dict) -> str:
     average_pain = pd.to_numeric(latest_sets["pain"], errors="coerce").mean()
     average_rir = pd.to_numeric(latest_sets["rir"], errors="coerce").mean()
     _, upper_target = target_rep_range(item["reps"])
+    volume_comparison = ""
+    if current_weight > 0:
+        max_volume = session_summary(exercise_log)["volume_load"].max()
+        if pd.notna(max_volume) and max_volume > 0:
+            equivalent_reps = math.ceil(max_volume / current_weight)
+            volume_comparison = (
+                f" · Match max workout volume · {equivalent_reps} total reps "
+                f"at {current_weight:g} kg"
+            )
 
     if pd.notna(average_pain) and average_pain >= 4:
         return (
             f"Recommended today · Up to {current_weight:g} kg · "
-            "Review comfort before progressing"
+            f"Review comfort before progressing{volume_comparison}"
         )
     if (
         upper_target is not None
@@ -665,9 +675,9 @@ def today_recommendation(log: pd.DataFrame, item: dict) -> str:
     ):
         return (
             f"Recommended today · {target} · Increase slightly above "
-            f"{current_weight:g} kg"
+            f"{current_weight:g} kg{volume_comparison}"
         )
-    return f"Recommended today · {target} at {current_weight:g} kg"
+    return f"Recommended today · {target} at {current_weight:g} kg{volume_comparison}"
 
 
 def apply_date_to_day(day: str, exercise_count: int) -> None:
